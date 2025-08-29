@@ -15,7 +15,7 @@ This template provides a simple starting point with a standard React setup using
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/surajsodha22/cyb-clone
 ```
 
 ### 2. Navigate to the Project Directory
