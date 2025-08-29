@@ -21,7 +21,7 @@ git clone https://github.com/surajsodha22/cyb-clone
 ### 2. Navigate to the Project Directory
 
 ```bash
-cd your-repo-name
+cd cyb-clone
 ```
 
 ### 3. Install Dependencies
