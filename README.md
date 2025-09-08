@@ -1,4 +1,4 @@
- # React Template Project
+# React Template Project
 
 This is a basic React project template to help you get started quickly with React development.
 
@@ -42,3 +42,4 @@ This will open the app in your default browser at:
 
 ```
 http://localhost:3000
+```

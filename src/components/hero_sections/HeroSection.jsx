@@ -17,10 +17,10 @@ import Section13 from "./Section13";
 const HeroSection = ({container}) => {
   return (
     <>
-      <div className="bg-primary sm:px-0 px-5 sm:pt-4 pt-4 sm:pb-16 pb-10 ">
+      {/* <div className="bg-primary sm:px-0 px-5 sm:pt-4 pt-4 sm:pb-16 pb-10 ">
         <Section1 container={container} />
-      </div>
-      <div className="max-w-3xl relative sm:-top-10 -top-5 mx-4 md:mx-auto bg-white p-2  shadow-md rounded">
+      </div> */}
+      {/* <div className="max-w-3xl relative sm:-top-10 -top-5 mx-4 md:mx-auto bg-white p-2  shadow-md rounded">
         <h1 className="text-center text-lg py-2">
           Trusted by Corporations, Enterprices, And Startups.
         </h1>
@@ -34,8 +34,8 @@ const HeroSection = ({container}) => {
             />
           ))}
         </div>
-      </div>
-      <div className={`sm:px-0 px-5  ${container}`}>
+      </div> */}
+      <div className={`sm:px-0 px-5  ${container} mt-5`}>
         <Section2 />
         <Section3 />
       </div>
@@ -75,9 +75,9 @@ const HeroSection = ({container}) => {
         <Section12 />
       </div>
 
-      <div className="bg-primary sm:px-0 px-5 sm:pt-4 pt-0  pb-4 mt-10 ">
+      {/* <div className="bg-primary sm:px-0 px-5 sm:pt-4 pt-0  pb-4 mt-10 ">
         <Section13 container={container} />
-      </div>
+      </div> */}
     </>
   );
 };

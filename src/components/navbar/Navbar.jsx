@@ -10,7 +10,7 @@ const Navbar = () => {
   const [navMenuOpen, setNavMenuOpen] = useState(0);
 
   return (
-    <nav className="w-full  shadow-sm pt-4 ">
+    <nav className="w-full pt-4 ">
       <div className="sm:px-0 px-5">
         <div className="flex items-center justify-between h-16 ">
           {/* Logo */}

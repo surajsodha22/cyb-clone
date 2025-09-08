@@ -1,0 +1,68 @@
+import React from "react";
+import Button from "../reusable/Button";
+
+const BannerSection = ({
+  container = "container mx-auto px-6",
+  title,
+  highlight1,
+  highlight2,
+  subtitle,
+  description,
+  button,
+  image,
+  pathname,
+}) => {
+  console.log(pathname);
+  return (
+    <section
+      className={`flex ${container} flex-col md:flex-row items-center justify-between`}
+    >
+      {/* Left Content */}
+      {pathname === "/" ? (
+        <>
+          <div className="md:w-1/2 space-y-6">
+            <h1 className="text-4xl md:text-5xl font-bold">
+              {title} <span className="text-red-400">{highlight1}</span> of{" "}
+              <br />
+              Global <span className="text-secondary">{highlight2}</span>
+            </h1>
+
+            {subtitle && <p className="text-gray-600 text-lg">{subtitle}</p>}
+
+            {description && <p className="text-gray-500">{description}</p>}
+
+            {button && (
+              <Button
+                text={button.text}
+                onClick={button.onClick}
+                className=""
+              />
+            )}
+          </div>
+          <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+            <div className="rounded-[30px] overflow-hidden">
+              <img src={image} alt="banner" className="w-full h-auto" />
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <div>
+            {" "}
+            <h1 className="text-4xl md:text-5xl font-bold ">{title}</h1>
+            <hr className="border-b-2 border-black w-9" />
+          </div>
+          <div className="md:w-96 mt-10 mr-10 flex justify-center">
+            <div className="rounded-[30px] overflow-hidden">
+              <img src={image} alt="banner" className="" />
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* Right Image */}
+    </section>
+  );
+};
+
+export default BannerSection;

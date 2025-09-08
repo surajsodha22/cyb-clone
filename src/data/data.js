@@ -25,6 +25,10 @@ import {
   image1,
   image2,
   image3,
+  journey1,
+  journey2,
+  journey3,
+  journey4,
 } from "./assetes";
 
 export const navMenu = [
@@ -215,5 +219,32 @@ export const footerLinks = [
       "Salesforce Integration",
       "Power BI Development Company",
     ],
+  },
+];
+
+export const journeys = [
+  {
+    year: "2016",
+    description:
+      "We started our journey with 10 employees working passionately...",
+    image: journey1,
+  },
+  {
+    year: "2017-2018",
+    description:
+      "We started our journey with 10 employees working passionately...",
+    image: journey2,
+  },
+  {
+    year: "2019-2020",
+    description:
+      "We started our journey with 10 employees working passionately...",
+    image: journey3,
+  },
+  {
+    year: "2021-2022",
+    description:
+      "We started our journey with 10 employees working passionately...",
+    image: journey4,
   },
 ];

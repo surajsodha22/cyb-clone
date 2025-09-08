@@ -34,8 +34,16 @@ import image2 from "../assetes/Image2.png";
 import image3 from "../assetes/Image3.png";
 
 import women from "../assetes/women.png";
-
+import banner2 from "../assetes/banner2.jpg";
+import aboutBanner from "../assetes/aboutBanner.png";
+import linkdin_frame from "../assetes/linkdin_frame.png";
 import footImg from "../assetes/footImg.png";
+import HandGroup from "../assetes/HandGroup.png";
+import goal from "../assetes/goal.jpg";
+import journey1 from "../assetes/journey1.png";
+import journey2 from "../assetes/journey2.png";
+import journey3 from "../assetes/journey3.png";
+import journey4 from "../assetes/journey4.png";
 
 import {FaRocket} from "react-icons/fa";
 
@@ -51,6 +59,11 @@ export {
   meet,
   women,
   footImg,
+  banner2,
+  aboutBanner,
+  linkdin_frame,
+  HandGroup,
+  goal,
 };
 
 export {Frame, Frame1, Frame2, Frame3, Frame4, Frame5};
@@ -60,3 +73,5 @@ export {app1, app2, app3, app4};
 export {d1, d2, d3, d4, d5, d6};
 export {avatar1, avatar2, avatar3};
 export {image1, image2, image3};
+
+export {journey1, journey2, journey3, journey4};

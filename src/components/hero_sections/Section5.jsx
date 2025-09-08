@@ -4,7 +4,7 @@ import {apps} from "../../data/data";
 const Section5 = () => {
   return (
     <div>
-      <div className=" flex flex-wrap justify-between sm:gap-20">
+      <div className=" flex md:flex-row flex-col flex-wrap justify-between sm:gap-20">
         <div className="bg-gradient-to-r from-secondary to-white text-4xl flex flex-col justify-center pl-4 ">
           Strategic Partnerships
         </div>
