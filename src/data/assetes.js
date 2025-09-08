@@ -44,6 +44,8 @@ import journey1 from "../assetes/journey1.png";
 import journey2 from "../assetes/journey2.png";
 import journey3 from "../assetes/journey3.png";
 import journey4 from "../assetes/journey4.png";
+import girl from "../assetes/girl.png";
+import jobImg from "../assetes/jobs.png";
 
 import {FaRocket} from "react-icons/fa";
 
@@ -64,6 +66,8 @@ export {
   linkdin_frame,
   HandGroup,
   goal,
+  girl,
+  jobImg,
 };
 
 export {Frame, Frame1, Frame2, Frame3, Frame4, Frame5};

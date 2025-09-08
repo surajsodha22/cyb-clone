@@ -50,9 +50,6 @@ const HeroSection = ({container}) => {
         <Section5 />
       </div>
 
-      <div className="bg-primary sm:px-0 px-5 sm:pt-4 pt-4 sm:pb-16 pb-10 mt-10 ">
-        <Section6 container={container} />
-      </div>
       <div className={`sm:px-0 px-5  ${container} mt-10`}>
         <Section7 />
       </div>

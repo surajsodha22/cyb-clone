@@ -33,6 +33,12 @@ const Banner = ({container, location}) => {
             image={aboutBanner}
             pathname={location.pathname}
           />
+        ) : location.pathname == "/careers" ? (
+          <BannerSection
+            title="Carrier"
+            image={aboutBanner}
+            pathname={location.pathname}
+          />
         ) : (
           ""
         )}

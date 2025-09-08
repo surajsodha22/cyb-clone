@@ -1,3 +1,4 @@
+import {FaEarthAsia} from "react-icons/fa6";
 import {
   paydeer,
   payvendor,
@@ -29,6 +30,7 @@ import {
   journey2,
   journey3,
   journey4,
+  jobImg,
 } from "./assetes";
 
 export const navMenu = [
@@ -246,5 +248,81 @@ export const journeys = [
     description:
       "We started our journey with 10 employees working passionately...",
     image: journey4,
+  },
+];
+
+export const jobs = [
+  {
+    title: "Frontend Developer",
+    experience: "3 years minimum experience in ReactJS.",
+    badges: ["Full Time", "Min 3 Years", "Indore, India"],
+    img: jobImg,
+  },
+  {
+    title: "Manual QA",
+    experience: "2 years minimum experience in testing.",
+    badges: ["Full Time", "Min 2 Years", "Indore, India"],
+    img: jobImg,
+  },
+  {
+    title: "MERN Stack Developer",
+    experience: "3 years minimum experience in ReactJS.",
+    badges: ["Full Time", "Min 3 Years", "Indore, India"],
+    img: jobImg,
+  },
+  {
+    title: "Business Analyst - Post Sales",
+    experience: "3 years minimum experience in ReactJS.",
+    badges: ["Full Time", "Min 3 Years", "Indore, India"],
+    img: jobImg,
+  },
+  {
+    title: "Business Analyst - Pre Sales",
+    experience: "2 years minimum experience in ReactJS.",
+    badges: ["Full Time", "Min 2 Years", "Indore, India"],
+    img: jobImg,
+  },
+  {
+    title: "Graphic Designer",
+    experience: "3 years minimum experience in ReactJS.",
+    badges: ["Full Time", "Min 3 Years", "Indore, India"],
+    img: jobImg,
+  },
+  {
+    title: "Digital Marketing Intern",
+    experience: "3 years minimum experience in ReactJS.",
+    badges: ["Internship", "0-1 Years", "Indore, India"],
+    img: jobImg,
+  },
+  {
+    title: "SEO Specialist",
+    experience: "3 years minimum experience in ReactJS.",
+    badges: ["Full Time", "Min 3 Years", "Indore, India"],
+    img: jobImg,
+  },
+  {
+    title: "Back Office Executive",
+    experience: "3 years minimum experience in ReactJS.",
+    badges: ["Full Time", "Min 3 Years", "Indore, India"],
+    img: jobImg,
+  },
+];
+
+export const benefits = [
+  {
+    icon: <FaEarthAsia />,
+    text: "A friendly workforce spread across UK, Egypt, China, Europe, and India",
+  },
+  {
+    icon: <FaEarthAsia />,
+    text: "A chance to have a healthy Work Life Balance.",
+  },
+  {
+    icon: <FaEarthAsia />,
+    text: "Many opportunities to unleash Your Creative side",
+  },
+  {
+    icon: <FaEarthAsia />,
+    text: "Our Philosophy... Play harder.",
   },
 ];
