@@ -15,7 +15,7 @@ const BannerSection = ({
   console.log(pathname);
   return (
     <section
-      className={`flex ${container} flex-col md:flex-row items-center justify-between`}
+      className={`flex ${container} flex-col md:flex-row items-center justify-between pt-5`}
     >
       {/* Left Content */}
       {pathname === "/" ? (
@@ -50,9 +50,9 @@ const BannerSection = ({
           <div>
             {" "}
             <h1 className="text-4xl md:text-5xl font-bold ">{title}</h1>
-            <hr className="border-b-2 border-black w-9" />
+            <hr className="border-b-2 border-black w-20" />
           </div>
-          <div className="md:w-96 mt-10 mr-10 flex justify-center">
+          <div className="md:w-96  mr-10 flex justify-center">
             <div className="rounded-[30px] overflow-hidden">
               <img src={image} alt="banner" className="" />
             </div>

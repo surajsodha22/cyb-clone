@@ -326,3 +326,26 @@ export const benefits = [
     text: "Our Philosophy... Play harder.",
   },
 ];
+
+export const infoCards = [
+  {
+    title: "Who We Are ?",
+    subtitle: "Custom, Scalable Solutions",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
+  },
+  {
+    title: "Where Do We Come From ?",
+    subtitle: "Custom, Scalable Solutions",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
+  },
+  {
+    title: "What We Do ?",
+    subtitle: "Custom, Scalable Solutions",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
+  },
+  {
+    title: "How We Make Difference ?",
+    subtitle: "Custom, Scalable Solutions",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
+  },
+];

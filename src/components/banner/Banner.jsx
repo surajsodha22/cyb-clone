@@ -1,10 +1,9 @@
 import React from "react";
 import {FaRocket} from "react-icons/fa";
-import {image} from "../../data/assetes";
+import {aboutBanner, image, partner} from "../../data/assetes";
 
 import Button from "../reusable/Button";
 import BannerSection from "./BannerSection";
-import {aboutBanner} from "../../data/assetes";
 
 const Banner = ({container, location}) => {
   if (location.pathname == "/") {
@@ -37,6 +36,12 @@ const Banner = ({container, location}) => {
           <BannerSection
             title="Carrier"
             image={aboutBanner}
+            pathname={location.pathname}
+          />
+        ) : location.pathname == "/partnership" ? (
+          <BannerSection
+            title="Partner With Us"
+            image={partner}
             pathname={location.pathname}
           />
         ) : (

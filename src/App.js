@@ -32,7 +32,7 @@ const App = () => {
   return (
     <div>
       {/* Header */}
-      <div className="bg-cover" style={style}>
+      <div className="" style={style}>
         <div className={container}>
           <Navbar />
           <Banner container={container} location={location} />

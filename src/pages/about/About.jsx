@@ -3,7 +3,7 @@ import {linkdin_frame, HandGroup, goal} from "../../data/assetes";
 import {journeys} from "../../data/data";
 import Section11 from "../../components/hero_sections/Section11";
 
-const About = () => {
+const About = ({container}) => {
   const InfoSection = ({title, description, image, reverse = false}) => {
     return (
       <section
@@ -103,7 +103,7 @@ const About = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-16 space-y-16">
+    <div className={`${container} px-6 py-16 space-y-16`}>
       <div>
         <InfoSection
           title="Company Overview"

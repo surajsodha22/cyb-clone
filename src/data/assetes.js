@@ -46,6 +46,9 @@ import journey3 from "../assetes/journey3.png";
 import journey4 from "../assetes/journey4.png";
 import girl from "../assetes/girl.png";
 import jobImg from "../assetes/jobs.png";
+import BusinessPart1 from "../assetes/business_partner.png";
+import BusinessPart2 from "../assetes/business_partner2.png";
+import partner from "../assetes/partner.png";
 
 import {FaRocket} from "react-icons/fa";
 
@@ -68,6 +71,9 @@ export {
   goal,
   girl,
   jobImg,
+  BusinessPart1,
+  BusinessPart2,
+  partner,
 };
 
 export {Frame, Frame1, Frame2, Frame3, Frame4, Frame5};

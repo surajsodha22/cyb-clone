@@ -2,10 +2,12 @@ import React from "react";
 import {benefits, jobs} from "../../data/data";
 import {girl} from "../../data/assetes";
 
-const Careers = () => {
+const Careers = ({container}) => {
   return (
     <div className="bg-[#fff7f0] py-16 px-4 md:px-10">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 mb-20 justify-between">
+      <div
+        className={`${container} flex flex-col md:flex-row gap-10 mb-20 justify-between`}
+      >
         {/* Left */}
         <div className="relative bg-secondary max-w-lg md:w-1/2 rounded-xl flex items-center justify-center overflow-hidden min-h-[300px] sm:min-h-[400px]">
           <h2 className="text-white font-semibold text-lg sm:text-2xl absolute top-4 left-4 leading-snug">
