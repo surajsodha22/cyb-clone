@@ -34,6 +34,7 @@ import image2 from "../assetes/Image2.png";
 import image3 from "../assetes/Image3.png";
 
 import women from "../assetes/women.png";
+import women2 from "../assetes/women2.png";
 import banner2 from "../assetes/banner2.jpg";
 import aboutBanner from "../assetes/aboutBanner.png";
 import linkdin_frame from "../assetes/linkdin_frame.png";
@@ -49,6 +50,38 @@ import jobImg from "../assetes/jobs.png";
 import BusinessPart1 from "../assetes/business_partner.png";
 import BusinessPart2 from "../assetes/business_partner2.png";
 import partner from "../assetes/partner.png";
+import headSalesForces from "../assetes/headSalesForces.png";
+import salesFor1 from "../assetes/salesFor1.png";
+import salesFor2 from "../assetes/salesFor2.png";
+import salesFor3 from "../assetes/salesFor3.png";
+import salesFor4 from "../assetes/salesFor4.png";
+import salesFor5 from "../assetes/salesFor5.png";
+import salesFor6 from "../assetes/salesFor6.png";
+import salesFor7 from "../assetes/salesFor7.png";
+import salesFor8 from "../assetes/salesFor8.png";
+import salesFor9 from "../assetes/salesFor9.png";
+
+import salesForIcon1 from "../assetes/salesForIcon1.png";
+import salesForIcon2 from "../assetes/salesForIcon2.png";
+import salesForIcon3 from "../assetes/salesForIcon3.png";
+import salesForIcon4 from "../assetes/salesForIcon4.png";
+import salesForIcon5 from "../assetes/salesForIcon5.png";
+
+import web3Sales1 from "../assetes/web3Sales1.jpg";
+import web3Sales2 from "../assetes/web3Sales2.jpg";
+import web3Sales3 from "../assetes/web3Sales3.jpg";
+import web3Sales4 from "../assetes/web3Sales4.jpg";
+import web3Sales5 from "../assetes/web3Sales5.jpg";
+import web3Sales6 from "../assetes/web3Sales6.jpg";
+import web3Sales7 from "../assetes/web3Sales7.jpg";
+import web3Sales8 from "../assetes/web3Sales8.jpg";
+
+import html from "../assetes/html.png";
+import react from "../assetes/react.png";
+import mern from "../assetes/mern.png";
+import mean from "../assetes/mean.png";
+import angular from "../assetes/angular.png";
+import vue from "../assetes/vue.png";
 
 import {FaRocket} from "react-icons/fa";
 
@@ -63,6 +96,7 @@ export {
   digital_excellence_bg,
   meet,
   women,
+  women2,
   footImg,
   banner2,
   aboutBanner,
@@ -74,14 +108,59 @@ export {
   BusinessPart1,
   BusinessPart2,
   partner,
+  headSalesForces,
+  Frame,
+  Frame1,
+  Frame2,
+  Frame3,
+  Frame4,
+  Frame5,
+  app1,
+  app2,
+  app3,
+  app4,
+  d1,
+  d2,
+  d3,
+  d4,
+  d5,
+  d6,
+  avatar1,
+  avatar2,
+  avatar3,
+  image1,
+  image2,
+  image3,
+  journey1,
+  journey2,
+  journey3,
+  journey4,
+  salesFor1,
+  salesFor2,
+  salesFor3,
+  salesFor4,
+  salesFor5,
+  salesFor6,
+  salesFor7,
+  salesFor8,
+  salesFor9,
+  salesForIcon1,
+  salesForIcon2,
+  salesForIcon3,
+  salesForIcon4,
+  salesForIcon5,
+  web3Sales1,
+  web3Sales2,
+  web3Sales3,
+  web3Sales4,
+  web3Sales5,
+  web3Sales6,
+  web3Sales7,
+  web3Sales8,
+  html,
+  react,
+  mern,
+  mean,
+  angular,
+  vue,
 };
-
-export {Frame, Frame1, Frame2, Frame3, Frame4, Frame5};
-
-export {app1, app2, app3, app4};
-
-export {d1, d2, d3, d4, d5, d6};
-export {avatar1, avatar2, avatar3};
-export {image1, image2, image3};
-
-export {journey1, journey2, journey3, journey4};

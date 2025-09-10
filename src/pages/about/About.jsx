@@ -1,7 +1,7 @@
 import React from "react";
 import {linkdin_frame, HandGroup, goal} from "../../data/assetes";
 import {journeys} from "../../data/data";
-import Section11 from "../../components/hero_sections/Section11";
+import FAQ from "../../components/reusable/FAQ";
 
 const About = ({container}) => {
   const InfoSection = ({title, description, image, reverse = false}) => {
@@ -150,7 +150,7 @@ const About = ({container}) => {
         </div>
       </div>
 
-      <Section11 />
+      <FAQ />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import {FaRocket} from "react-icons/fa";
-import {aboutBanner, image, partner} from "../../data/assetes";
+import {aboutBanner, image, partner, headSalesForces} from "../../data/assetes";
 
 import Button from "../reusable/Button";
 import BannerSection from "./BannerSection";
@@ -42,6 +42,15 @@ const Banner = ({container, location}) => {
           <BannerSection
             title="Partner With Us"
             image={partner}
+            pathname={location.pathname}
+          />
+        ) : location.pathname == "/salesforce" ? (
+          <BannerSection
+            title="Salesforce Development Company"
+            description={
+              "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
+            }
+            image={headSalesForces}
             pathname={location.pathname}
           />
         ) : (

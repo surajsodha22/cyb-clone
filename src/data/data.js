@@ -31,6 +31,34 @@ import {
   journey3,
   journey4,
   jobImg,
+  salesFor1,
+  salesFor2,
+  salesFor3,
+  salesFor4,
+  salesFor5,
+  salesFor6,
+  salesFor7,
+  salesFor8,
+  salesFor9,
+  salesForIcon1,
+  salesForIcon2,
+  salesForIcon3,
+  salesForIcon4,
+  salesForIcon5,
+  web3Sales1,
+  web3Sales2,
+  web3Sales3,
+  web3Sales4,
+  web3Sales5,
+  web3Sales6,
+  web3Sales7,
+  web3Sales8,
+  html,
+  react,
+  mern,
+  mean,
+  angular,
+  vue,
 } from "./assetes";
 
 export const navMenu = [
@@ -348,4 +376,79 @@ export const infoCards = [
     subtitle: "Custom, Scalable Solutions",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
   },
+];
+
+export const salesServices = [
+  {
+    title: "Blockchain Ecosystem Development",
+    img: salesFor1,
+  },
+  {title: "Public Blockchain Development", img: salesFor2},
+  {title: "Private Blockchain Development", img: salesFor3},
+  {title: "Blockchain Explorer Development", img: salesFor4},
+  {title: "Blockchain Wallet Development", img: salesFor5},
+  {title: "Blockchain Development", img: salesFor6},
+  {title: "Enterprise Blockchain Development", img: salesFor7},
+  {title: "Custom Blockchain Development", img: salesFor8},
+  {title: "Blockchain Integration", img: salesFor9},
+];
+
+export const SalesIndustary = [
+  {title: "Requirement Analysis", icon: salesForIcon1},
+  {title: "Model Selection", icon: salesForIcon2},
+  {title: "Data Integration", icon: salesForIcon3},
+  {title: "Testing and Evaluation", icon: salesForIcon4},
+  {title: "Support and Maintenance", icon: salesForIcon5},
+];
+
+export const web3services = [
+  {
+    title: "AI Development",
+    img: web3Sales1,
+    desc: "We build intelligent AI solutions tailored for automation, predictive analytics, and decision-making in Web3 ecosystems.",
+  },
+  {
+    title: "Metaverse Development",
+    img: web3Sales2,
+    desc: "Create immersive 3D environments, virtual spaces, and social experiences with our cutting-edge metaverse development services.",
+  },
+  {
+    title: "Web3 Development",
+    img: web3Sales3,
+    desc: "Build decentralized applications (dApps) and smart contracts to power the next generation of the internet using Web3 technologies.",
+  },
+  {
+    title: "Crypto Exchange Development",
+    img: web3Sales4,
+    desc: "Launch secure and scalable centralized or decentralized crypto exchange platforms with custom trading features.",
+  },
+  {
+    title: "NFT Development",
+    img: web3Sales5,
+    desc: "Design and develop NFT platforms, marketplaces, and smart contracts for digital asset tokenization and ownership.",
+  },
+  {
+    title: "Token Development",
+    img: web3Sales6,
+    desc: "Create custom crypto tokens (ERC-20, BEP-20, etc.) with utility, governance, or security features for your ecosystem.",
+  },
+  {
+    title: "Metaverse AI Development",
+    img: web3Sales7,
+    desc: "Combine artificial intelligence with metaverse apps for intelligent NPCs, dynamic environments, and personalized user experiences.",
+  },
+  {
+    title: "DApps Development",
+    img: web3Sales8,
+    desc: "Develop decentralized applications with full-stack blockchain integration, smart contracts, and user-friendly interfaces.",
+  },
+];
+
+export const techStacks = [
+  {name: "HTML", img: html},
+  {name: "ReactJS", img: react},
+  {name: "Meren Stack", img: mern},
+  {name: "Mean Stack", img: mean},
+  {name: "Angular JS", img: angular},
+  {name: "Vue.JS", img: vue},
 ];

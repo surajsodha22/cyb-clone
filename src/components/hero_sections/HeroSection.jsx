@@ -10,9 +10,10 @@ import Section7 from "./Section7";
 import Section8 from "./Section8";
 import Section9 from "./Section9";
 import Section10 from "./Section10";
-import Section11 from "./Section11";
+
 import Section12 from "./Section12";
-import Section13 from "./Section13";
+
+import FAQ from "../reusable/FAQ";
 
 const HeroSection = ({container}) => {
   return (
@@ -65,7 +66,7 @@ const HeroSection = ({container}) => {
       </div>
 
       <div className="bg-primary sm:px-0 px-5 sm:pt-4 pt-0  pb-16 mt-10 ">
-        <Section11 container={container} />
+        <FAQ container={container} />
       </div>
 
       <div className={`sm:px-0 px-5  ${container} mt-10`}>
