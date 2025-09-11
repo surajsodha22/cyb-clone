@@ -1,4 +1,3 @@
-import React from "react";
 import {blogs} from "../../data/data";
 import Button from "../reusable/Button";
 

@@ -27,7 +27,7 @@ const TalentNetwork = () => {
               key={index}
               className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition
                ${
-                 index % 2 == 0 ? "bg-[#FEBB4D1A]" : "bg-[#feba4d5d]"
+                 index % 2 === 0 ? "bg-[#FEBB4D1A]" : "bg-[#feba4d5d]"
                }  text-black hover:bg-secondary`}
             >
               <span>{role}</span>

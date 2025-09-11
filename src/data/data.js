@@ -59,14 +59,97 @@ import {
   mean,
   angular,
   vue,
+  ai_service1,
+  ai_service6,
+  ai_service5,
+  ai_service4,
+  ai_service3,
+  ai_service2,
+  ai_pro2,
+  ai_pro1,
+  ai_pro4,
+  ai_pro5,
+  ai_pro3,
+  slideImd,
+  solar3,
+  solar1,
+  solar2,
+  slideBox1,
+  slideBox2,
+  slideBox3,
+  slideBox4,
+  bmImg1,
+  bmImg2,
+  bmImg3,
+  bmImg4,
+  bmImg5,
+  bmImg6,
+  Rectangle,
+  uiUxSer1,
+  uiUxSer2,
+  iconMail,
+  iconPhone,
+  iconLinkedin,
+  iconGoogle,
+  iconPinterest,
+  iconFacebook,
+  iconInsta,
+  tech1,
+  tech2,
+  tech3,
+  tech4,
+  tech5,
+  fintechImg,
+  location1,
+  location2,
+  location3,
 } from "./assetes";
 
 export const navMenu = [
-  {name: "Services"},
-  {name: "Industries"},
-  {name: "Platform"},
-  {name: "Hire talent"},
-  {name: "Our Company"},
+  {
+    id: 1,
+    name: "Services",
+    submenu: [
+      {name: "Software Development", link: "/software-development"},
+      {name: "Business Modernization", link: "/business_modernization"},
+      {name: "Salesforce", link: "/salesforce"},
+      {name: "Mobile App Development", link: "/mobile-app-development"},
+      {name: "Website Development", link: "/website-development"},
+      {name: "UI UX Design", link: "/ui_ux_design"},
+      {name: "AI Development", link: "/ai_development"},
+      {name: "DevOps", link: "/devops"},
+      {name: "On Demand", link: "/on-demand"},
+    ],
+  },
+  {
+    id: 2,
+    name: "Industries",
+    submenu: [
+      {name: "Fintech", link: "/fintech"},
+      {name: "Healthcare", link: "/healthcare"},
+      {name: "Agriculture", link: "/agriculture"},
+      {name: "Real Estate", link: "/real-estate"},
+      {name: "Ecommerce", link: "/ecommerce"},
+    ],
+  },
+  {
+    id: 3,
+    name: "Platform",
+    submenu: [
+      {name: "DevOps", link: "/devops"},
+      {name: "Salesforce", link: "/salesforce"},
+    ],
+  },
+  {
+    id: 4,
+    name: "Our Company",
+    submenu: [
+      {name: "About Us", link: "/about"},
+      {name: "Testimonials", link: "/testimonials"},
+      {name: "Contact Us", link: "/contact"},
+      {name: "Career", link: "/careers"},
+    ],
+  },
 ];
 
 export const trustArr = [paydeer, payvendor, findeer, webhub];
@@ -205,17 +288,17 @@ export const techItems = [
 
 export const locations = [
   {
-    img: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/737459981.jpg?k=a9a26f508b53a31fd891882661fc6a0f15b89d51643e27daee10a206f48c4e27&o=&hp=1",
+    img: location1,
     address:
       "2ND Floor, C-10, Chitrakoot Marg, Sector 9, Vaishali Nagar, Jaipur, Rajasthan 302021",
   },
   {
-    img: "https://i.ytimg.com/vi/Ba0UPFkDrxo/maxresdefault.jpg",
+    img: location2,
     address:
       "Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai, U.A.E",
   },
   {
-    img: "https://digital.ihg.com/is/image/ihg/intercontinental-tegucigalpa-6071105521-2x1",
+    img: location1,
     address: "#254 Vision Exchange 2 Venture Drive, Singapore 608526",
   },
 ];
@@ -234,23 +317,40 @@ export const footerLinks = [
   },
   {
     title: "Company",
-    items: ["About", "Contact us", "Careers", "Culture", "Blog"],
+    items: [
+      "About",
+      "Contact us",
+      "Careers",
+      "Our Team",
+      "Life At Cybdeer",
+      "Partnership",
+      "Blog",
+    ],
   },
   {
     title: "Industries",
     items: ["Healthcare", "Restaurant", "Finance", "Fintech", "On-Demand Apps"],
   },
-  {
-    title: "Platforms",
-    items: [
-      "Adobe Commerce Development",
-      "Salesforce Development Company",
-      "Salesforce Implementation Company",
-      "Salesforce Integration",
-      "Power BI Development Company",
-    ],
-  },
 ];
+
+export const reachUs = {
+  title: "Reach Us",
+  contacts: [
+    {
+      title: "Cybdeer@gmail.com",
+      icon: iconMail,
+      link: "https://mail.google.com/mail/?view=cm&fs=1&to=Cybdeer@gmail.com",
+    },
+    {title: "0987654321", icon: iconPhone, link: "tel:0987654321"},
+  ],
+  socials: [
+    {icon: iconInsta, link: "https://www.instagram.com/accounts/login/"},
+    {icon: iconFacebook, link: "https://www.facebook.com/"},
+    {icon: iconLinkedin, link: "https://www.linkedin.com/login"},
+    {icon: iconGoogle, link: "https://www.google.com/"},
+    {icon: iconPinterest, link: "https://www.pinterest.com/login"},
+  ],
+};
 
 export const journeys = [
   {
@@ -451,4 +551,310 @@ export const techStacks = [
   {name: "Mean Stack", img: mean},
   {name: "Angular JS", img: angular},
   {name: "Vue.JS", img: vue},
+];
+
+export const Ai_Services = [
+  {
+    title: "AI MVP Development ",
+    img: ai_service1,
+  },
+  {title: "Custom AI Model Development", img: ai_service2},
+  {title: "AI Integration Services", img: ai_service3},
+  {title: "Enterprise AI Development", img: ai_service4},
+  {title: "Generative AI Development ", img: ai_service5},
+  {title: "Multi Agent System development ", img: ai_service6},
+];
+
+export const Ai_Process = [
+  {title: "Discovery & Planning", img: ai_pro1},
+  {title: "Data Collection & Preparation", img: ai_pro2},
+  {title: "Model Development & Training", img: ai_pro3},
+  {title: "Deployment & Integrationion ", img: ai_pro4},
+  {title: "Monitoring & Maintenance", img: ai_pro5},
+];
+
+export const Ai_Slide = [
+  {
+    title: "Healthcare",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    img: slideImd,
+  },
+  {
+    title: "Healthcare",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    img: slideImd,
+  },
+  {
+    title: "Healthcare",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    img: slideImd,
+  },
+];
+
+export const UXUI_Slide = [
+  {
+    title: "FinTech",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    img: fintechImg,
+  },
+  {
+    title: "FinTech",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    img: fintechImg,
+  },
+  {
+    title: "FinTech",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    img: fintechImg,
+  },
+];
+
+export const Ai_services2 = [
+  {
+    image: solar1,
+    title: "Artificial Intelligence & Machine Learning Frameworks",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+  },
+  {
+    image: solar2,
+    title: "Natural Language Processing (NLP)",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+  },
+  {
+    image: solar3,
+    title: "Cloud & Deployment Platforms",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+  },
+];
+
+export const Ai_SecurityCards = [
+  {
+    image: slideBox1,
+    title: "We Implement Secure design Principle",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+  },
+  {
+    image: slideBox2,
+    title: "Data Security & Privacy",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+  },
+  {
+    image: slideBox3,
+    title: "Robot Authentication and Access Control",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+  },
+  {
+    image: slideBox4,
+    title: "Complaints and Standards",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+  },
+  {
+    image: slideBox2,
+    title: "Data Security & Privacy",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+  },
+];
+
+export const BusinessServices = [
+  {
+    title: "Legacy System Modernization",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt. Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt. sed do eiusmodtempor incididunt.",
+  },
+  {
+    title: "Cloud Transformation",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt. Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt. sed do eiusmodtempor incididunt.",
+  },
+  {
+    title: "Process Automation",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt. Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt. sed do eiusmodtempor incididunt.",
+  },
+  {
+    title: "Cybersecurity Modernization",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt. Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt. sed do eiusmodtempor incididunt.",
+  },
+  {
+    title: "Future-Ready Solutions",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt. Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt. sed do eiusmodtempor incididunt.",
+  },
+  {
+    title: "Cybersecurity Modernization",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt. Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt. sed do eiusmodtempor incididunt.",
+  },
+];
+
+export const processSteps = [
+  {
+    icon: Rectangle,
+    title: "Assessment & Strategy",
+    description:
+      "We Prioritize Your Privacy With End-To-End Encryption, Ensuring That.",
+  },
+  {
+    icon: Rectangle,
+    title: "Technology Upgrade",
+    description:
+      "We Prioritize Your Privacy With End-To-End Encryption, Ensuring That.",
+  },
+  {
+    icon: Rectangle,
+    title: "Process Automation",
+    description:
+      "We Prioritize Your Privacy With End-To-End Encryption, Ensuring That.",
+  },
+  {
+    icon: Rectangle,
+    title: "Digital Experience Enhancement",
+    description:
+      "We Prioritize Your Privacy With End-To-End Encryption, Ensuring That.",
+  },
+  {
+    icon: Rectangle,
+    title: "Ongoing Support & Scaling",
+    description:
+      "We Prioritize Your Privacy With End-To-End Encryption, Ensuring That.",
+  },
+];
+export const BusinessTechnologies = [
+  {
+    title: "Cloud Platforms & Containerization",
+    description:
+      "Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.",
+    icon: bmImg1,
+  },
+  {
+    title: "Artificial Intelligence & Machine Learning",
+    description:
+      "Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.",
+    icon: bmImg2,
+  },
+  {
+    title: "API Management & Integration Tools",
+    description:
+      "Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.",
+    icon: bmImg3,
+  },
+  {
+    title: "Automation Tools",
+    description:
+      "Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.",
+    icon: bmImg4,
+  },
+  {
+    title: "Modern Web & App Technologies",
+    description:
+      "Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.",
+    icon: bmImg5,
+  },
+  {
+    title: "Document AI & RPA for Process Automation",
+    description:
+      "Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.",
+    icon: bmImg6,
+  },
+];
+
+export const BusinessMethodologies = [
+  {
+    title: "Agile Development Methodology",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    title: "DevOps",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    title: "Design Thinking",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    title: "Lean Six Sigma",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+];
+
+export const UiUxData = [
+  {
+    reverse: false,
+    icon: uiUxSer1,
+    title: "User Research & Analysis",
+    desc: "Understanding target audience behavior and needs. Competitor analysis and industry benchmarking. Creating detailed user personas and journey maps",
+  },
+  {
+    reverse: false,
+    icon: uiUxSer2,
+    title: "Wireframing & Prototyping",
+    desc: "Understanding target audience behavior and needs. Competitor analysis and industry benchmarking. Creating detailed user personas and journey maps",
+  },
+  {
+    reverse: false,
+    icon: uiUxSer1,
+    title: "UI Design",
+    desc: "Understanding target audience behavior and needs. Competitor analysis and industry benchmarking. Creating detailed user personas and journey maps",
+  },
+  {
+    reverse: true,
+    icon: uiUxSer2,
+    title: "UX Design & Strategy",
+    desc: "Understanding target audience behavior and needs. Competitor analysis and industry benchmarking. Creating detailed user personas and journey maps",
+  },
+  {
+    reverse: true,
+    icon: uiUxSer1,
+    title: "Design System & Branding",
+    desc: "Understanding target audience behavior and needs. Competitor analysis and industry benchmarking. Creating detailed user personas and journey maps",
+  },
+  {
+    reverse: true,
+    icon: uiUxSer2,
+    title: "Usability Testing",
+    desc: "Understanding target audience behavior and needs. Competitor analysis and industry benchmarking. Creating detailed user personas and journey maps",
+  },
+];
+
+export const tech_work = [
+  {title: "Figma", img: tech1},
+  {title: "Adobe XD", img: tech2},
+  {title: "Photoshop", img: tech3},
+  {title: "Illustrator", img: tech4},
+  {title: "Prototpie", img: tech5},
+];
+
+export const UiUxProcessSteps = [
+  {
+    title: "Empathize",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    title: "Define",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    title: "Ideate",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    title: "Design",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    title: "Test",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
 ];

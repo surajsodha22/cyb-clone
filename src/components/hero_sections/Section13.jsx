@@ -12,12 +12,8 @@ const Section13 = ({container}) => {
                 key={index}
                 className="bg-white w-72 mx-auto shadow-md rounded-2xl  text-center px-6 py-8"
               >
-                <div className="text-5xl mb-6 h-32 w-full">
-                  <img
-                    className="rounded-lg h-32 w-full"
-                    src={data.img}
-                    alt=""
-                  />
+                <div className="text-5xl mb-6 h-24 w-24 mx-auto">
+                  <img className="rounded-lg  w-full" src={data.img} alt="" />
                 </div>
 
                 <div className="flex items-start justify-center gap-2 text-sm text-gray-700">

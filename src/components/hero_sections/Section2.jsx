@@ -8,17 +8,16 @@ import {
   FaUser,
 } from "react-icons/fa";
 import {services} from "../../data/data";
+import SectionHeading from "../reusable/SectionHeading";
 
 const Section2 = () => {
   return (
-    <section className="">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-        We build impactful mobile and web app
-      </h2>
-      <p className="text-center text-gray-600 mb-12">
-        Here is how we have created a success story for brands dreaming big and
-        something exceptional.
-      </p>
+    <section className="mt-10">
+      <SectionHeading
+        title="A solution for your software needs."
+        subtitle="We are ready to bridge the gap between your ideas and technology. Here is the way to filling the gaps and make your growth with innovation."
+        align="center"
+      />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service, index) => (
@@ -31,8 +30,8 @@ const Section2 = () => {
                 <img src={service.img} alt="" />
               </span>
             </div>
-            <h3 className="text-xl  mb-2">{service.title}</h3>
-            <p className="">{service.desc}</p>
+            <h3 className="text-xl  font-semibold mb-2">{service.title}</h3>
+            <p className="text-sm text-gray-600">{service.desc}</p>
           </div>
         ))}
       </div>

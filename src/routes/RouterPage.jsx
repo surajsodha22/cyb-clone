@@ -1,12 +1,16 @@
 import React, {Suspense, lazy} from "react";
 import {Routes, Route} from "react-router-dom";
-import AI_Development from "../pages/AI_Development/AI_Development";
+import BusinessModernization from "../pages/business_modernization/BusinessModernization";
+import UiUxDesign from "../pages/uiUxDesign/UiUxDesign";
 
 const Home = lazy(() => import("../pages/home/Home"));
 const About = lazy(() => import("../pages/about/About"));
 const Careers = lazy(() => import("../pages/careers/Careers"));
 const Partnership = lazy(() => import("../pages/partnership/Partnership"));
 const Salesforce = lazy(() => import("../pages/salesforce/Salesforce"));
+const AIDevelopment = lazy(() =>
+  import("../pages/AI_Development/AIDevelopment")
+);
 
 const RouterPage = ({container}) => {
   return (
@@ -25,8 +29,19 @@ const RouterPage = ({container}) => {
         />
         <Route
           path="/ai_development"
-          element={<AI_Development container={container} />}
+          element={<AIDevelopment container={container} />}
         />
+
+        <Route
+          path="/business_modernization"
+          element={<BusinessModernization container={container} />}
+        />
+        <Route
+          path="/ui_ux_design"
+          element={<UiUxDesign container={container} />}
+        />
+
+        <Route path="/*" element={"page not found"} />
       </Routes>
     </Suspense>
   );

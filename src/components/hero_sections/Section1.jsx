@@ -1,36 +1,35 @@
-import React from "react";
 import {FaRocket} from "react-icons/fa";
-import {image} from "../../data/assetes";
-import {trustArr} from "../../data/data";
+import {homeMan, image, payvendor} from "../../data/assetes";
+
 import Button from "../reusable/Button";
+import SectionHeading from "../reusable/SectionHeading";
 
 const Section1 = ({container}) => {
   return (
-    <section
-      className={`flex ${container}  flex-col md:flex-row items-center justify-between`}
-    >
-      <div className="md:w-1/2 space-y-6">
-        <h1 className="text-4xl md:text-5xl font-bold">
-          Driving The <span className="text-red-400">Vision</span> of <br />
-          Global <span className="text-secondary">Innovators</span>
-        </h1>
-        <p className="text-gray-600 text-lg">
-          We shape the future by solving business challenges with smart ideas
-          and flexible solutions
-        </p>
-        <p className="text-gray-500">
-          Our customers love to work with us <strong>Clutch 4.9 ★★★★</strong>
-        </p>
-        <Button
-          text="Speak to Our Experts"
-          icon={FaRocket}
-          onClick={() => alert("Experts")}
-        />
-      </div>
+    <section className={` ${container}  `}>
+      <SectionHeading title="Our Business" align="center" />
 
-      <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-        <div className="rounded-[30px] overflow-hidden">
-          <img src={image} alt="VR people" className="w-full h-auto" />
+      <div className="flex flex-col md:flex-row items-center justify-between bg-primary p-14">
+        <div className="">
+          <div className="w-72 bg-white border shadow-sm rounded-sm">
+            <img src={homeMan} className="w-full" alt="" />
+          </div>
+        </div>
+        <div>
+          <div className="max-w-2xl">
+            <div>
+              <img src={payvendor} alt="" />
+            </div>
+            <div className="mt-5 font-sans text-gray-700">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
+              vero perferendis ducimus recusandae unde porro molestiae alias,
+              repellendus earum eius illo facilis deserunt accusamus officia non
+              culpa quis ipsa nobis! Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Sed, vel? Sed commodi nemo omnis in eligendi
+              consequatur dolorum, voluptate pariatur, mollitia vitae assumenda
+              nobis. Unde sequi amet repellendus dicta quod.
+            </div>
+          </div>
         </div>
       </div>
     </section>

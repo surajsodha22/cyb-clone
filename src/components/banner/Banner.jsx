@@ -1,17 +1,22 @@
 import React from "react";
 import {FaRocket} from "react-icons/fa";
-import {aboutBanner, image, partner, headSalesForces} from "../../data/assetes";
+import {
+  aboutBanner,
+  image,
+  partner,
+  headSalesForces,
+  aiImg,
+  businessHeadImg,
+  uiUxHeadImg,
+} from "../../data/assetes";
 
-import Button from "../reusable/Button";
 import BannerSection from "./BannerSection";
 
 const Banner = ({container, location}) => {
-  if (location.pathname == "/") {
-  }
   return (
     <>
       <div>
-        {location.pathname == "/" ? (
+        {location.pathname === "/" ? (
           <BannerSection
             title="Driving The"
             highlight1="Vision"
@@ -26,31 +31,58 @@ const Banner = ({container, location}) => {
             image={image}
             pathname={location.pathname}
           />
-        ) : location.pathname == "/about" ? (
+        ) : location.pathname === "/about" ? (
           <BannerSection
             title="About Us"
             image={aboutBanner}
             pathname={location.pathname}
           />
-        ) : location.pathname == "/careers" ? (
+        ) : location.pathname === "/careers" ? (
           <BannerSection
             title="Carrier"
             image={aboutBanner}
             pathname={location.pathname}
           />
-        ) : location.pathname == "/partnership" ? (
+        ) : location.pathname === "/partnership" ? (
           <BannerSection
             title="Partner With Us"
             image={partner}
             pathname={location.pathname}
           />
-        ) : location.pathname == "/salesforce" ? (
+        ) : location.pathname === "/salesforce" ? (
           <BannerSection
             title="Salesforce Development Company"
             description={
               "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
             }
             image={headSalesForces}
+            pathname={location.pathname}
+          />
+        ) : location.pathname === "/ai_development" ? (
+          <BannerSection
+            title="AI Development"
+            description={
+              "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
+            }
+            image={aiImg}
+            pathname={location.pathname}
+          />
+        ) : location.pathname === "/business_modernization" ? (
+          <BannerSection
+            title="Business Modernization"
+            description={
+              "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
+            }
+            image={businessHeadImg}
+            pathname={location.pathname}
+          />
+        ) : location.pathname === "/ui_ux_design" ? (
+          <BannerSection
+            title="UI UX Design "
+            description={
+              "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
+            }
+            image={uiUxHeadImg}
             pathname={location.pathname}
           />
         ) : (

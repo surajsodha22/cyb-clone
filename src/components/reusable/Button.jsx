@@ -1,4 +1,3 @@
-import React from "react";
 import {FaRocket} from "react-icons/fa";
 
 const Button = ({variant = "", text, icon: Icon, onClick, className = ""}) => {

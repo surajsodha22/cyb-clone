@@ -16,7 +16,7 @@ const Salesforce = ({container}) => {
           {salesServices.map((service, index) => (
             <div
               key={index}
-              className="relative bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition"
+              className="relative bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition border"
             >
               {/* Top-right image */}
               <div className="absolute top-0 right-0 size-20">

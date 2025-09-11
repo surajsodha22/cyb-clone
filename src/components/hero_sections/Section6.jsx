@@ -1,9 +1,9 @@
-import React from "react";
 import Input from "../reusable/Input";
 import {IoPerson} from "react-icons/io5";
 import {MdOutlineEmail} from "react-icons/md";
 import {FaPhoneAlt} from "react-icons/fa";
 import Button from "../reusable/Button";
+import SectionHeading from "../reusable/SectionHeading";
 
 const Section6 = ({container}) => {
   return (
@@ -11,15 +11,15 @@ const Section6 = ({container}) => {
       <div
         className={`${container} px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center`}
       >
-        <div>
-          <div className="text-3xl font-bold mb-4 max-w-lg">
-            Our Technology Experts are Catalysts for Digital Transformation
-          </div>
-          <div className="text-lg max-w-lg">
-            Book a Free call with Our Experts and Start Building the future
-            Today.
-          </div>
+        <div className="max-w-96">
+          <SectionHeading
+            title="Our Technology Experts are Catalysts for Digital Transformation"
+            subtitle=" Book a Free call with Our Experts and Start Building the future
+            Today."
+            align="left"
+          />
         </div>
+
         <div>
           <div className="border max-w-lg py-10 rounded-md border-secondary">
             <form action="">

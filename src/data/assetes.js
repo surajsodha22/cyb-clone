@@ -83,9 +83,127 @@ import mean from "../assetes/mean.png";
 import angular from "../assetes/angular.png";
 import vue from "../assetes/vue.png";
 
+import aiImg from "../assetes/aiImg.png";
+
+import ai_service1 from "../assetes/ai_service1.png";
+import ai_service2 from "../assetes/ai_service2.png";
+import ai_service3 from "../assetes/ai_service3.png";
+import ai_service4 from "../assetes/ai_service4.png";
+import ai_service5 from "../assetes/ai_service5.png";
+import ai_service6 from "../assetes/ai_service6.png";
+
+import ai_pro1 from "../assetes/ai_pro1.png";
+import ai_pro2 from "../assetes/ai_pro2.png";
+import ai_pro3 from "../assetes/ai_pro3.png";
+import ai_pro4 from "../assetes/ai_pro4.png";
+import ai_pro5 from "../assetes/ai_pro5.png";
+import slideImd from "../assetes/slideImd.png";
+import ai_img2 from "../assetes/ai_img2.png";
+import solar1 from "../assetes/solar_arrow-up-linear2.png";
+import solar2 from "../assetes/solar_arrow-up-linear2.png";
+import solar3 from "../assetes/solar_arrow-up-linear2.png";
+import slideBox1 from "../assetes/slideBox1.png";
+import slideBox2 from "../assetes/slideBox2.png";
+import slideBox3 from "../assetes/slideBox3.png";
+import slideBox4 from "../assetes/slideBox4.png";
+import businessHeadImg from "../assetes/business_head_img.png";
+import Rectangle from "../assetes/Rectangle.png";
+import businessAiImg from "../assetes/business_ai_img.png";
+import bmImg1 from "../assetes/bm_img1.png";
+import bmImg2 from "../assetes/bm_img2.png";
+import bmImg3 from "../assetes/bm_img3.png";
+import bmImg4 from "../assetes/bm_img4.png";
+import bmImg5 from "../assetes/bm_img5.png";
+import bmImg6 from "../assetes/bm_img6.png";
+import women3 from "../assetes/women3.png";
+import uiUxHeadImg from "../assetes/ui_ux_head_img.png";
+import uiUxSer1 from "../assetes/ui_ux_ser1.png";
+import uiUxSer2 from "../assetes/ui_ux_ser2.png";
+
+import iconMail from "../assetes/icon_mail.png";
+import iconPhone from "../assetes/icon_phone.png";
+
+import iconFacebook from "../assetes/icon_facebook.png";
+import iconGoogle from "../assetes/icon_google.png";
+import iconLinkedin from "../assetes/icon_linkedin.png";
+import iconPinterest from "../assetes/icon_pint.png";
+import iconInsta from "../assetes/icons_instagram.png";
+
+import ManImg from "../assetes/manImg.png";
+
+import tech1 from "../assetes/tech_ai.png";
+import tech2 from "../assetes/tech_figma.png";
+import tech3 from "../assetes/tech_proto.png";
+import tech4 from "../assetes/tech_ps.png";
+import tech5 from "../assetes/tech_xd.png";
+
+import UIUXProcess from "../assetes/UIUX_process.png";
+
+import fintechImg from "../assetes/fintech_img.png";
+import location1 from "../assetes/location1.png";
+import location2 from "../assetes/location2.png";
+import location3 from "../assetes/location3.png";
+
+import homeMan from "../assetes/home_man.png";
+import lableIcon from "../assetes/lable.png";
+
 import {FaRocket} from "react-icons/fa";
 
 export {
+  lableIcon,
+  homeMan,
+  location1,
+  location2,
+  location3,
+  UIUXProcess,
+  fintechImg,
+  tech1,
+  tech2,
+  tech3,
+  tech4,
+  tech5,
+  ManImg,
+  iconPhone,
+  iconFacebook,
+  iconGoogle,
+  iconLinkedin,
+  iconPinterest,
+  iconInsta,
+  iconMail,
+  uiUxSer1,
+  uiUxSer2,
+  uiUxHeadImg,
+  women3,
+  bmImg1,
+  bmImg2,
+  bmImg3,
+  bmImg4,
+  bmImg5,
+  bmImg6,
+  businessAiImg,
+  Rectangle,
+  businessHeadImg,
+  slideBox1,
+  slideBox2,
+  slideBox3,
+  slideBox4,
+  solar1,
+  solar2,
+  solar3,
+  ai_img2,
+  slideImd,
+  ai_pro1,
+  ai_pro2,
+  ai_pro3,
+  ai_pro4,
+  ai_pro5,
+  ai_service1,
+  ai_service2,
+  ai_service3,
+  ai_service4,
+  ai_service5,
+  ai_service6,
+  aiImg,
   logo,
   image,
   paydeer,

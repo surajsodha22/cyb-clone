@@ -12,7 +12,6 @@ const BannerSection = ({
   image,
   pathname,
 }) => {
-  console.log(pathname);
   return (
     <section
       className={`flex ${container} flex-col md:flex-row items-center justify-between pt-5`}

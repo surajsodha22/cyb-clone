@@ -1,4 +1,3 @@
-import React from "react";
 import {digital_excellence_bg} from "../../data/assetes";
 
 import Button from "../reusable/Button";
