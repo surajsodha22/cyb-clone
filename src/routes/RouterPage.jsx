@@ -8,6 +8,8 @@ const About = lazy(() => import("../pages/about/About"));
 const Careers = lazy(() => import("../pages/careers/Careers"));
 const Partnership = lazy(() => import("../pages/partnership/Partnership"));
 const Salesforce = lazy(() => import("../pages/salesforce/Salesforce"));
+const Contact = lazy(() => import("../pages/contact/Contact"));
+
 const AIDevelopment = lazy(() =>
   import("../pages/AI_Development/AIDevelopment")
 );
@@ -31,7 +33,6 @@ const RouterPage = ({container}) => {
           path="/ai_development"
           element={<AIDevelopment container={container} />}
         />
-
         <Route
           path="/business_modernization"
           element={<BusinessModernization container={container} />}
@@ -40,6 +41,9 @@ const RouterPage = ({container}) => {
           path="/ui_ux_design"
           element={<UiUxDesign container={container} />}
         />
+
+        <Route path="/contact-us" element={<Contact container={container} />} />
+        {/* <Route path="/contact-us" element={<Contact />} /> */}
 
         <Route path="/*" element={"page not found"} />
       </Routes>

@@ -36,8 +36,7 @@ const App = () => {
     };
   } else if (
     location.pathname === "/salesforce" ||
-    location.pathname === "/ai_development" ||
-    location.pathname === "/ui_ux_design"
+    location.pathname === "/ai_development"
   ) {
     style = gradientStyle;
   } else if (location.pathname === "/ui_ux_design") {

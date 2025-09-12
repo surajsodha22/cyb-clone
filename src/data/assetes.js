@@ -147,9 +147,16 @@ import location3 from "../assetes/location3.png";
 import homeMan from "../assetes/home_man.png";
 import lableIcon from "../assetes/lable.png";
 
+import ellipse793 from "../assetes/Ellipse_793.png";
+import ellipse794 from "../assetes/Ellipse_794.png";
+import letterSend1 from "../assetes/letter_send1.png";
+
 import {FaRocket} from "react-icons/fa";
 
 export {
+  letterSend1,
+  ellipse793,
+  ellipse794,
   lableIcon,
   homeMan,
   location1,
