@@ -150,10 +150,12 @@ import lableIcon from "../assetes/lable.png";
 import ellipse793 from "../assetes/Ellipse_793.png";
 import ellipse794 from "../assetes/Ellipse_794.png";
 import letterSend1 from "../assetes/letter_send1.png";
+import contactHead from "../assetes/contact_head.png";
 
 import {FaRocket} from "react-icons/fa";
 
 export {
+  contactHead,
   letterSend1,
   ellipse793,
   ellipse794,

@@ -1,6 +1,6 @@
 import React, {Suspense, lazy} from "react";
 import {Routes, Route} from "react-router-dom";
-import BusinessModernization from "../pages/business_modernization/BusinessModernization";
+import BusinessModernization from "../pages/business-modernization/BusinessModernization";
 import UiUxDesign from "../pages/uiUxDesign/UiUxDesign";
 
 const Home = lazy(() => import("../pages/home/Home"));
@@ -9,9 +9,10 @@ const Careers = lazy(() => import("../pages/careers/Careers"));
 const Partnership = lazy(() => import("../pages/partnership/Partnership"));
 const Salesforce = lazy(() => import("../pages/salesforce/Salesforce"));
 const Contact = lazy(() => import("../pages/contact/Contact"));
+const MobileApp = lazy(() => import("../pages/mobileApp/MobileApp"));
 
 const AIDevelopment = lazy(() =>
-  import("../pages/AI_Development/AIDevelopment")
+  import("../pages/ai-development/AIDevelopment")
 );
 
 const RouterPage = ({container}) => {
@@ -30,17 +31,18 @@ const RouterPage = ({container}) => {
           element={<Salesforce container={container} />}
         />
         <Route
-          path="/ai_development"
+          path="/ai-development"
           element={<AIDevelopment container={container} />}
         />
         <Route
-          path="/business_modernization"
+          path="/business-modernization"
           element={<BusinessModernization container={container} />}
         />
         <Route
-          path="/ui_ux_design"
+          path="/ui-ux-design"
           element={<UiUxDesign container={container} />}
         />
+        <Route path="/mobile-app-development" element={<MobileApp />} />
 
         <Route path="/contact-us" element={<Contact container={container} />} />
         {/* <Route path="/contact-us" element={<Contact />} /> */}

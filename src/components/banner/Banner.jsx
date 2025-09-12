@@ -8,6 +8,7 @@ import {
   aiImg,
   businessHeadImg,
   uiUxHeadImg,
+  contactHead,
 } from "../../data/assetes";
 
 import BannerSection from "./BannerSection";
@@ -58,7 +59,7 @@ const Banner = ({container, location}) => {
             image={headSalesForces}
             pathname={location.pathname}
           />
-        ) : location.pathname === "/ai_development" ? (
+        ) : location.pathname === "/ai-development" ? (
           <BannerSection
             title="AI Development"
             description={
@@ -67,7 +68,7 @@ const Banner = ({container, location}) => {
             image={aiImg}
             pathname={location.pathname}
           />
-        ) : location.pathname === "/business_modernization" ? (
+        ) : location.pathname === "/business-modernization" ? (
           <BannerSection
             title="Business Modernization"
             description={
@@ -76,13 +77,28 @@ const Banner = ({container, location}) => {
             image={businessHeadImg}
             pathname={location.pathname}
           />
-        ) : location.pathname === "/ui_ux_design" ? (
+        ) : location.pathname === "/ui-ux-design" ? (
           <BannerSection
             title="UI UX Design "
             description={
               "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
             }
             image={uiUxHeadImg}
+            pathname={location.pathname}
+          />
+        ) : location.pathname === "/contact-us" ? (
+          <BannerSection
+            title="Get in Touch "
+            image={contactHead}
+            pathname={location.pathname}
+          />
+        ) : location.pathname === "/mobile-app-development" ? (
+          <BannerSection
+            title="Mobile App Development"
+            description={
+              "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
+            }
+            image={contactHead}
             pathname={location.pathname}
           />
         ) : (

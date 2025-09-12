@@ -36,10 +36,10 @@ const App = () => {
     };
   } else if (
     location.pathname === "/salesforce" ||
-    location.pathname === "/ai_development"
+    location.pathname === "/ai-development"
   ) {
     style = gradientStyle;
-  } else if (location.pathname === "/ui_ux_design") {
+  } else if (location.pathname === "/ui-ux-design") {
     style = gradientStyle2;
   } else {
     style = {
