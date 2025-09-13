@@ -70,7 +70,7 @@ const RouterPage = ({container}) => {
           path="/website-development"
           element={<WebsiteDevelopment container={container} />}
         />
-        <Route path="/on-demand" element={<Devops container={container} />} />
+        {/* <Route path="/on-demand" element={<Devops container={container} />} /> */}
         <Route path="/*" element={"page not found"} />
       </Routes>
     </Suspense>

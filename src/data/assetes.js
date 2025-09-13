@@ -151,10 +151,18 @@ import ellipse793 from "../assetes/Ellipse_793.png";
 import ellipse794 from "../assetes/Ellipse_794.png";
 import letterSend1 from "../assetes/letter_send1.png";
 import contactHead from "../assetes/contact_head.png";
+import softwareHead from "../assetes/softwhere_head.png";
+import mobileHead from "../assetes/mobile_head.png";
+import webHead from "../assetes/web_head.png";
+import devopsHead from "../assetes/devops_head.png";
 
 import {FaRocket} from "react-icons/fa";
 
 export {
+  devopsHead,
+  webHead,
+  mobileHead,
+  softwareHead,
   contactHead,
   letterSend1,
   ellipse793,
