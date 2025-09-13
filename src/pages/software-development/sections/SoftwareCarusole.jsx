@@ -9,6 +9,7 @@ import {
   FaGraduationCap,
   FaIndustry,
 } from "react-icons/fa";
+import {leftArrow, rightArrow} from "../../../data/assetes";
 
 const SoftwareCarusole = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -125,22 +126,18 @@ const SoftwareCarusole = () => {
           <div className="flex justify-center mt-8 space-x-4">
             <button
               onClick={prevSlide}
-              className="w-10 h-10 bg-white border-2 border-gray-300 rounded-full flex items-center justify-center hover:border-gray-400 transition-colors duration-200"
+              className="w-10 h-10 flex items-center justify-center hover:border-gray-400 transition-colors duration-200"
             >
-              <img
-                src="../../src/assetes/MobileAppDev/Vector.png"
-                alt="Previous"
-                className="w-5 h-5 transform -rotate-180"
-              />
+              <img src={leftArrow} alt="Previous" className="w-full" />
             </button>
             <button
               onClick={nextSlide}
-              className="w-10 h-10 bg-white border-2 border-gray-300 rounded-full flex items-center justify-center hover:border-gray-400 transition-colors duration-200"
+              className="w-10 h-10 flex items-center justify-center hover:border-gray-400 transition-colors duration-200"
             >
               <img
-                src="../../src/assetes/MobileAppDev/Vector.png"
+                src={rightArrow}
                 alt="Next"
-                className="w-5 h-5"
+                className="w-full rounded-full"
               />
             </button>
           </div>

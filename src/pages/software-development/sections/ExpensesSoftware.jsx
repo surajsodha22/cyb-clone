@@ -6,6 +6,7 @@ import {
   FaUsers,
   FaRocket,
 } from "react-icons/fa";
+import {woman3} from "../../../data/assetes";
 
 const ExpensesSoftware = () => {
   const costFactors = [
@@ -78,7 +79,7 @@ const ExpensesSoftware = () => {
           {/* Right Side - Image */}
           <div className="w-full lg:w-1/2">
             <img
-              src="../../src/assetes/MobileAppDev/Group 1000001847.png"
+              src={woman3}
               alt="Professional woman with CYBDEER folder"
               className="w-full max-w-lg mx-auto lg:mx-0 object-contain"
             />

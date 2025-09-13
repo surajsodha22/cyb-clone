@@ -1,33 +1,7 @@
 import React from "react";
+import {WebProcessSteps} from "../../../data/data";
 
 const Process = () => {
-  const processSteps = [
-    {
-      id: 1,
-      title: "Business Analysis",
-      icon: "Frame 1707479776.png",
-      description: "We Prioritize Your Privacy With End-To-End Encryption.",
-    },
-    {
-      id: 2,
-      title: "UI/UX Designing",
-      icon: "Frame 1707479776 (1).png",
-      description: "We Prioritize Your Privacy With End-To-End Encryption.",
-    },
-    {
-      id: 3,
-      title: "Launch",
-      icon: "Frame 1707479776 (2).png",
-      description: "We Prioritize Your Privacy With End-To-End Encryption.",
-    },
-    {
-      id: 4,
-      title: "Maintenance & Support",
-      icon: "Frame 1707479776 (3).png",
-      description: "We Prioritize Your Privacy With End-To-End Encryption.",
-    },
-  ];
-
   return (
     <div className="py-16 bg-white relative overflow-hidden">
       {/* Background pattern */}
@@ -52,18 +26,14 @@ const Process = () => {
 
         {/* Process Steps */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8">
-          {processSteps.map((step, index) => (
+          {WebProcessSteps.map((step, index) => (
             <div key={step.id} className="flex items-center">
               {/* Process Card */}
               <div className="bg-white rounded-xl p-4 w-48 h-36 border border-orange-500 shadow-lg hover:shadow-xl transition-shadow">
                 {/* Icon */}
                 <div className="flex justify-center mb-2">
                   <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-                    <img
-                      src={`../../src/assetes/SoftwareDevelopement/${step.icon}`}
-                      alt={step.title}
-                      className="w-6 h-6"
-                    />
+                    <img src={step.icon} alt={step.title} className="w-6 h-6" />
                   </div>
                 </div>
 
@@ -79,7 +49,7 @@ const Process = () => {
               </div>
 
               {/* Arrow (except for last item) */}
-              {index < processSteps.length - 1 && (
+              {index < WebProcessSteps.length - 1 && (
                 <div className="hidden lg:block -mx-2 z-10">
                   <svg
                     width="90"
@@ -104,7 +74,7 @@ const Process = () => {
 
         {/* Mobile arrows (vertical) */}
         <div className="lg:hidden flex flex-col items-center mt-8 space-y-4">
-          {processSteps.slice(0, -1).map((_, index) => (
+          {WebProcessSteps.slice(0, -1).map((_, index) => (
             <div key={`mobile-arrow-${index}`} className="text-red-500">
               <svg
                 width="24"

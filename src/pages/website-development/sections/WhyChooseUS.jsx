@@ -6,6 +6,7 @@ import {
   FiLayers,
   FiTarget,
 } from "react-icons/fi";
+import {coding} from "../../../data/assetes";
 
 const WhyChooseUS = () => {
   const features = [
@@ -54,7 +55,7 @@ const WhyChooseUS = () => {
           <div className="order-1">
             <div className="relative">
               <img
-                src="../../src/assetes/SoftwareDevelopement/6e185722d52619aa22359dcae1e0d7d8b40234b4.png"
+                src={coding}
                 alt="Web Development - Coding on laptop"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />

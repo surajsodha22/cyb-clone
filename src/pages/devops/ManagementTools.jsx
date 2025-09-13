@@ -1,4 +1,5 @@
 import React from "react";
+import {cloud1, cloud2, cloud3} from "../../data/assetes";
 
 const ManagementTools = () => {
   return (
@@ -22,11 +23,7 @@ const ManagementTools = () => {
             <div className="flex flex-col items-center text-center">
               {/* AWS Logo */}
               <div className="w-20 h-20 bg-white border border-gray-200 rounded-lg flex items-center justify-center mb-4">
-                <img
-                  src="../../src/assetes/DevOps/Frame 1618876727.png"
-                  alt="AWS"
-                  className="w-12 h-12"
-                />
+                <img src={cloud1} alt="AWS" className="w-12 h-12" />
               </div>
 
               {/* Title */}
@@ -45,11 +42,7 @@ const ManagementTools = () => {
             <div className="flex flex-col items-center text-center">
               {/* Azure Logo */}
               <div className="w-20 h-20 bg-white border border-gray-200 rounded-lg flex items-center justify-center mb-4">
-                <img
-                  src="../../src/assetes/DevOps/Frame 1618876728.png"
-                  alt="Microsoft Azure"
-                  className="w-12 h-12"
-                />
+                <img src={cloud2} alt="Microsoft Azure" className="w-12 h-12" />
               </div>
 
               {/* Title */}
@@ -71,7 +64,7 @@ const ManagementTools = () => {
               {/* Google Workspace Logo */}
               <div className="w-20 h-20 bg-white border border-gray-200 rounded-lg flex items-center justify-center mb-4">
                 <img
-                  src="../../src/assetes/DevOps/Frame 1618876729.png"
+                  src={cloud3}
                   alt="Google Workspace"
                   className="w-12 h-12"
                 />
@@ -95,11 +88,7 @@ const ManagementTools = () => {
             <div className="flex flex-col items-center text-center">
               {/* AWS Logo */}
               <div className="w-20 h-20 bg-white border border-gray-200 rounded-lg flex items-center justify-center mb-4">
-                <img
-                  src="../../src/assetes/DevOps/Frame 1618876727.png"
-                  alt="AWS"
-                  className="w-12 h-12"
-                />
+                <img src={cloud1} alt="AWS" className="w-12 h-12" />
               </div>
 
               {/* Title */}

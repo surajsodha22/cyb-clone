@@ -1,51 +1,7 @@
 import React from "react";
+import {webDevServices} from "../../../data/data";
 
 const ServicesWebDev = () => {
-  const services = [
-    {
-      id: 1,
-      title: "Custom Website Design & Development",
-      icon: "Icon (1).png",
-      description:
-        "Our membership management software provides full automation of membership renewals and payments",
-    },
-    {
-      id: 2,
-      title: "E-commerce Development",
-      icon: "Icon (2).png",
-      description:
-        "Our membership management software provides full automation of membership renewals and payments",
-    },
-    {
-      id: 3,
-      title: "Portfolio & Business Websites",
-      icon: "Icon (3).png",
-      description:
-        "Our membership management software provides full automation of membership renewals and payments",
-    },
-    {
-      id: 4,
-      title: "We Implement Secure design Principle",
-      icon: "Icon (4).png",
-      description:
-        "Our membership management software provides full automation of membership renewals and payments",
-    },
-    {
-      id: 5,
-      title: "CMS Development For development",
-      icon: "Icon (1).png",
-      description:
-        "Our membership management software provides full automation of membership renewals and payments",
-    },
-    {
-      id: 6,
-      title: "Maintenance & Support",
-      icon: "Icon (2).png",
-      description:
-        "Our membership management software provides full automation of membership renewals and payments",
-    },
-  ];
-
   return (
     <div className="py-16 bg-white relative overflow-hidden">
       {/* Background dotted pattern */}
@@ -72,7 +28,7 @@ const ServicesWebDev = () => {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => (
+          {webDevServices?.map((service) => (
             <div
               key={service.id}
               className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
@@ -85,7 +41,7 @@ const ServicesWebDev = () => {
                   {/* Icon container */}
                   <div className="relative w-16 h-16 bg-white rounded-full flex items-center justify-center ">
                     <img
-                      src={`../../src/assetes/SoftwareDevelopement/${service.icon}`}
+                      src={service.icon}
                       alt={service.title}
                       className="w-16 h-16"
                     />

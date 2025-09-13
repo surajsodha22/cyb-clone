@@ -1,4 +1,5 @@
 import React from "react";
+import {mobAppImg} from "../../../data/assetes";
 
 function DevelopmentProcess() {
   const processSteps = [
@@ -71,7 +72,7 @@ function DevelopmentProcess() {
               {/* Main image container */}
               <div className="relative z-10 p-8">
                 <img
-                  src="../../src/assetes/MobileAppDev/Group 1000001864.png"
+                  src={mobAppImg}
                   alt="Mobile App Development Process"
                   className="w-full h-auto rounded-[40px]"
                 />

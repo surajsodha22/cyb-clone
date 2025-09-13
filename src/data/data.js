@@ -103,6 +103,59 @@ import {
   location1,
   location2,
   location3,
+  softImg,
+  softImg1,
+  softImg2,
+  softImg3,
+  softImg4,
+  softImg5,
+  softProStep1,
+  softProStep4,
+  softProStep3,
+  softProStep2,
+  softProStep5,
+  Soft_Tech2,
+  Soft_Tech1,
+  Soft_Tech3,
+  Soft_Tech4,
+  appIcon1,
+  appIcon6,
+  appIcon5,
+  appIcon4,
+  appIcon3,
+  appIcon2,
+  MobAppDevTech1,
+  MobAppDevTech2,
+  MobAppDevTech3,
+  MobAppDevTech4,
+  MobAppDevTech5,
+  MobAppDevTech6,
+  ai_app1,
+  ai_app2,
+  ai_app3,
+  ai_app4,
+  webPro1,
+  webPro2,
+  webPro3,
+  webPro4,
+  webServ1,
+  webServ2,
+  webServ3,
+  webServ4,
+  webServ5,
+  webServ6,
+  devopsSer1,
+  devopsSer2,
+  devopsSer3,
+  devopsSer4,
+  devopsSer5,
+  devopsSer6,
+  devOpSerBen1,
+  devOpSerBen2,
+  devOpSerBen3,
+  devOpSerBen4,
+  devOpSerBen5,
+  devOpSerBen6,
 } from "./assetes";
 
 export const navMenu = [
@@ -856,5 +909,379 @@ export const UiUxProcessSteps = [
     title: "Test",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+];
+
+export const softwareServices = [
+  {
+    icon: softImg,
+    title: "Software Development Consulting",
+    description:
+      "Our experienced developers are ready to optimize your workflows, and deliver high-quality software solutions for your business. Unlike others who only aim to sell their products, we focus on your needs.",
+  },
+  {
+    icon: softImg1,
+    title: "Custom Software Development",
+    description:
+      "We provide software development services that combine advanced technologies and industry experience, ensuring you receive a tailored, future-ready software solution.",
+  },
+  {
+    icon: softImg2,
+    title: "Enterprise Software Development",
+    description:
+      "Enterprise software development solves complexity, security, and integration challenges for large organizations, addressing needs across multiple departments and users.",
+  },
+  {
+    icon: softImg3,
+    title: "AI Software Development",
+    description:
+      "To enhance efficiency, accuracy, and innovation, we must adopt AI software development. This fusion of human creativity and AI delivers the best outcome with a future-forward vision.",
+  },
+  {
+    icon: softImg4,
+    title: "Custom CRM Development",
+    description:
+      "Every business faces unique complexities. We offer custom CRM solutions, with tailored functionality, to help you overcome these challenges and boost your sales.",
+  },
+  {
+    icon: softImg5,
+    title: "API Development",
+    description:
+      "API development is the process of designing, developing, testing, and maintaining APIs, which helps enable faster development, scalability, and new revenue streams in these modern businesses.",
+  },
+];
+
+export const softwareProcessSteps = [
+  {
+    icon: softProStep1,
+    title: "Discovery, Analysis & Planning",
+    description:
+      "The initial phase of our process involves a thorough consultation with stakeholders to understand your business objectives and requirements.",
+  },
+  {
+    icon: softProStep2,
+    title: "UI UX / Architecture Design",
+    description:
+      "UI and UX design are crucial for a better user experience. While UI focuses on the visual design and layout, UX is about the user's feeling and journey.",
+  },
+  {
+    icon: softProStep3,
+    title: "Agile Development",
+    description:
+      "Agile development is a smarter approach to building software, offering flexibility, continuous improvement, and close collaboration.",
+  },
+  {
+    icon: softProStep4,
+    title: "Testing and Quality Ensurance",
+    description:
+      "As one of our most important steps for ensuring a high-quality product, we focus on both verification and validation, catching bugs and ensuring customer needs are met.",
+  },
+  {
+    icon: softProStep5,
+    title: "Software Development",
+    description:
+      "As the final step, our expert developers create innovative software tailored to your needs, backed by deep knowledge of programming languages and frameworks.",
+  },
+];
+
+export const technologies = [
+  {
+    name: "Artificial Intelligence",
+    icon: Soft_Tech1,
+    description:
+      "To improve efficiency and innovation, our developers use AI's subfields like machine learning to create future-ready solutions.",
+  },
+  {
+    name: "Data Analytics",
+    icon: Soft_Tech2,
+    description:
+      "By collecting and analyzing your data, we gain insights that lead to key benefits, including better decision-making, reduced costs.",
+  },
+  {
+    name: "Cloud",
+    icon: Soft_Tech3,
+    description:
+      "we provide the best cloud services, including IaaS, PaaS, and SaaS, and enhanced security for your innovative ideas.",
+  },
+  {
+    name: "Blockchain Software",
+    icon: Soft_Tech4,
+    description:
+      "As a blockchain developer, we provide custom software solutions to enhance business security, trust, efficiency, and automation.",
+  },
+];
+
+export const appDevelopmentServices = [
+  {
+    id: 1,
+    title: "Custom App Development",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    icon: appIcon1,
+  },
+  {
+    id: 2,
+    title: "React Native App Development",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    icon: appIcon2,
+  },
+  {
+    id: 3,
+    title: "Flutter App Development",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    icon: appIcon3,
+  },
+  {
+    id: 4,
+    title: "Android App Development",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    icon: appIcon4,
+  },
+  {
+    id: 5,
+    title: "IOS App Development",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    icon: appIcon5,
+  },
+  {
+    id: 6,
+    title: "IONIC App Development",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    icon: appIcon6,
+  },
+];
+
+export const mobApptechnologies = [
+  {
+    id: 1,
+    title: "Artificial Intelligence",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: MobAppDevTech1,
+  },
+  {
+    id: 2,
+    title: "Internet Of Things (IOT)",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: MobAppDevTech2,
+  },
+  {
+    id: 3,
+    title: "BlockChain",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: MobAppDevTech3,
+  },
+  {
+    id: 4,
+    title: "Cloud",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: MobAppDevTech4,
+  },
+  {
+    id: 5,
+    title: "AR/VR",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: MobAppDevTech5,
+  },
+  {
+    id: 6,
+    title: "MetaVerse",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: MobAppDevTech6,
+  },
+];
+
+export const aiMobFeatures = [
+  {
+    icon: ai_app1,
+    title: "Versatile Approach",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    icon: ai_app2,
+    title: "Client Support",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    icon: ai_app3,
+    title: "Secure App Creation",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    icon: ai_app4,
+    title: "High Scalability",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+];
+
+export const WebProcessSteps = [
+  {
+    id: 1,
+    title: "Business Analysis",
+    icon: webPro1,
+    description: "We Prioritize Your Privacy With End-To-End Encryption.",
+  },
+  {
+    id: 2,
+    title: "UI/UX Designing",
+    icon: webPro2,
+    description: "We Prioritize Your Privacy With End-To-End Encryption.",
+  },
+  {
+    id: 3,
+    title: "Launch",
+    icon: webPro3,
+    description: "We Prioritize Your Privacy With End-To-End Encryption.",
+  },
+  {
+    id: 4,
+    title: "Maintenance & Support",
+    icon: webPro4,
+    description: "We Prioritize Your Privacy With End-To-End Encryption.",
+  },
+];
+
+export const webDevServices = [
+  {
+    id: 1,
+    title: "Custom Website Design & Development",
+    icon: webServ1,
+    description:
+      "Our membership management software provides full automation of membership renewals and payments",
+  },
+  {
+    id: 2,
+    title: "E-commerce Development",
+    icon: webServ2,
+    description:
+      "Our membership management software provides full automation of membership renewals and payments",
+  },
+  {
+    id: 3,
+    title: "Portfolio & Business Websites",
+    icon: webServ3,
+    description:
+      "Our membership management software provides full automation of membership renewals and payments",
+  },
+  {
+    id: 4,
+    title: "We Implement Secure design Principle",
+    icon: webServ4,
+    description:
+      "Our membership management software provides full automation of membership renewals and payments",
+  },
+  {
+    id: 5,
+    title: "CMS Development For development",
+    icon: webServ5,
+    description:
+      "Our membership management software provides full automation of membership renewals and payments",
+  },
+  {
+    id: 6,
+    title: "Maintenance & Support",
+    icon: webServ6,
+    description:
+      "Our membership management software provides full automation of membership renewals and payments",
+  },
+];
+
+export const devOpsServices = [
+  {
+    id: 1,
+    title: "DevOps Consulting",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: devopsSer1,
+  },
+  {
+    id: 2,
+    title: "DevOps Automation",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: devopsSer2,
+  },
+  {
+    id: 3,
+    title: "DevOps Staffing",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: devopsSer3,
+  },
+  {
+    id: 4,
+    title: "IT Infrastructure and Implementation",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: devopsSer4,
+  },
+  {
+    id: 5,
+    title: "DevOps Configuration Management",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: devopsSer5,
+  },
+  {
+    id: 6,
+    title: "Code Inspection and Integration",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: devopsSer6,
+  },
+];
+
+export const benefitsDevops = [
+  {
+    id: 1,
+    title: "Professional DevOps Engineers",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    image: devOpSerBen1,
+  },
+  {
+    id: 2,
+    title: "Affordable DevOps Solution",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    image: devOpSerBen2,
+  },
+  {
+    id: 3,
+    title: "Software Lifecycle Predictability",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    image: devOpSerBen3,
+  },
+  {
+    id: 4,
+    title: "We Follow Agile Methodology",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    image: devOpSerBen4,
+  },
+  {
+    id: 5,
+    title: "Ongoing Monitoring",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    image: devOpSerBen5,
+  },
+  {
+    id: 6,
+    title: "Complex Delivery Experience",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    image: devOpSerBen6,
   },
 ];

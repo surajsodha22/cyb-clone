@@ -1,29 +1,7 @@
 import React from "react";
+import {aiMobFeatures} from "../../../data/data";
 
 const AiFeatures = () => {
-  const features = [
-    {
-      icon: "AI App Development Services.png",
-      title: "Versatile Approach",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      icon: "AI App Development Services (1).png",
-      title: "Client Support",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      icon: "AI App Development Services (2).png",
-      title: "Secure App Creation",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      icon: "AI App Development Services (3).png",
-      title: "High Scalability",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-  ];
-
   return (
     <section className="py-12 px-6 lg:px-20">
       {/* Heading */}
@@ -40,7 +18,7 @@ const AiFeatures = () => {
 
       {/* Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {features.map((feature, index) => (
+        {aiMobFeatures?.map((feature, index) => (
           <div
             key={index}
             className="bg-white border border-orange-200 rounded-xl shadow-sm p-2 pb-12 text-center hover:shadow-lg transition"
@@ -49,9 +27,9 @@ const AiFeatures = () => {
             <div className="mb-4 flex justify-center">
               <div className="w-16 h-16  rounded-lg flex items-center justify-center">
                 <img
-                  src={`../../src/assetes/MobileAppDev/${feature.icon}`}
+                  src={feature.icon}
                   alt={feature.title}
-                  className="w-10 h-10 object-contain"
+                  className="w-full"
                 />
               </div>
             </div>

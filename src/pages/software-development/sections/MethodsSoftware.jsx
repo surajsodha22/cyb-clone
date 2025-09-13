@@ -1,4 +1,6 @@
 import React from "react";
+import {homeMan2} from "../../../data/assetes";
+import SectionHeading from "../../../components/reusable/SectionHeading";
 
 const MethodsSoftware = () => {
   return (
@@ -8,7 +10,7 @@ const MethodsSoftware = () => {
           {/* Left Side - Image */}
           <div className="w-full lg:w-2/5">
             <img
-              src="../../src/assetes/MobileAppDev/Group 1000001831.png"
+              src={homeMan2}
               alt="Professional developer with laptop"
               className="w-full max-w-md mx-auto lg:mx-0 object-contain"
             />
@@ -16,15 +18,13 @@ const MethodsSoftware = () => {
 
           {/* Right Side - Content */}
           <div className="w-full lg:w-3/5 text-left">
-            <h2 className="text-3xl md:text-3xl font-bold text-gray-900 mb-6 text-left">
-              Our methods of software development
-            </h2>
-
-            <p className="text-gray-600 text-lg mb-8 leading-relaxed text-left">
-              We use these methods for developing software. These methodologies
-              are tailored to different types of organizations, and our choice
-              depends on your specific business needs. Here are the methods:
-            </p>
+            <SectionHeading
+              title={"Our methods of software development"}
+              subtitle={
+                "We use these methods for developing software. These methodologies are tailored to different types of organizations, and our choice depends on your specific business needs. Here are the methods:"
+              }
+              align="left"
+            />
 
             {/* Methodology Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -1,4 +1,5 @@
 import React from "react";
+import {mob_robo} from "../../../data/assetes";
 // import botImage from "../../assetes/MobileAppDev/aibote2.png"; // update path according to your project
 
 const AiServices = () => {
@@ -44,7 +45,7 @@ const AiServices = () => {
         {/* Image */}
         <div className="flex-shrink-0  bg-[#FEBB4D] rounded-2xl p-3">
           <img
-            src={"botImage"}
+            src={mob_robo}
             alt="AI Bot"
             className="w-64 h-64 object-contain rounded-2xl"
           />

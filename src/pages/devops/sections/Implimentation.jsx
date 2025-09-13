@@ -1,46 +1,54 @@
 import React from "react";
+import {
+  devopsPro1,
+  devopsPro2,
+  devopsPro3,
+  devopsPro4,
+  devopsPro5,
+  devopsPro6,
+} from "../../../data/assetes";
 
 const Implimentation = () => {
   const processSteps = [
     {
       id: 1,
       title: "Strategy Development",
-      icon: "Frame 1618876621.png",
+      icon: devopsPro1,
       color: "bg-[#FFE5BB]",
       textColor: "text-gray-800",
     },
     {
       id: 2,
       title: "Continuous Monitoring",
-      icon: "Frame 1618876621 (1).png",
+      icon: devopsPro2,
       color: "bg-[#FF6B35]",
       textColor: "text-white",
     },
     {
       id: 3,
       title: "Technology Identification",
-      icon: "Frame 1618876621 (2).png",
+      icon: devopsPro3,
       color: "bg-[#FFE5BB]",
       textColor: "text-gray-800",
     },
     {
       id: 4,
       title: "DevOps Execution",
-      icon: "Frame 1618876621 (3).png",
+      icon: devopsPro4,
       color: "bg-[#FF6B35]",
       textColor: "text-white",
     },
     {
       id: 5,
       title: "Regular Monitoring",
-      icon: "Frame 1618876621 (4).png",
+      icon: devopsPro5,
       color: "bg-[#FFE5BB]",
       textColor: "text-gray-800",
     },
     {
       id: 6,
       title: "Digital Transformation",
-      icon: "Frame 1618876621 (5).png",
+      icon: devopsPro6,
       color: "bg-[#FF6B35]",
       textColor: "text-white",
     },
@@ -79,11 +87,7 @@ const Implimentation = () => {
               >
                 {/* Icon Container */}
                 <div className="mb-3 relative z-20">
-                  <img
-                    src={`../../src/assetes/SoftwareDevelopement/${step.icon}`}
-                    alt={step.title}
-                    className="w-20 h-20"
-                  />
+                  <img src={step.icon} alt={step.title} className="w-20 h-20" />
                 </div>
 
                 {/* Step Title */}

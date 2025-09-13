@@ -1,4 +1,5 @@
 import React from "react";
+import {devLeft, devRight} from "../../../data/assetes";
 
 const BenefitsServicesDevOps = () => {
   return (
@@ -42,7 +43,7 @@ const BenefitsServicesDevOps = () => {
           {/* Top-Right: Image 1 */}
           <div className="rounded-lg overflow-hidden shadow-lg">
             <img
-              src="../../src/assetes/DevOps/programming-background-with-person-working-with-codes-computer 1.png"
+              src={devRight}
               alt="Person typing on laptop with code on screen"
               className="w-full h-full object-cover min-h-[300px]"
             />
@@ -51,7 +52,7 @@ const BenefitsServicesDevOps = () => {
           {/* Bottom-Left: Image 2 */}
           <div className="rounded-xl overflow-hidden shadow-lg">
             <img
-              src="../../src/assetes/DevOps/person-working-html-computer 1.png"
+              src={devLeft}
               alt="Person holding tablet with search interface"
               className="w-full h-full object-cover min-h-[300px]"
             />

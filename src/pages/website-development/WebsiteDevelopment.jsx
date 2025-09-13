@@ -9,6 +9,7 @@ import ReversePartnershipCTAMan from "../../components/reusable/ReversePartnersh
 import MultiGridSlider from "../../components/reusable/MultiGridSlider";
 import AutoSlider from "../../components/reusable/AutoSlider";
 import SectionHeading from "../../components/reusable/SectionHeading";
+import Section7 from "../../components/hero_sections/Section7";
 
 const WebsiteDevelopment = ({container}) => {
   return (
@@ -19,8 +20,16 @@ const WebsiteDevelopment = ({container}) => {
         <Process />
         <ServicesWebDev />
         <WhyChooseUS />
-        <TechSolutionsSection />
-        <ReversePartnershipCTAMan />
+        {/* <TechSolutionsSection /> */}
+        <Section7
+          title="Technologies we Use "
+          subtitle={
+            "follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
+          }
+        />
+        <div className="mt-28">
+          <ReversePartnershipCTAMan />
+        </div>
         <div className="mt-10">
           <SectionHeading
             title={"Our Industry Specific Mobile App Development Services"}

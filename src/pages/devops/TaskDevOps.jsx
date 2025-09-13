@@ -1,4 +1,5 @@
 import React from "react";
+import {check} from "../../data/assetes";
 
 const TaskDevOps = () => {
   const tasks = [
@@ -113,11 +114,7 @@ const TaskDevOps = () => {
               >
                 <div className="flex-shrink-0 mr-4">
                   <div className="w-6 h-6  rounded-full flex items-center justify-center">
-                    <img
-                      src="../../src/assetes/DevOps/hugeicons_tick-01.png"
-                      alt="Check"
-                      className="w-6 h-6"
-                    />
+                    <img src={check} alt="Check" className="w-6 h-6" />
                   </div>
                 </div>
                 <span className="text-gray-900 font-medium">{task.title}</span>
@@ -138,11 +135,7 @@ const TaskDevOps = () => {
               >
                 <div className="flex-shrink-0 mr-4">
                   <div className=" rounded-full flex items-center justify-center">
-                    <img
-                      src="../../src/assetes/DevOps/hugeicons_tick-01.png"
-                      alt="Check"
-                      className="w-6 h-6"
-                    />
+                    <img src={check} alt="Check" className="w-6 h-6" />
                   </div>
                 </div>
                 <span className="text-gray-900 font-medium">{task.title}</span>

@@ -1,4 +1,5 @@
 import React from "react";
+import {webColab} from "../../../data/assetes";
 
 const Collaborate = () => {
   return (
@@ -48,7 +49,7 @@ const Collaborate = () => {
                 {/* Right Side - 3D Illustration */}
                 <div className="flex-1 lg:w-1/3 flex justify-end items-center">
                   <img
-                    src="../../src/assetes/SoftwareDevelopement/d7c590cf95f73845d6894c689637c2afc788178c.png"
+                    src={webColab}
                     alt="Web Development 3D Illustration"
                     className="w-full max-w-md h-auto"
                   />

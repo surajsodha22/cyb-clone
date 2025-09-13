@@ -3,14 +3,13 @@ import {Routes, Route} from "react-router-dom";
 import BusinessModernization from "../pages/business-modernization/BusinessModernization";
 import UiUxDesign from "../pages/uiUxDesign/UiUxDesign";
 
-import Devops from "../pages/devops/Devops";
-
 const Home = lazy(() => import("../pages/home/Home"));
 const About = lazy(() => import("../pages/about/About"));
 const Careers = lazy(() => import("../pages/careers/Careers"));
 const Partnership = lazy(() => import("../pages/partnership/Partnership"));
 const Salesforce = lazy(() => import("../pages/salesforce/Salesforce"));
 const Contact = lazy(() => import("../pages/contact/Contact"));
+const Devops = lazy(() => import("../pages/devops/Devops"));
 const MobileApp = lazy(() => import("../pages/mobileApp/MobileApp"));
 const WebsiteDevelopment = lazy(() =>
   import("../pages/website-development/WebsiteDevelopment")
@@ -65,7 +64,6 @@ const RouterPage = ({container}) => {
         />
         <Route path="/devops" element={<Devops container={container} />} />
 
-        {/* will work */}
         <Route
           path="/website-development"
           element={<WebsiteDevelopment container={container} />}

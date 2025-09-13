@@ -1,51 +1,7 @@
 import React from "react";
+import {mobApptechnologies} from "../../../data/data";
 
 function EmergingTech() {
-  const technologies = [
-    {
-      id: 1,
-      title: "Artificial Intelligence",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      icon: "eos-icons_ai.png",
-    },
-    {
-      id: 2,
-      title: "Internet Of Things (IOT)",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      icon: "eos-icons_ai (1).png",
-    },
-    {
-      id: 3,
-      title: "BlockChain",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      icon: "eos-icons_ai (2).png",
-    },
-    {
-      id: 4,
-      title: "Cloud",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      icon: "eos-icons_ai (3).png",
-    },
-    {
-      id: 5,
-      title: "AR/VR",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      icon: "eos-icons_ai (4).png",
-    },
-    {
-      id: 6,
-      title: "MetaVerse",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      icon: "Group 1000001855.png",
-    },
-  ];
-
   return (
     <div className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,7 +18,7 @@ function EmergingTech() {
 
         {/* Technologies Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  px-22 gap-6">
-          {technologies.map((tech) => (
+          {mobApptechnologies.map((tech) => (
             <div
               key={tech.id}
               className="bg-white rounded-lg  p-6 hover:shadow-lg transition-shadow duration-300"
@@ -71,7 +27,7 @@ function EmergingTech() {
               <div className="mb-4">
                 <div className="w-12 h-12 shadow-lg rounded-lg flex items-center justify-center">
                   <img
-                    src={`../../src/assetes/MobileAppDev/${tech.icon}`}
+                    src={tech.icon}
                     alt={tech.title}
                     className="w-8 h-8 object-contain"
                   />

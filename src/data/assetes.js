@@ -145,6 +145,8 @@ import location2 from "../assetes/location2.png";
 import location3 from "../assetes/location3.png";
 
 import homeMan from "../assetes/home_man.png";
+import homeMan2 from "../assetes/homeMen2.png";
+
 import lableIcon from "../assetes/lable.png";
 
 import ellipse793 from "../assetes/Ellipse_793.png";
@@ -155,10 +157,184 @@ import softwareHead from "../assetes/softwhere_head.png";
 import mobileHead from "../assetes/mobile_head.png";
 import webHead from "../assetes/web_head.png";
 import devopsHead from "../assetes/devops_head.png";
+import softImg from "../assetes/soft_img.png";
+import softImg1 from "../assetes/soft_img1.png";
+import softImg2 from "../assetes/soft_img2.png";
+import softImg3 from "../assetes/soft_img3.png";
+import softImg4 from "../assetes/soft_img4.png";
+import softImg5 from "../assetes/soft_img5.png";
 
+import softProStep1 from "../assetes/Soft_Pro_step1.png";
+import softProStep2 from "../assetes/Soft_Pro_step2.png";
+import softProStep3 from "../assetes/Soft_Pro_step3.png";
+import softProStep4 from "../assetes/Soft_Pro_step4.png";
+import softProStep5 from "../assetes/Soft_Pro_step5.png";
+
+import Soft_Tech1 from "../assetes/Soft_Tech1.png";
+import Soft_Tech2 from "../assetes/Soft_Tech2.png";
+import Soft_Tech3 from "../assetes/Soft_Tech3.png";
+import Soft_Tech4 from "../assetes/Soft_Tech4.png";
+
+import leftArrow from "../assetes/left_arrow.png";
+import rightArrow from "../assetes/right_arrow.png";
+import woman3 from "../assetes/woman3.png";
+import bg_yellow from "../assetes/bg_yellow.png";
+import appIcon1 from "../assetes/appIcon2.png";
+import appIcon2 from "../assetes/appIcon2.png";
+import appIcon3 from "../assetes/appIcon3.png";
+import appIcon4 from "../assetes/appIcon4.png";
+import appIcon5 from "../assetes/appIcon5.png";
+import appIcon6 from "../assetes/appIcon6.png";
+import mobAppImg from "../assetes/mobAppImg.png";
+
+import MobAppDevTech1 from "../assetes/MobAppDevTech1.png";
+import MobAppDevTech2 from "../assetes/MobAppDevTech2.png";
+import MobAppDevTech3 from "../assetes/MobAppDevTech3.png";
+import MobAppDevTech4 from "../assetes/MobAppDevTech4.png";
+import MobAppDevTech5 from "../assetes/MobAppDevTech5.png";
+import MobAppDevTech6 from "../assetes/MobAppDevTech6.png";
+
+import ai_app1 from "../assetes/ai_app1.png";
+import ai_app2 from "../assetes/ai_app2.png";
+import ai_app3 from "../assetes/ai_app3.png";
+import ai_app4 from "../assetes/ai_app4.png";
+
+import webColab from "../assetes/webColab.png";
+
+import mob_robo from "../assetes/mob_robo.png";
+
+import webPro1 from "../assetes/webPro1.png";
+import webPro2 from "../assetes/webPro2.png";
+import webPro3 from "../assetes/webPro3.png";
+import webPro4 from "../assetes/webPro4.png";
+
+import webServ1 from "../assetes/webServ1.png";
+import webServ2 from "../assetes/webServ2.png";
+import webServ3 from "../assetes/webServ3.png";
+import webServ4 from "../assetes/webServ4.png";
+import webServ5 from "../assetes/webServ5.png";
+import webServ6 from "../assetes/webServ6.png";
+
+import devopsSer1 from "../assetes/devopsSer1.png";
+import devopsSer2 from "../assetes/devopsSer2.png";
+import devopsSer3 from "../assetes/devopsSer3.png";
+import devopsSer4 from "../assetes/devopsSer4.png";
+import devopsSer5 from "../assetes/devopsSer5.png";
+import devopsSer6 from "../assetes/devopsSer6.png";
+
+import devopsPro1 from "../assetes/devopsPro1.png";
+import devopsPro2 from "../assetes/devopsPro2.png";
+import devopsPro3 from "../assetes/devopsPro3.png";
+import devopsPro4 from "../assetes/devopsPro4.png";
+import devopsPro5 from "../assetes/devopsPro5.png";
+import devopsPro6 from "../assetes/devopsPro6.png";
+
+import devOpSerBen1 from "../assetes/devOpSerBen1.jpg";
+import devOpSerBen2 from "../assetes/devOpSerBen2.png";
+import devOpSerBen3 from "../assetes/devOpSerBen3.jpg";
+import devOpSerBen4 from "../assetes/devOpSerBen4.png";
+import devOpSerBen5 from "../assetes/devOpSerBen5.png";
+import devOpSerBen6 from "../assetes/devOpSerBen6.jpg";
+
+import check from "../assetes/check.png";
+import devLeft from "../assetes/devLeft.jpg";
+import devRight from "../assetes/devRight.jpg";
+
+import devOffer1 from "../assetes/devOffer1.jpg";
+import devOffer2 from "../assetes/devOffer2.jpg";
+import devOffer3 from "../assetes/devOffer3.png";
+import devOffer4 from "../assetes/devOffer4.jpg";
+import devOffer5 from "../assetes/devOffer5.jpg";
+
+import coding from "../assetes/coding.png";
+import devops_1 from "../assetes/devops_1.png";
+
+import cloud1 from "../assetes/cloud1.png";
+import cloud2 from "../assetes/cloud2.png";
+import cloud3 from "../assetes/cloud3.png";
 import {FaRocket} from "react-icons/fa";
 
 export {
+  cloud1,
+  cloud2,
+  cloud3,
+  devOffer1,
+  devOffer2,
+  devOffer3,
+  devOffer4,
+  devOffer5,
+  devRight,
+  devLeft,
+  devOpSerBen1,
+  devOpSerBen2,
+  devOpSerBen3,
+  devOpSerBen4,
+  devOpSerBen5,
+  devOpSerBen6,
+  devops_1,
+  devopsPro1,
+  devopsPro2,
+  devopsPro3,
+  devopsPro4,
+  devopsPro5,
+  devopsPro6,
+  check,
+  devopsSer1,
+  devopsSer2,
+  devopsSer3,
+  devopsSer4,
+  devopsSer5,
+  devopsSer6,
+  coding,
+  webServ1,
+  webServ2,
+  webServ3,
+  webServ4,
+  webServ5,
+  webServ6,
+  webPro1,
+  webPro2,
+  webPro3,
+  webPro4,
+  webColab,
+  ai_app1,
+  ai_app2,
+  ai_app3,
+  ai_app4,
+  mob_robo,
+  MobAppDevTech1,
+  MobAppDevTech2,
+  MobAppDevTech3,
+  MobAppDevTech4,
+  MobAppDevTech5,
+  MobAppDevTech6,
+  mobAppImg,
+  appIcon1,
+  appIcon2,
+  appIcon3,
+  appIcon4,
+  appIcon5,
+  appIcon6,
+  bg_yellow,
+  woman3,
+  leftArrow,
+  rightArrow,
+  homeMan2,
+  Soft_Tech1,
+  Soft_Tech2,
+  Soft_Tech3,
+  Soft_Tech4,
+  softProStep1,
+  softProStep2,
+  softProStep3,
+  softProStep4,
+  softProStep5,
+  softImg,
+  softImg1,
+  softImg2,
+  softImg3,
+  softImg4,
+  softImg5,
   devopsHead,
   webHead,
   mobileHead,

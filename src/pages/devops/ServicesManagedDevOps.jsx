@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  devOffer1,
+  devOffer2,
+  devOffer3,
+  devOffer4,
+  devOffer5,
+} from "../../data/assetes";
 
 const ServicesManagedDevOps = () => {
   return (
@@ -22,7 +29,7 @@ const ServicesManagedDevOps = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="order-2 md:order-1">
                 <img
-                  src="../../src/assetes/DevOps/0ee2ae1ad6b60bef943a66efbb998fdeda7428ba.jpg"
+                  src={devOffer1}
                   alt="Containerization and Orchestration"
                   className="w-full h-80 object-cover rounded-xl shadow-lg"
                 />
@@ -61,7 +68,7 @@ const ServicesManagedDevOps = () => {
               </div>
               <div>
                 <img
-                  src="../../src/assetes/DevOps/7002a484e51358c38535ada19301948f987af941.jpg"
+                  src={devOffer2}
                   alt="Microservices"
                   className="w-full h-80 object-cover rounded-xl shadow-lg"
                 />
@@ -74,7 +81,7 @@ const ServicesManagedDevOps = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="order-2 md:order-1">
                 <img
-                  src="../../src/assetes/DevOps/d8c73b07f5f0b97ab2d74b777dfc2b0ee09d0958.png"
+                  src={devOffer3}
                   alt="Release Management"
                   className="w-full h-80 object-cover rounded-xl shadow-lg"
                 />
@@ -113,7 +120,7 @@ const ServicesManagedDevOps = () => {
               </div>
               <div>
                 <img
-                  src="../../src/assetes/DevOps/67771ca7b2a2d87c14eb6ef78b6cff430cc1344b.jpg"
+                  src={devOffer4}
                   alt="Security Management"
                   className="w-full h-80 object-cover rounded-xl shadow-lg"
                 />
@@ -126,7 +133,7 @@ const ServicesManagedDevOps = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="order-2 md:order-1">
                 <img
-                  src="../../src/assetes/DevOps/b954c88d78251899c4abab5614535c52201c0caa.jpg"
+                  src={devOffer5}
                   alt="IT Infrastructure Management"
                   className="w-full h-80 object-cover rounded-xl shadow-lg"
                 />

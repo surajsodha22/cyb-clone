@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {fintechImg, leftArrow, rightArrow} from "../../../data/assetes";
 
 function CarouselAppServices() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,28 +10,28 @@ function CarouselAppServices() {
       category: "FinTech",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      image: "Group 1000001862 (1).png",
+      image: {fintechImg},
     },
     {
       id: 2,
       category: "Healthcare",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      image: "Group 1000001862 (1).png",
+      image: {fintechImg},
     },
     {
       id: 3,
       category: "E-commerce",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      image: "Group 1000001862 (1).png",
+      image: {fintechImg},
     },
     {
       id: 4,
       category: "Education",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      image: "Group 1000001862 (1).png",
+      image: {fintechImg},
     },
   ];
 
@@ -67,24 +68,16 @@ function CarouselAppServices() {
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center hover:shadow-lg transition-shadow"
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center hover:shadow-lg transition-shadow"
           >
-            <img
-              src="../../src/assetes/MobileAppDev/Vector.png"
-              alt="Previous"
-              className="w-6 h-6 transform rotate-180"
-            />
+            <img src={leftArrow} alt="Previous" className="w-full transform " />
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center hover:shadow-lg transition-shadow"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12rounded-full flex items-center justify-center "
           >
-            <img
-              src="../../src/assetes/MobileAppDev/Vector.png"
-              alt="Next"
-              className="w-6 h-6"
-            />
+            <img src={rightArrow} alt="Next" className="w-full" />
           </button>
 
           {/* Main Carousel Card */}
@@ -113,8 +106,8 @@ function CarouselAppServices() {
                     {/* Main illustration */}
                     <div className="relative z-10">
                       <img
-                        src={`../../src/assetes/MobileAppDev/${currentItem.image}`}
-                        alt={`${currentItem.category} Mobile App`}
+                        src={currentItem?.image.fintechImg}
+                        alt={`${currentItem.category}`}
                         className="w-full max-w-md h-auto"
                       />
                     </div>

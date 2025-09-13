@@ -1,13 +1,16 @@
 import React from "react";
 import {CiMobile1} from "react-icons/ci";
 import {features, features2} from "../../data/data";
+import SectionHeading from "../reusable/SectionHeading";
 
-const Section7 = () => {
+const Section7 = ({
+  title = "Empowering Digital Transformation with Innovative Tech Solutions",
+  subtitle,
+}) => {
   return (
-    <div>
-      <div className="text-3xl max-w-xl mx-auto font-bold text-center">
-        Empowering Digital Transformation with Innovative Tech Solutions
-      </div>
+    <div className="mt-10">
+      <SectionHeading title={title} subtitle={subtitle} />
+
       <div className="flex flex-wrap gap-2 mt-6 justify-center ">
         <div className="bg-secondary px-4 py-2 rounded w-96">
           {features.map((feature, index) => (
