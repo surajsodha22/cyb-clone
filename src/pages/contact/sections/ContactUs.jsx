@@ -141,7 +141,7 @@ export default function ContactUs() {
 
                 <div>
                   <label className="block text-gray-700 text-sm text-left  font-medium mb-2">
-                    Phone Number
+                    Phone number
                   </label>
                   <input
                     type="text"
@@ -211,7 +211,7 @@ export default function ContactUs() {
                   type="button"
                   className="bg-gradient-to-r from-[#f26e6e] to-[#e05555] text-white px-8 py-3 rounded-full font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
                 >
-                  Send Message
+                  Send message
                 </button>
               </div>
             </form>
