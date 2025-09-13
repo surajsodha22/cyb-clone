@@ -65,7 +65,7 @@ const App = () => {
       </div>
 
       {/* Routes */}
-      <div className="mt-4">
+      <div className="">
         <RouterPage container={container} />
       </div>
 

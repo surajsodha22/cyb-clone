@@ -8,7 +8,7 @@ import MultiGridSlider from "../../components/reusable/MultiGridSlider";
 
 const AIDevelopment = ({container}) => {
   return (
-    <div>
+    <div className="pt-4">
       <div className={`${container}`}>
         <h2 className="text-3xl font-bold text-center mb-12">
           Our Prompt Engineering Services

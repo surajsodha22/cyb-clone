@@ -146,7 +146,7 @@ export const navMenu = [
     submenu: [
       {name: "About Us", link: "/about"},
       {name: "Testimonials", link: "/testimonials"},
-      {name: "Contact Us", link: "/contact"},
+      {name: "Contact Us", link: "/contact-us"},
       {name: "Career", link: "/careers"},
     ],
   },

@@ -3,6 +3,8 @@ import {Routes, Route} from "react-router-dom";
 import BusinessModernization from "../pages/business-modernization/BusinessModernization";
 import UiUxDesign from "../pages/uiUxDesign/UiUxDesign";
 
+import Devops from "../pages/devops/Devops";
+
 const Home = lazy(() => import("../pages/home/Home"));
 const About = lazy(() => import("../pages/about/About"));
 const Careers = lazy(() => import("../pages/careers/Careers"));
@@ -10,10 +12,16 @@ const Partnership = lazy(() => import("../pages/partnership/Partnership"));
 const Salesforce = lazy(() => import("../pages/salesforce/Salesforce"));
 const Contact = lazy(() => import("../pages/contact/Contact"));
 const MobileApp = lazy(() => import("../pages/mobileApp/MobileApp"));
-
+const WebsiteDevelopment = lazy(() =>
+  import("../pages/website-development/WebsiteDevelopment")
+);
+const SoftwareDevelopment = lazy(() =>
+  import("../pages/software-development/SoftwareDevelopment")
+);
 const AIDevelopment = lazy(() =>
   import("../pages/ai-development/AIDevelopment")
 );
+const Testimonials = lazy(() => import("../pages/testimonials/Testimonials"));
 
 const RouterPage = ({container}) => {
   return (
@@ -42,11 +50,27 @@ const RouterPage = ({container}) => {
           path="/ui-ux-design"
           element={<UiUxDesign container={container} />}
         />
-        <Route path="/mobile-app-development" element={<MobileApp />} />
-
         <Route path="/contact-us" element={<Contact container={container} />} />
-        {/* <Route path="/contact-us" element={<Contact />} /> */}
+        <Route
+          path="/testimonials"
+          element={<Testimonials container={container} />}
+        />
+        <Route
+          path="/mobile-app-development"
+          element={<MobileApp container={container} />}
+        />
+        <Route
+          path="/software-development"
+          element={<SoftwareDevelopment container={container} />}
+        />
+        <Route path="/devops" element={<Devops container={container} />} />
 
+        {/* will work */}
+        <Route
+          path="/website-development"
+          element={<WebsiteDevelopment container={container} />}
+        />
+        <Route path="/on-demand" element={<Devops container={container} />} />
         <Route path="/*" element={"page not found"} />
       </Routes>
     </Suspense>

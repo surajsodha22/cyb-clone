@@ -1,0 +1,105 @@
+import React from "react";
+
+function AppDevelopmentServices() {
+  const services = [
+    {
+      id: 1,
+      title: "Custom App Development",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      icon: "application_5958774 1.png",
+    },
+    {
+      id: 2,
+      title: "React Native App Development",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      icon: "Vector (1).png",
+    },
+    {
+      id: 3,
+      title: "Flutter App Development",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      icon: "Group (1).png",
+    },
+    {
+      id: 4,
+      title: "Android App Development",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      icon: "android_152753 1.png",
+    },
+    {
+      id: 5,
+      title: "IOS App Development",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      icon: "Group (2).png",
+    },
+    {
+      id: 6,
+      title: "IONIC App Development",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      icon: "Group (3).png",
+    },
+  ];
+
+  return (
+    <div className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header Section */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Our Mobile App Development Services
+          </h2>
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+            follows the best app development practices while digitalizing your
+            idea. Here are all the app development services offered by us:
+          </p>
+        </div>
+
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              className="bg-white mb-18 mt-18  rounded-xl border border-gray-200 border-l-4 border-l-orange-300 shadow-lg p-8 relative hover:shadow-xl transition-shadow duration-300"
+            >
+              {/* Vector 2143 Background with Service Icon */}
+              <div className="absolute -top-23 left-1/2 transform -translate-x-1/2">
+                <div className="w-44 h-44 flex items-center justify-center relative">
+                  {/* Vector 2143 Background */}
+                  <img
+                    src="../../src/assetes/MobileAppDev/Vector 2143.png"
+                    alt="Background Icon"
+                    className="w-44 h-44 object-contain absolute"
+                  />
+                  {/* Service Icon on top */}
+                  <img
+                    src={`../../src/assetes/MobileAppDev/${service.icon}`}
+                    alt={service.title}
+                    className="w-12 h-12 object-contain relative z-10"
+                  />
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="pt-12">
+                <h3 className="text-md font-bold text-gray-900 mb-4 text-center">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default AppDevelopmentServices;
