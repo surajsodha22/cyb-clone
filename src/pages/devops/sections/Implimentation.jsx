@@ -1,46 +1,48 @@
 import React from "react";
+import {impli1, impli2, impli3, impli4, impli5, impli6} from "../../../data/assetes";
+
 
 const Implimentation = () => {
   const processSteps = [
     {
       id: 1,
       title: "Strategy Development",
-      icon: "Frame 1618876621.png",
+      icon: impli1,
       color: "bg-[#FFE5BB]",
       textColor: "text-gray-800",
     },
     {
       id: 2,
       title: "Continuous Monitoring",
-      icon: "Frame 1618876621 (1).png",
+      icon: impli2,
       color: "bg-[#FF6B35]",
       textColor: "text-white",
     },
     {
       id: 3,
       title: "Technology Identification",
-      icon: "Frame 1618876621 (2).png",
+      icon: impli3,
       color: "bg-[#FFE5BB]",
       textColor: "text-gray-800",
     },
     {
       id: 4,
       title: "DevOps Execution",
-      icon: "Frame 1618876621 (3).png",
+      icon: impli4,
       color: "bg-[#FF6B35]",
       textColor: "text-white",
     },
     {
       id: 5,
       title: "Regular Monitoring",
-      icon: "Frame 1618876621 (4).png",
+      icon: impli5,
       color: "bg-[#FFE5BB]",
       textColor: "text-gray-800",
     },
     {
       id: 6,
       title: "Digital Transformation",
-      icon: "Frame 1618876621 (5).png",
+      icon: impli6,
       color: "bg-[#FF6B35]",
       textColor: "text-white",
     },
@@ -80,7 +82,7 @@ const Implimentation = () => {
                 {/* Icon Container */}
                 <div className="mb-3 relative z-20">
                   <img
-                    src={`../../src/assetes/SoftwareDevelopement/${step.icon}`}
+                      src={step.icon}
                     alt={step.title}
                     className="w-20 h-20"
                   />

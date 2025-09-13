@@ -1,6 +1,6 @@
 import React from "react";
 import {FaRocket} from "react-icons/fa";
-
+import {whatdevops} from "../../../data/assetes";
 const WhatDevOps = () => {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white relative">
@@ -38,7 +38,7 @@ const WhatDevOps = () => {
               {/* Main Image Container with Orange Border */}
               <div className="relative rounded-2xl  overflow-hidden shadow-2xl">
                 <img
-                  src="../../src/assetes/MobileAppDev/Group 1000001943.png"
+                  src={whatdevops}
                   alt="DevOps conceptual image with holographic elements"
                   className="w-full max-w-lg h-auto object-contain"
                 />

@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeading from "../../../components/reusable/SectionHeading";
-
+import { devopsservicesicon1, devopsservicesicon2, devopsservicesicon3, devopsservicesicon4, devopsservicesicon5, devopsservicesicon6 } from "../../../data/assetes";
 const ServicesDevOps = () => {
   const services = [
     {
@@ -8,42 +8,42 @@ const ServicesDevOps = () => {
       title: "DevOps Consulting",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      icon: "Frame 1618876586.png",
+      icon: devopsservicesicon1,
     },
     {
       id: 2,
       title: "DevOps Automation",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      icon: "Frame 1618876586 (1).png",
+      icon: devopsservicesicon2,
     },
     {
       id: 3,
       title: "DevOps Staffing",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      icon: "Frame 1618876586 (2).png",
+      icon: devopsservicesicon3,
     },
     {
       id: 4,
       title: "IT Infrastructure and Implementation",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      icon: "Frame 1618876586 (3).png",
+      icon: devopsservicesicon4,
     },
     {
       id: 5,
       title: "DevOps Configuration Management",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      icon: "Frame 1618876586 (4).png",
+      icon: devopsservicesicon5,
     },
     {
       id: 6,
       title: "Code Inspection and Integration",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      icon: "Frame 1618876586 (5).png",
+      icon: devopsservicesicon6,
     },
   ];
 
@@ -51,7 +51,7 @@ const ServicesDevOps = () => {
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white relative">
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header Section */}
-        <SectionHeading title="Oour DevOps Services" subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"/>
+        <SectionHeading title="Our DevOps Services" subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"/>
        
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -66,7 +66,7 @@ const ServicesDevOps = () => {
               <div className=" ">
                 <div className="w-14 h-14  rounded-full flex items-center justify-center ">
                   <img
-                    src={`../../src/assetes/SoftwareDevelopement/${service.icon}`}
+                    src={service.icon}
                     alt={service.title}
                     className="w-14 h-14"
                   />

@@ -151,10 +151,37 @@ import ellipse793 from "../assetes/Ellipse_793.png";
 import ellipse794 from "../assetes/Ellipse_794.png";
 import letterSend1 from "../assetes/letter_send1.png";
 import contactHead from "../assetes/contact_head.png";
-
 import {FaRocket} from "react-icons/fa";
+import devopsservicesicon1 from "../assetes/devopsservicesicon1.png";
+import devopsservicesicon2 from "../assetes/devopsservicesicon2.png";
+import devopsservicesicon3 from "../assetes/devopsservicesicon3.png";
+import devopsservicesicon4 from "../assetes/devopsservicesicon4.png";
+import devopsservicesicon5 from "../assetes/devopsservicesicon5.png";
+import devopsservicesicon6 from "../assetes/devopsservicesicon6.png";
+
+import whatdevops from "../assetes/whatdevops.png";
+
+import impli1 from "../assetes/impli1.png";
+import impli2 from "../assetes/impli2.png";
+import impli3 from "../assetes/impli3.png";
+import impli4 from "../assetes/impli4.png";
+import impli5 from "../assetes/impli5.png";
+import impli6 from "../assetes/impli6.png";
 
 export {
+  whatdevops,
+  impli1,
+  impli2,
+  impli3,
+  impli4,
+  impli5,
+  impli6,
+  devopsservicesicon1,
+  devopsservicesicon2,
+  devopsservicesicon3,
+  devopsservicesicon4,
+  devopsservicesicon5,
+  devopsservicesicon6,
   contactHead,
   letterSend1,
   ellipse793,
