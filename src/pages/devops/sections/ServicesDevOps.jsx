@@ -51,7 +51,7 @@ const ServicesDevOps = () => {
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white relative">
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header Section */}
-        <SectionHeading title="Our DevOps Services" subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"/>
+        <SectionHeading title="Oour DevOps Services" subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"/>
        
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
