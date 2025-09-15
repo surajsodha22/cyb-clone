@@ -1,7 +1,5 @@
 import React, {useState} from "react";
 import {
-  FaChevronLeft,
-  FaChevronRight,
   FaHeartbeat,
   FaBuilding,
   FaCreditCard,

@@ -40,7 +40,7 @@ const WhatDevOps = () => {
               <div className="relative rounded-2xl  overflow-hidden shadow-2xl">
                 <img
                   src={devops_1}
-                  alt="DevOps conceptual image with holographic elements"
+                  alt="dev_img"
                   className="w-full max-w-lg h-auto object-contain"
                 />
 

@@ -1,5 +1,5 @@
 import React from "react";
-import {Rectangle} from "../../data/assetes";
+
 import {processSteps} from "../../data/data";
 import SectionHeading from "./SectionHeading";
 

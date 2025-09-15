@@ -254,7 +254,21 @@ import cloud2 from "../assetes/cloud2.png";
 import cloud3 from "../assetes/cloud3.png";
 import {FaRocket} from "react-icons/fa";
 
+import testimoIcon from "../assetes/testimoIcon.png";
+import ratingStar from "../assetes/ratingStar.png";
+import testmoProfile from "../assetes/testmoProfile.png";
+import playIcon from "../assetes/playIcon.png";
+import testimoHead from "../assetes/testimoHead.png";
+
+import man3 from "../assetes/man3.jpg";
+
 export {
+  testimoHead,
+  man3,
+  playIcon,
+  testimoIcon,
+  ratingStar,
+  testmoProfile,
   cloud1,
   cloud2,
   cloud3,

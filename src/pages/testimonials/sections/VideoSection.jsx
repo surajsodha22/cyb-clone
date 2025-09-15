@@ -1,9 +1,9 @@
 import React from "react";
 
-const VideoSection = ({img}) => {
+const VideoSection = ({img, container, playIcon}) => {
   return (
-    <div>
-      <div className="py-20 bg-gradient-to-br from-amber-50 to-orange-50 relative overflow-hidden">
+    <div className={container}>
+      <div className="pt-10  relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16 max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
@@ -29,7 +29,7 @@ const VideoSection = ({img}) => {
                 {/* Play Button */}
                 <div className="absolute bottom-[-25px] right-2">
                   <div className="w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600 transition-colors cursor-pointer border border-orange-200">
-                    <img src={img} alt="Play" className="w-7 h-7" />
+                    <img src={playIcon} alt="Play" className="w-7 h-7" />
                   </div>
                 </div>
               </div>
@@ -51,7 +51,7 @@ const VideoSection = ({img}) => {
                 {/* Play Button */}
                 <div className="absolute bottom-[-25px] right-2">
                   <div className="w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600 transition-colors cursor-pointer border border-orange-200">
-                    <img src={img} alt="Play" className="w-7 h-7" />
+                    <img src={playIcon} alt="Play" className="w-7 h-7" />
                   </div>
                 </div>
               </div>
@@ -73,7 +73,7 @@ const VideoSection = ({img}) => {
                 {/* Play Button */}
                 <div className="absolute bottom-[-25px] right-2">
                   <div className="w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600 transition-colors cursor-pointer border border-orange-200">
-                    <img src={img} alt="Play" className="w-7 h-7" />
+                    <img src={playIcon} alt="Play" className="w-7 h-7" />
                   </div>
                 </div>
               </div>

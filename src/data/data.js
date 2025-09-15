@@ -102,7 +102,6 @@ import {
   fintechImg,
   location1,
   location2,
-  location3,
   softImg,
   softImg1,
   softImg2,
@@ -156,6 +155,9 @@ import {
   devOpSerBen4,
   devOpSerBen5,
   devOpSerBen6,
+  testimoIcon,
+  ratingStar,
+  testmoProfile,
 } from "./assetes";
 
 export const navMenu = [
@@ -1283,5 +1285,62 @@ export const benefitsDevops = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     image: devOpSerBen6,
+  },
+];
+
+export const testimonialsData = [
+  {
+    id: 1,
+    text: "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines. We've received numerous compliments on the new site, and it's easier for customers to navigate.",
+    name: "Jane Cooper",
+    role: "President of Sales",
+    avatar: testmoProfile,
+    quote: testimoIcon,
+    stars: ratingStar,
+  },
+  {
+    id: 2,
+    text: "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines. We've received numerous compliments on the new site, and it's easier for customers to navigate.",
+    name: "Jane Cooper",
+    role: "President of Sales",
+    avatar: testmoProfile,
+    quote: testimoIcon,
+    stars: ratingStar,
+  },
+  {
+    id: 3,
+    text: "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines. We've received numerous compliments on the new site, and it's easier for customers to navigate.",
+    name: "Jane Cooper",
+    role: "President of Sales",
+    avatar: testmoProfile,
+    quote: testimoIcon,
+    stars: ratingStar,
+  },
+  {
+    id: 4,
+    text: "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines. We've received numerous compliments on the new site, and it's easier for customers to navigate.",
+    name: "Jane Cooper",
+    role: "President of Sales",
+    avatar: testmoProfile,
+    quote: testimoIcon,
+    stars: ratingStar,
+  },
+  {
+    id: 5,
+    text: "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines. We've received numerous compliments on the new site, and it's easier for customers to navigate.",
+    name: "Jane Cooper",
+    role: "President of Sales",
+    avatar: testmoProfile,
+    quote: testimoIcon,
+    stars: ratingStar,
+  },
+  {
+    id: 6,
+    text: "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines. We've received numerous compliments on the new site, and it's easier for customers to navigate.",
+    name: "Jane Cooper",
+    role: "President of Sales",
+    avatar: testmoProfile,
+    quote: testimoIcon,
+    stars: ratingStar,
   },
 ];

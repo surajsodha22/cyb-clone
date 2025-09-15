@@ -1,5 +1,5 @@
 import React from "react";
-import {softProStep1} from "../../../data/assetes";
+
 import {softwareProcessSteps} from "../../../data/data";
 import SectionHeading from "../../../components/reusable/SectionHeading";
 

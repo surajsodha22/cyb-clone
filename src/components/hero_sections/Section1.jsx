@@ -1,7 +1,4 @@
-import {FaRocket} from "react-icons/fa";
-import {homeMan, image, payvendor} from "../../data/assetes";
-
-import Button from "../reusable/Button";
+import {homeMan, payvendor} from "../../data/assetes";
 import SectionHeading from "../reusable/SectionHeading";
 
 const Section1 = ({container}) => {

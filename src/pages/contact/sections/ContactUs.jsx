@@ -78,19 +78,27 @@ export default function ContactUs() {
             {/* Social Icons */}
             <div className="flex items-center gap-4 mt-8">
               <a
-                href="#"
+                href="https://twitter.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-gray-800 transition-colors"
               >
                 <FaTwitter className="text-sm" />
               </a>
+
               <a
-                href="#"
+                href="https://linkedin.com/in/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-gray-800 transition-colors"
               >
                 <FaLinkedinIn className="text-sm" />
               </a>
+
               <a
-                href="#"
+                href="https://instagram.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-gray-800 transition-colors"
               >
                 <FaInstagram className="text-sm" />

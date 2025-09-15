@@ -40,6 +40,7 @@ const Footer = ({container}) => {
                 <a
                   href={contact.link}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-orange-600"
                 >
                   {contact.title}
@@ -55,6 +56,7 @@ const Footer = ({container}) => {
                 key={idx}
                 href={social.link}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 flex items-center justify-center rounded-full"
               >
                 <img src={social.icon} alt="social" className="" />

@@ -1,12 +1,4 @@
 import React from "react";
-import {
-  FaMobileAlt,
-  FaCode,
-  FaRobot,
-  FaChartLine,
-  FaCogs,
-  FaUser,
-} from "react-icons/fa";
 import {services} from "../../data/data";
 import SectionHeading from "../reusable/SectionHeading";
 

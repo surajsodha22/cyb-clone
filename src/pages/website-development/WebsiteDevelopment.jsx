@@ -4,7 +4,7 @@ import Collaborate from "./sections/Collaborate";
 import Process from "./sections/Process";
 import ServicesWebDev from "./sections/ServicesWebDev";
 import WhyChooseUS from "./sections/WhyChooseUS";
-import TechSolutionsSection from "./sections/TechSolutionsSection";
+
 import ReversePartnershipCTAMan from "../../components/reusable/ReversePartnershipCTAMan";
 import MultiGridSlider from "../../components/reusable/MultiGridSlider";
 import AutoSlider from "../../components/reusable/AutoSlider";
@@ -20,7 +20,7 @@ const WebsiteDevelopment = ({container}) => {
         <Process />
         <ServicesWebDev />
         <WhyChooseUS />
-        {/* <TechSolutionsSection /> */}
+
         <Section7
           title="Technologies we Use "
           subtitle={

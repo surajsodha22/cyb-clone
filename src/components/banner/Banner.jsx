@@ -13,6 +13,7 @@ import {
   mobileHead,
   webHead,
   devopsHead,
+  testimoHead,
 } from "../../data/assetes";
 
 import BannerSection from "./BannerSection";
@@ -130,6 +131,12 @@ const Banner = ({container, location}) => {
               "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
             }
             image={devopsHead}
+            pathname={location.pathname}
+          />
+        ) : location?.pathname === "/testimonials" ? (
+          <BannerSection
+            title="Testimonial"
+            image={testimoHead}
             pathname={location.pathname}
           />
         ) : (
