@@ -1,5 +1,6 @@
 import React from "react";
 import {techStacks} from "../../data/data";
+import SectionHeading from "./SectionHeading";
 
 const roles = [
   "FrontEnd Developers",
@@ -16,9 +17,7 @@ const roles = [
 const TalentNetwork = () => {
   return (
     <div className="">
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
-        India's Largest Talent Network
-      </h2>
+      <SectionHeading title="India's Largest Talent Network" align="center" />
 
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-white rounded-xl  space-y-2">
@@ -34,7 +33,7 @@ const TalentNetwork = () => {
             </div>
           ))}
         </div>
-        <div className="bg-[#fff4e4] rounded-xl ">
+        <div className="bg-primary rounded-xl ">
           <div className=" p-6 flex flex-wrap gap-4 justify-center items-center max-w-md mx-auto">
             {techStacks.map((tech, index) => (
               <div

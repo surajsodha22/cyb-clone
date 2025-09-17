@@ -11,12 +11,12 @@ const Section7 = ({
     <div className="mt-10">
       <SectionHeading title={title} subtitle={subtitle} />
 
-      <div className="flex flex-wrap gap-2 mt-6 justify-center ">
-        <div className="bg-secondary px-4 py-2 rounded w-96">
+      <div className="flex flex-wrap mt-6 justify-between ">
+        <div className="bg-secondary px-6 py-4  flex-1 rounded-tl-2xl rounded-bl-2xl ">
           {features.map((feature, index) => (
             <div
               key={index}
-              className=" mt-0 hover:bg-[#FFD694] hover:shadow-sm p-4 rounded flex gap-2 items-center"
+              className=" mt-0 hover:bg-[#FFD694] hover:shadow-md p-4 rounded flex gap-2 items-center"
             >
               <div>
                 <CiMobile1 />
@@ -25,7 +25,7 @@ const Section7 = ({
             </div>
           ))}
         </div>
-        <div className=" bg-primary">
+        <div className=" bg-primary flex-1">
           <div className="flex w-full flex-wrap justify-center items-center gap-4 max-w-2xl mx-auto p-4 mt-10">
             {features2.map((feature, index) => (
               <div

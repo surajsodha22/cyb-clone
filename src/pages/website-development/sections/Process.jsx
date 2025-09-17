@@ -1,96 +1,40 @@
 import React from "react";
 import {WebProcessSteps} from "../../../data/data";
+import SectionHeading from "../../../components/reusable/SectionHeading";
 
-const Process = () => {
+const Process = ({container}) => {
   return (
-    <div className="py-16 bg-white relative overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div
-          className="w-full h-full"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle, #ff6b35 2px, transparent 2px)",
-            backgroundSize: "30px 30px",
-          }}
-        ></div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            Our Web Development Process
-          </h2>
-        </div>
+    <div className="my-16 bg-primary">
+      <div className={`${container} py-16`}>
+        <SectionHeading title="Our Web Development Process" align="center" />
 
         {/* Process Steps */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-8">
           {WebProcessSteps.map((step, index) => (
             <div key={step.id} className="flex items-center">
               {/* Process Card */}
-              <div className="bg-white rounded-xl p-4 w-48 h-36 border border-orange-500 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="bg-white rounded-xl p-4 w-52 min-h-44 border border-[#FFAD32] shadow-lg hover:shadow-xl transition-shadow">
                 {/* Icon */}
                 <div className="flex justify-center mb-2">
-                  <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-                    <img src={step.icon} alt={step.title} className="w-6 h-6" />
+                  <div className="w-10 h-10 flex items-center justify-center">
+                    <img
+                      src={step.icon}
+                      alt={step.title}
+                      className="w-10 h-10"
+                    />
                   </div>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-sm font-bold text-gray-900 text-center mb-2">
+                <h3 className="text-base font-bold text-gray-900 text-center mb-2">
                   {step.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-xs text-gray-700 text-center leading-tight">
+                <p className="text-sm text-gray-700 text-center leading-tight">
                   {step.description}
                 </p>
               </div>
-
-              {/* Arrow (except for last item) */}
-              {index < WebProcessSteps.length - 1 && (
-                <div className="hidden lg:block -mx-2 z-10">
-                  <svg
-                    width="90"
-                    height="8"
-                    viewBox="0 0 80 8"
-                    fill="none"
-                    className="text-red-500"
-                  >
-                    <path
-                      d="M72 4L2 4M72 4L68 0M72 4L68 8"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-
-        {/* Mobile arrows (vertical) */}
-        <div className="lg:hidden flex flex-col items-center mt-8 space-y-4">
-          {WebProcessSteps.slice(0, -1).map((_, index) => (
-            <div key={`mobile-arrow-${index}`} className="text-red-500">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                className="rotate-90"
-              >
-                <path
-                  d="M9 18L15 12L9 6"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
             </div>
           ))}
         </div>

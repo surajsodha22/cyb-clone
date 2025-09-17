@@ -2,6 +2,7 @@ import React from "react";
 
 import {processSteps} from "../../data/data";
 import SectionHeading from "./SectionHeading";
+import {businessProcess} from "../../data/assetes";
 
 const BusinessModernizationProcess = ({container}) => {
   return (
@@ -11,15 +12,17 @@ const BusinessModernizationProcess = ({container}) => {
         align="center"
       />
 
-      <div className="relative flex flex-wrap flex-col md:flex-row justify-center items-start md:items-center sm:gap-10 ">
-        {/* Optional SVG Path Background Here (or dashed border CSS) */}
+      <div>
+        <img src={businessProcess} alt="Business Modernization Process" />
+      </div>
 
-        {processSteps.map((step, index) => (
+      {/*
+      <div className="relative flex flex-wrap flex-col md:flex-row justify-center items-start md:items-center sm:gap-10 ">
+         {processSteps.map((step, index) => (
           <div
             key={index}
             className="flex flex-wrap flex-col items-center text-center w-72 h-40 justify-center"
           >
-            {/* Dashed Circle with Icon */}
             <div className="rounded-full ">
               <img
                 src={step.icon}
@@ -28,7 +31,6 @@ const BusinessModernizationProcess = ({container}) => {
               />
             </div>
 
-            {/* Title & Description */}
             <h3 className="font-semibold mt-2 text-sm md:text-base">
               {step.title}
             </h3>
@@ -36,8 +38,9 @@ const BusinessModernizationProcess = ({container}) => {
               {step.description}
             </p>
           </div>
-        ))}
+        ))} 
       </div>
+      */}
     </section>
   );
 };

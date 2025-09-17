@@ -1,6 +1,6 @@
 import React from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Autoplay, Pagination, Navigation} from "swiper/modules";
+import {Autoplay, Pagination} from "swiper/modules";
 import {Ai_Slide} from "../../data/data";
 
 const AutoSlider = ({reverse = false, slideData}) => {
@@ -16,8 +16,7 @@ const AutoSlider = ({reverse = false, slideData}) => {
           disableOnInteraction: false,
         }}
         pagination={{clickable: true}}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
         {Data?.map((item, index) => {

@@ -1,30 +1,18 @@
 import React from "react";
 import {webDevServices} from "../../../data/data";
-
+import SectionHeading from "../../../components/reusable/SectionHeading";
 const ServicesWebDev = () => {
   return (
-    <div className="py-16 bg-white relative overflow-hidden">
+    <div className=" ">
       {/* Background dotted pattern */}
-      <div className="absolute top-0 right-0 w-64 h-full opacity-10">
-        <div
-          className="w-full h-full"
-          style={{
-            backgroundSize: "20px 20px",
-          }}
-        ></div>
-      </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="">
         {/* Header Section */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our Web Development Services
-          </h2>
-          <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            follows the best app development practices while digitalizing your
-            idea. Here are all the app development services offered by us:
-          </p>
-        </div>
+        <SectionHeading
+          title="Our Web Development Services"
+          subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
+          align="center"
+        />
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -40,7 +40,7 @@ import aboutBanner from "../assetes/aboutBanner.png";
 import linkdin_frame from "../assetes/linkdin_frame.png";
 import footImg from "../assetes/footImg.png";
 import HandGroup from "../assetes/HandGroup.png";
-import goal from "../assetes/goal.jpg";
+import goal from "../assetes/goal.png";
 import journey1 from "../assetes/journey1.png";
 import journey2 from "../assetes/journey2.png";
 import journey3 from "../assetes/journey3.png";
@@ -163,6 +163,12 @@ import softImg2 from "../assetes/soft_img2.png";
 import softImg3 from "../assetes/soft_img3.png";
 import softImg4 from "../assetes/soft_img4.png";
 import softImg5 from "../assetes/soft_img5.png";
+import softImgHover from "../assetes/softImgHover.png";
+import softImgHover1 from "../assetes/softImgHover1.png";
+import softImgHover2 from "../assetes/softImgHover2.png";
+import softImgHover3 from "../assetes/softImgHover3.png";
+import softImgHover4 from "../assetes/softImgHover4.png";
+import softImgHover5 from "../assetes/softImgHover5.png";
 
 import softProStep1 from "../assetes/Soft_Pro_step1.png";
 import softProStep2 from "../assetes/Soft_Pro_step2.png";
@@ -262,9 +268,55 @@ import testimoHead from "../assetes/testimoHead.png";
 
 import man3 from "../assetes/man3.jpg";
 
+import boxBG from "../assetes/boxBG.png";
+import boxBGHover from "../assetes/boxBgHover.jpeg";
+import ctaBanner from "../assetes/ctaBanner.png";
+import ctaBanner2 from "../assetes/ctaBanner2.png";
+import ctaBanner3 from "../assetes/ctaBanner3.png";
+import businessProcess from "../assetes/businessProcess.png";
+
+import techIcon1 from "../assetes/tech/js.png";
+import techIcon2 from "../assetes/tech/css.png";
+import techIcon3 from "../assetes/tech/html.png";
+import techIcon4 from "../assetes/tech/react.png";
+import techIcon5 from "../assetes/tech/next.png";
+import techIcon6 from "../assetes/tech/svelte.png";
+import techIcon7 from "../assetes/tech/angular.png";
+import techIcon8 from "../assetes/tech/spring.png";
+import techIcon9 from "../assetes/tech/mean.png";
+import techIcon10 from "../assetes/tech/shopify.png";
+import techIcon11 from "../assetes/tech/drupal.png";
+import techIcon12 from "../assetes/tech/hubSpot.png";
+import techIcon13 from "../assetes/tech/mern.png";
+import techIcon14 from "../assetes/tech/laravel.png";
+import techIcon15 from "../assetes/tech/vue.png";
+import techIcon16 from "../assetes/tech/blockChain.png";
+
 export {
+  businessProcess,
+  techIcon1,
+  techIcon2,
+  techIcon3,
+  techIcon4,
+  techIcon5,
+  techIcon6,
+  techIcon7,
+  techIcon8,
+  techIcon9,
+  techIcon10,
+  techIcon11,
+  techIcon12,
+  techIcon13,
+  techIcon14,
+  techIcon15,
+  techIcon16,
+  ctaBanner,
+  ctaBanner2,
+  ctaBanner3,
   testimoHead,
   man3,
+  boxBG,
+  boxBGHover,
   playIcon,
   testimoIcon,
   ratingStar,
@@ -349,6 +401,12 @@ export {
   softImg3,
   softImg4,
   softImg5,
+  softImgHover,
+  softImgHover1,
+  softImgHover2,
+  softImgHover3,
+  softImgHover4,
+  softImgHover5,
   devopsHead,
   webHead,
   mobileHead,

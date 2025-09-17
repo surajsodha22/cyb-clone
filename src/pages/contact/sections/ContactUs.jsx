@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {FaPhoneAlt, FaEnvelope, FaMapMarkerAlt} from "react-icons/fa";
 import {FaTwitter, FaLinkedinIn, FaInstagram} from "react-icons/fa";
 import {ellipse793, ellipse794, letterSend1} from "../../../data/assetes";
+import HeadingSection from "../../../components/reusable/SectionHeading";
 // import letterSend from "../../assetes/Testimonial/letter_send 1.png";
 
 export default function ContactUs() {
@@ -10,18 +11,16 @@ export default function ContactUs() {
   const subjects = ["General Inquiry", "Sales", "Support", "Partnership"];
 
   return (
-    <div className="flex flex-col items-center justify-center my-10">
+    <div className="flex flex-col items-center">
       {/* Heading */}
-      <div className="text-center mb-8">
-        <h2 className="text-4xl font-bold text-gray-800 mb-2">Contact Us</h2>
-        <p className="text-gray-500 text-lg">
-          Any question or remarks? Just write us a message!
-        </p>
-      </div>
+      <HeadingSection
+        title="Contact Us"
+        subtitle="Any question or remarks? Just write us a message!"
+      />
 
       {/* Card */}
-      <div className="relative bg-white rounded-3xl  shadow-md w-full max-w-6xl overflow-hidden">
-        <div className="flex flex-col lg:flex-row">
+      <div className="relative bg-white rounded-3xl  shadow-md w-full">
+        <div className="flex flex-col lg:flex-row  justify-between">
           {/* Left Panel - Contact Information */}
           <div className="relative lg:w-2/5 bg-[#FFB74D] p-8 lg:p-10 text-white flex flex-col border-2 m-4 rounded-2xl justify-between min-h-[500px]">
             {/* Decorative circles - using actual images */}

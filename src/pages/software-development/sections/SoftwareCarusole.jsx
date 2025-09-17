@@ -1,4 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Navigation, Pagination} from "swiper/modules";
 import {
   FaHeartbeat,
   FaBuilding,
@@ -8,10 +10,14 @@ import {
   FaIndustry,
 } from "react-icons/fa";
 import {leftArrow, rightArrow} from "../../../data/assetes";
+import SectionHeading from "../../../components/reusable/SectionHeading";
 
-const SoftwareCarusole = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
+const SoftwareCarusole = ({container}) => {
   const industries = [
     {
       id: 1,
@@ -57,88 +63,88 @@ const SoftwareCarusole = () => {
     },
   ];
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === industries.length - 3 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? industries.length - 3 : prevIndex - 1
-    );
-  };
-
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
+      <div className={``}>
         {/* Header Section */}
-        <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Here is a list of industries for which we offer software development
-            services.
-          </h2>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-            As one of the top software development companies, we serve diverse
-            industries globally. Our best and most experienced developers have
-            deep knowledge in their respective fields.
-          </p>
+        <div className={`max-w-4xl mx-auto`}>
+          <SectionHeading
+            title={
+              "Here is a list of industries for which we offer software development services."
+            }
+            subtitle={
+              "As one of the top software development companies, we serve diverse industries globally. Our best and most experienced developers have deep knowledge in their respective fields."
+            }
+          />
         </div>
 
-        {/* Carousel Container */}
+        {/* Swiper Container */}
         <div className="relative">
-          {/* Cards Container */}
-          <div className="overflow-hidden">
-            <div
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{transform: `translateX(-${currentIndex * 33.333}%)`}}
-            >
-              {industries.map((industry) => (
-                <div key={industry.id} className="w-1/3 flex-shrink-0 px-4">
-                  <div className="bg-gradient-to-br from-[#FEBB4D] to-[#FFF8E9] rounded-2xl shadow-lg p-8 relative hover:shadow-xl transition-shadow duration-300">
+          <Swiper
+            modules={[Navigation, Pagination]}
+            loop={true}
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation={{
+              nextEl: ".swiper-button-next-custom",
+              prevEl: ".swiper-button-prev-custom",
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+            }}
+            className="mySwiper"
+          >
+            {industries.map((industry) => (
+              <SwiperSlide key={industry.id}>
+                <div className="px-4">
+                  <div className="bg-gradient-to-br from-[#FEBB4D] to-[#FFF8E9] rounded-2xl shadow-lg p-6 lg:p-8 relative hover:shadow-xl transition-shadow duration-300 h-96">
                     {/* Circular Icon - Top Left */}
                     <div className="">
-                      <div className="w-16 h-16 bg-white  rounded-full flex items-center justify-center shadow-lg">
-                        <div className="text-red-500 text-xl">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white rounded-full flex items-center justify-center shadow-lg">
+                        <div className="text-red-500 text-lg sm:text-xl">
                           {industry.icon}
                         </div>
                       </div>
                     </div>
 
                     {/* Content */}
-                    <div className="pt-6">
-                      <h3 className="text- font-bold text-[#231f20] mb-4 text-left leading-tight">
+                    <div className="pt-4 sm:pt-6">
+                      <h3 className="text-base sm:text-lg lg:text-xl font-bold text-[#231f20] mb-3 sm:mb-4 text-left leading-tight">
                         {industry.title}
                       </h3>
-                      <p className="text-gray-600 text-sm leading-relaxed text-left">
+                      <p className="text-gray-600 text-xs sm:text-sm leading-relaxed text-left">
                         {industry.description}
                       </p>
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          {/* Custom Navigation Arrows */}
+          <div className="flex justify-center mt-6 sm:mt-8 lg:mt-10 space-x-2 sm:space-x-4">
+            <button className="swiper-button-prev-custom w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center hover:opacity-70 transition-opacity duration-200">
+              <img src={leftArrow} alt="Previous" className="w-full h-full" />
+            </button>
+            <button className="swiper-button-next-custom w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center hover:opacity-70 transition-opacity duration-200">
+              <img src={rightArrow} alt="Next" className="w-full h-full" />
+            </button>
           </div>
 
-          {/* Navigation Arrows */}
-          <div className="flex justify-center mt-8 space-x-4">
-            <button
-              onClick={prevSlide}
-              className="w-10 h-10 flex items-center justify-center hover:border-gray-400 transition-colors duration-200"
-            >
-              <img src={leftArrow} alt="Previous" className="w-full" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="w-10 h-10 flex items-center justify-center hover:border-gray-400 transition-colors duration-200"
-            >
-              <img
-                src={rightArrow}
-                alt="Next"
-                className="w-full rounded-full"
-              />
-            </button>
-          </div>
+          {/* Custom Pagination */}
+          <div className="swiper-pagination-custom flex justify-center mt-4"></div>
         </div>
       </div>
     </section>

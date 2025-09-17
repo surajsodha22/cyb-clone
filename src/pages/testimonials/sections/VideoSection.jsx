@@ -1,88 +1,65 @@
 import React from "react";
+import HeadingSection from "../../../components/reusable/SectionHeading";
 
 const VideoSection = ({img, container, playIcon}) => {
+  const testimonialData = [
+    {
+      id: 1,
+      title: "Paydeer Fintech Portal",
+      image: img,
+    },
+    {
+      id: 2,
+      title: "Paydeer Fintech Portal",
+      image: img,
+    },
+    {
+      id: 3,
+      title: "Paydeer Fintech Portal",
+      image: img,
+    },
+  ];
+
   return (
     <div className={container}>
-      <div className="pt-10  relative overflow-hidden">
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16 max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Video Testimonials Of Partnerships That We Cherish
-            </h2>
-            <p className="text-md text-gray-600 leading-relaxed">
-              From startups to established enterprises, these videos bring to
-              life the experiences of partners who trusted us to transform their
-              ideas into impactful solutions.
-            </p>
-          </div>
+      <div className="relative overflow-hidden">
+        <div className={``}>
+          <HeadingSection
+            title="Video Testimonials Of Partnerships That We Cherish"
+            subtitle="From startups to established enterprises, these videos bring to life the experiences of partners who trusted us to transform their ideas into impactful solutions."
+          />
 
           {/* Testimonial Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Card 1 */}
-            <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="relative">
-                <img
-                  src={img}
-                  alt="Client Testimonial"
-                  className="w-full h-80 object-cover rounded-t-3xl"
-                />
-                {/* Play Button */}
-                <div className="absolute bottom-[-25px] right-2">
-                  <div className="w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600 transition-colors cursor-pointer border border-orange-200">
-                    <img src={playIcon} alt="Play" className="w-7 h-7" />
+          <div className="flex flex-wrap justify-between">
+            {testimonialData.map((testimonial) => (
+              <div
+                key={testimonial.id}
+                className="bg-white rounded-2xl border shadow-xl max-w-[385px]"
+                style={{boxShadow: "0px 4px 4px 0px #00000040"}}
+              >
+                <div className="relative">
+                  <img
+                    src={testimonial.image}
+                    alt="Client Testimonial"
+                    className="w-full  object-cover rounded-t-2xl"
+                  />
+                  {/* Play Button */}
+                  <div className="absolute bottom-4 right-4">
+                    <div
+                      className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all cursor-pointer"
+                      style={{backgroundColor: "#FDC366"}}
+                    >
+                      <img src={playIcon} alt="Play" className="w-6 h-6" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="p-6 text-center">
-                <h3 className="text-lg font-bold text-black">
-                  Paydeer Fintech Portal
-                </h3>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="relative">
-                <img
-                  src={img}
-                  alt="Client Testimonial"
-                  className="w-full h-80 object-cover rounded-t-3xl"
-                />
-                {/* Play Button */}
-                <div className="absolute bottom-[-25px] right-2">
-                  <div className="w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600 transition-colors cursor-pointer border border-orange-200">
-                    <img src={playIcon} alt="Play" className="w-7 h-7" />
-                  </div>
+                <div className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    {testimonial.title}
+                  </h3>
                 </div>
               </div>
-              <div className="p-6 text-center">
-                <h3 className="text-lg font-bold text-black">
-                  Paydeer Fintech Portal
-                </h3>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="relative">
-                <img
-                  src={img}
-                  alt="Client Testimonial"
-                  className="w-full h-80 object-cover rounded-t-3xl"
-                />
-                {/* Play Button */}
-                <div className="absolute bottom-[-25px] right-2">
-                  <div className="w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600 transition-colors cursor-pointer border border-orange-200">
-                    <img src={playIcon} alt="Play" className="w-7 h-7" />
-                  </div>
-                </div>
-              </div>
-              <div className="p-6 text-center">
-                <h3 className="text-lg font-bold text-black">
-                  Paydeer Fintech Portal
-                </h3>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

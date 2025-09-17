@@ -12,7 +12,7 @@ const Section9 = () => {
           {blogs.map((item, index) => (
             <div
               key={index}
-              className=" flex flex-col gap-2 p-4 rounded-lg border "
+              className=" flex flex-col gap-4 p-4 rounded-lg border  "
             >
               <div className="w-full h-48 overflow-hidden rounded-lg">
                 <img src={item.image} className="w-full" alt="" />
@@ -20,8 +20,12 @@ const Section9 = () => {
               <div className="text-secondary font-semibold text-lg">
                 {item.category}
               </div>
-              <div className="font-semibold">{item.title}</div>
-              <div className="text-gray-500 text-sm">{item.description}</div>
+              <div>
+                <div className="font-semibold">{item.title}</div>
+                <div className="text-gray-500 text-sm mt-1">
+                  {item.description}
+                </div>
+              </div>
               <div className="flex items-center gap-4">
                 <div>
                   <img src={item.author.avtar} alt="" />

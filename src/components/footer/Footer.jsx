@@ -13,7 +13,7 @@ const Footer = ({container}) => {
         {/* Left Sections */}
         {footerLinks.map((section, index) => (
           <div key={index}>
-            <h3 className="font-semibold text-lg mb-3 text-black">
+            <h3 className="font-semibold text-lg mb-3 text-[#170F49]">
               {section.title}
             </h3>
             <ul className="space-y-2">
@@ -41,7 +41,7 @@ const Footer = ({container}) => {
                   href={contact.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-orange-600"
+                  className="hover:text-orange-600 text-[#6F6C90]"
                 >
                   {contact.title}
                 </a>

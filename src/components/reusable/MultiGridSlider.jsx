@@ -9,7 +9,7 @@ import SectionHeading from "./SectionHeading";
 const MultiGridSlider = () => {
   return (
     <div>
-      <section className="py-10 px-4 text-center">
+      <section className="py-16  px-4 text-center">
         <SectionHeading
           title="Technologies and Platforms We Use"
           subtitle=" follows the best app development practices while digitalizing your
@@ -28,7 +28,7 @@ const MultiGridSlider = () => {
           }}
           breakpoints={{
             320: {
-              slidesPerView: 2,
+              slidesPerView: 3,
               grid: {rows: 2},
             },
             640: {
@@ -40,7 +40,7 @@ const MultiGridSlider = () => {
               grid: {rows: 2},
             },
             1024: {
-              slidesPerView: 5,
+              slidesPerView: 8,
               grid: {rows: 2},
             },
           }}
@@ -55,7 +55,13 @@ const MultiGridSlider = () => {
                 className={`flex flex-col items-center text-center"
               }`}
               >
-                <div className="text-4xl mb-2">{item.icon}</div>
+                <div className="w-10 h-10">
+                  <img
+                    src={item.icon}
+                    alt={item.name}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <div className="text-sm font-medium">{item.name}</div>
               </div>
             </SwiperSlide>

@@ -1,6 +1,7 @@
 import React from "react";
 import {lableIcon, meet} from "../../data/assetes";
 import {cybdeerProjects} from "../../data/data";
+import SectionHeading from "../reusable/SectionHeading";
 
 const Section4 = ({container}) => {
   return (
@@ -11,15 +12,18 @@ const Section4 = ({container}) => {
         <div className="w-full">
           <div className="flex flex-col lg:flex-row justify-between gap-5 flex-wrap items-center">
             <div>
-              <div className="text-3xl fornt-bold mb-4 max-w-lg mx-auto font-bold text-center">
-                Why Cybdeer is the Strategic Choice for Your Project
+              <div className="max-w-xl">
+                <SectionHeading
+                  title=" Why Cybdeer only for your digital world?"
+                  align="left"
+                />
               </div>
 
               <div className="flex flex-wrap justify-between   gap-4 max-w-lg">
                 {cybdeerProjects.map((project, index) => (
                   <div
                     key={index}
-                    className="border p-3 rounded shadow-sm sm:w-52 w-36 mx-auto bg-white relative"
+                    className="border rounded shadow-sm sm:w-52 w-40 mx-auto bg-white relative"
                   >
                     <img
                       src={lableIcon}

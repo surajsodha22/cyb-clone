@@ -158,6 +158,28 @@ import {
   testimoIcon,
   ratingStar,
   testmoProfile,
+  softImgHover,
+  softImgHover1,
+  softImgHover2,
+  softImgHover3,
+  softImgHover4,
+  softImgHover5,
+  techIcon1,
+  techIcon2,
+  techIcon3,
+  techIcon4,
+  techIcon5,
+  techIcon6,
+  techIcon7,
+  techIcon8,
+  techIcon9,
+  techIcon10,
+  techIcon11,
+  techIcon12,
+  techIcon13,
+  techIcon14,
+  techIcon15,
+  techIcon16,
 } from "./assetes";
 
 export const navMenu = [
@@ -285,10 +307,10 @@ export const slider = [
 export const blogs = [
   {
     image: image1,
-    category: "Technology",
+    category: "Design",
     title: "How AI is Changing the World",
     description:
-      "AI is transforming industries by automating tasks and improving efficiency.",
+      "How do you create compelling presentations that wow your colleagues and impress your managers wow your colleagues and your managers?  ",
     author: {
       avtar: avatar1,
       name: "John Doe",
@@ -297,10 +319,10 @@ export const blogs = [
   },
   {
     image: image2,
-    category: "Travel",
+    category: "Product",
     title: "Exploring the Himalayas",
     description:
-      "A journey through the majestic Himalayan mountains and valleys.",
+      "How do you create compelling presentations that wow your colleagues and impress your managers wow your colleagues and your managers?  ",
     author: {
       avtar: avatar2,
       name: "Jane Smith",
@@ -310,10 +332,10 @@ export const blogs = [
 
   {
     image: image3,
-    category: "Technology",
+    category: "Software Engineering",
     title: "How AI is Changing the World",
     description:
-      "AI is transforming industries by automating tasks and improving efficiency.",
+      "How do you create compelling presentations that wow your colleagues and impress your managers wow your colleagues and your managers?",
     author: {
       avtar: avatar3,
       name: "John Doe",
@@ -323,34 +345,34 @@ export const blogs = [
 ];
 
 export const techItems = [
-  {name: "JavaScript", icon: "🟨", active: false},
-  {name: "CSS3", icon: "🔵", active: true},
-  {name: "HTML", icon: "🟧", active: true},
-  {name: "ReactJS", icon: "⚛️", active: true},
-  {name: "Next.JS", icon: "⬛", active: true},
-  {name: "Svelte", icon: "🟥", active: true},
-  {name: "Angular Java Script", icon: "🛑", active: true},
-  {name: "Spring Boot", icon: "🟢", active: false},
-  {name: "Mean Stack", icon: "📦", active: false},
-  {name: "Shopify", icon: "🛍️", active: true},
-  {name: "Drupal", icon: "💧", active: true},
-  {name: "HubSpot", icon: "🟠", active: true},
-  {name: "Mern Stack", icon: "📚", active: true},
-  {name: "Laravel", icon: "🟥", active: true},
-  {name: "VueJS", icon: "🟩", active: false},
-  {name: "Blockchain", icon: "🔗", active: false},
+  {name: "JavaScript", icon: techIcon1, active: false},
+  {name: "CSS3", icon: techIcon2, active: true},
+  {name: "HTML", icon: techIcon3, active: true},
+  {name: "ReactJS", icon: techIcon4, active: true},
+  {name: "Next.JS", icon: techIcon5, active: true},
+  {name: "Svelte", icon: techIcon6, active: true},
+  {name: "Angular Java Script", icon: techIcon7, active: true},
+  {name: "Spring Boot", icon: techIcon8, active: false},
+  {name: "Mean Stack", icon: techIcon9, active: false},
+  {name: "Shopify", icon: techIcon10, active: true},
+  {name: "Drupal", icon: techIcon11, active: true},
+  {name: "HubSpot", icon: techIcon12, active: true},
+  {name: "Mern Stack", icon: techIcon13, active: true},
+  {name: "Laravel", icon: techIcon14, active: true},
+  {name: "VueJS", icon: techIcon15, active: false},
+  {name: "Blockchain", icon: techIcon16, active: false},
 ];
 
 export const locations = [
   {
     img: location1,
     address:
-      "2ND Floor, C-10, Chitrakoot Marg, Sector 9, Vaishali Nagar, Jaipur, Rajasthan 302021",
+      "2ND Foor, C-10, Chitrakoot Marg, Sector 9, Vaishali Nagar, Jaipur, Rajasthan 302021",
   },
   {
     img: location2,
     address:
-      "Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai, U.A.E",
+      "Meydan Grandstand, 6th floor, Meydan Road, Nad AI Sheba, Dubai, U.A.E",
   },
   {
     img: location1,
@@ -917,36 +939,42 @@ export const UiUxProcessSteps = [
 export const softwareServices = [
   {
     icon: softImg,
+    hoverIcon: softImgHover,
     title: "Software Development Consulting",
     description:
       "Our experienced developers are ready to optimize your workflows, and deliver high-quality software solutions for your business. Unlike others who only aim to sell their products, we focus on your needs.",
   },
   {
     icon: softImg1,
+    hoverIcon: softImgHover1,
     title: "Custom Software Development",
     description:
       "We provide software development services that combine advanced technologies and industry experience, ensuring you receive a tailored, future-ready software solution.",
   },
   {
     icon: softImg2,
+    hoverIcon: softImgHover2,
     title: "Enterprise Software Development",
     description:
       "Enterprise software development solves complexity, security, and integration challenges for large organizations, addressing needs across multiple departments and users.",
   },
   {
     icon: softImg3,
+    hoverIcon: softImgHover3,
     title: "AI Software Development",
     description:
       "To enhance efficiency, accuracy, and innovation, we must adopt AI software development. This fusion of human creativity and AI delivers the best outcome with a future-forward vision.",
   },
   {
     icon: softImg4,
+    hoverIcon: softImgHover4,
     title: "Custom CRM Development",
     description:
       "Every business faces unique complexities. We offer custom CRM solutions, with tailored functionality, to help you overcome these challenges and boost your sales.",
   },
   {
     icon: softImg5,
+    hoverIcon: softImgHover5,
     title: "API Development",
     description:
       "API development is the process of designing, developing, testing, and maintaining APIs, which helps enable faster development, scalability, and new revenue streams in these modern businesses.",
@@ -976,37 +1004,37 @@ export const softwareProcessSteps = [
     icon: softProStep4,
     title: "Testing and Quality Ensurance",
     description:
-      "As one of our most important steps for ensuring a high-quality product, we focus on both verification and validation, catching bugs and ensuring customer needs are met.",
+      "As one of our most important steps for ensuring a high-quality product, we focus on both verification and validation. Verification helps us catch bugs and errors, while validation ensures the product fulfils customer needs.",
   },
   {
     icon: softProStep5,
     title: "Software Development",
     description:
-      "As the final step, our expert developers create innovative software tailored to your needs, backed by deep knowledge of programming languages and frameworks.",
+      "As the final step in software development, our expert developers create high-quality and innovative software tailored to the modern world. After researching every aspect of your business, our experts use their deep understanding of programming languages and frameworks.",
   },
 ];
 
 export const technologies = [
   {
-    name: "Artificial Intelligence",
+    title: "Artificial Intelligence",
     icon: Soft_Tech1,
     description:
       "To improve efficiency and innovation, our developers use AI's subfields like machine learning to create future-ready solutions.",
   },
   {
-    name: "Data Analytics",
+    title: "Data Analytics",
     icon: Soft_Tech2,
     description:
       "By collecting and analyzing your data, we gain insights that lead to key benefits, including better decision-making, reduced costs.",
   },
   {
-    name: "Cloud",
+    title: "Cloud",
     icon: Soft_Tech3,
     description:
       "we provide the best cloud services, including IaaS, PaaS, and SaaS, and enhanced security for your innovative ideas.",
   },
   {
-    name: "Blockchain Software",
+    title: "Blockchain Software",
     icon: Soft_Tech4,
     description:
       "As a blockchain developer, we provide custom software solutions to enhance business security, trust, efficiency, and automation.",
@@ -1131,25 +1159,25 @@ export const WebProcessSteps = [
     id: 1,
     title: "Business Analysis",
     icon: webPro1,
-    description: "We Prioritize Your Privacy With End-To-End Encryption.",
+    description: "We prioritize your privacy with end-to-end encryption.",
   },
   {
     id: 2,
     title: "UI/UX Designing",
     icon: webPro2,
-    description: "We Prioritize Your Privacy With End-To-End Encryption.",
+    description: "We prioritize your privacy with end-to-end encryption.",
   },
   {
     id: 3,
     title: "Launch",
     icon: webPro3,
-    description: "We Prioritize Your Privacy With End-To-End Encryption.",
+    description: "We prioritize your privacy with end-to-end encryption.",
   },
   {
     id: 4,
     title: "Maintenance & Support",
     icon: webPro4,
-    description: "We Prioritize Your Privacy With End-To-End Encryption.",
+    description: "We prioritize your privacy with end-to-end encryption.",
   },
 ];
 
@@ -1342,5 +1370,32 @@ export const testimonialsData = [
     avatar: testmoProfile,
     quote: testimoIcon,
     stars: ratingStar,
+  },
+];
+
+export const sliderDataMobApp = [
+  {
+    id: 1,
+    title: "FinTech",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    img: fintechImg,
+  },
+  {
+    id: 2,
+    title: "Healthcare",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    img: fintechImg,
+  },
+  {
+    id: 3,
+    title: "E-commerce",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    img: fintechImg,
+  },
+  {
+    id: 4,
+    title: "Education",
+    img: fintechImg,
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
   },
 ];

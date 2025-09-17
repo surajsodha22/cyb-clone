@@ -4,7 +4,7 @@ import SectionHeading from "../reusable/SectionHeading";
 
 const Section2 = () => {
   return (
-    <section className="mt-10">
+    <section className="">
       <SectionHeading
         title="A solution for your software needs."
         subtitle="We are ready to bridge the gap between your ideas and technology. Here is the way to filling the gaps and make your growth with innovation."

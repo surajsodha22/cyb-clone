@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {fintechImg, leftArrow, rightArrow} from "../../../data/assetes";
+import SectionHeading from "../../../components/reusable/SectionHeading";
 
 function CarouselAppServices() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -53,15 +54,11 @@ function CarouselAppServices() {
     <div className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our Industry Specific Mobile App Development Services
-          </h2>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-            follows the best app development practices while digitalizing your
-            idea. Here are all the app development services offered by us:
-          </p>
-        </div>
+        <SectionHeading
+          title="Our Industry Specific Mobile App Development Services"
+          subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
+          align="center"
+        />
 
         {/* Carousel Container */}
         <div className="relative">

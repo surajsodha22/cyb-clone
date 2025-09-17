@@ -3,7 +3,7 @@ import Map from "../../components/reusable/Map";
 
 function Contact({container}) {
   return (
-    <div className={`${container}`}>
+    <div className={`${container}  my-16`}>
       <ContactUs />
       <Map />
     </div>

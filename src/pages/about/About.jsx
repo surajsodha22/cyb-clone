@@ -14,7 +14,8 @@ const About = ({container}) => {
             reverse ? "order-2 md:order-2" : "order-2 md:order-1"
           } md:w-1/2`}
         >
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">{title}</h2>
+          <h2 className="text-3xl font-bold text-gray-900 ">{title}</h2>
+          <hr className="border-b-2 border-secondary w-20 my-4" />
           <p className="text-gray-600 leading-relaxed">{description}</p>
         </div>
 
@@ -25,7 +26,7 @@ const About = ({container}) => {
               : "order-1 md:order-2  justify-end"
           } md:w-1/2 flex`}
         >
-          <img src={image} alt={title} className="rounded-3xl shadow-md w-96" />
+          <img src={image} alt={title} className=" w-full" />
         </div>
       </section>
     );
@@ -103,55 +104,57 @@ const About = ({container}) => {
   };
 
   return (
-    <div className={`${container} px-6 py-16 space-y-16`}>
-      <div>
-        <InfoSection
-          title="Company Overview"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
-          image={linkdin_frame}
-        />
+    <>
+      <div className={`${container} px-6 py-16 space-y-16`}>
+        <div className="space-y-10">
+          <InfoSection
+            title="Company Overview"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
+            image={linkdin_frame}
+          />
 
-        <InfoSection
-          title="Who We Are"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
-          image={HandGroup}
-          reverse={true}
-        />
+          <InfoSection
+            title="Who We Are"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
+            image={HandGroup}
+            reverse={true}
+          />
 
-        <InfoSection
-          title="Company Overview"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
-          image={goal}
-        />
-      </div>
-
-      <div className="bg-primary py-10">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900">Our Journey</h2>
-          <p className="text-sm text-gray-500">Cyboticx Journey</p>
+          <InfoSection
+            title="Company Overview"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
+            image={goal}
+          />
         </div>
-        <div className="relative py-20 px-4 md:px-0">
-          {/* Vertical dotted line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 top-0 h-full border-l-2 border-dotted border-gray-300 z-0"></div>
 
-          {/* Title */}
+        <div className="bg-primary py-10">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900">Our Journey</h2>
+            <p className="text-sm text-gray-500">Cyboticx Journey</p>
+          </div>
+          <div className="relative py-20 px-4 md:px-0">
+            {/* Vertical dotted line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 top-0 h-full border-l-2 border-dotted border-gray-300 z-0"></div>
 
-          <div className="space-y-5 relative z-10">
-            {journeys.map((item, index) => (
-              <JourneyItem
-                key={index}
-                year={item.year}
-                description={item.description}
-                image={item.image}
-                isLeft={index % 2 === 0}
-              />
-            ))}
+            {/* Title */}
+
+            <div className="space-y-5 relative z-10">
+              {journeys.map((item, index) => (
+                <JourneyItem
+                  key={index}
+                  year={item.year}
+                  description={item.description}
+                  image={item.image}
+                  isLeft={index % 2 === 0}
+                />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
-      <FAQ />
-    </div>
+        <FAQ />
+      </div>
+    </>
   );
 };
 

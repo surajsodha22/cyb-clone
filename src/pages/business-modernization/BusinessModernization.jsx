@@ -3,11 +3,12 @@ import BusinessModernizationProcess from "../../components/reusable/BusinessMode
 import BusinessModernizationServices from "../../components/reusable/BusinessModernizationServices";
 import ReversePartnershipCTA from "../../components/reusable/ReversePartnershipCTA";
 import {BusinessTechnologies} from "../../data/data";
-import {businessAiImg} from "../../data/assetes";
+import {businessAiImg, ctaBanner2} from "../../data/assetes";
 import BusinessModernizationMethodologies from "../../components/reusable/BusinessModernizationMethodologies";
 import SectionHeading from "../../components/reusable/SectionHeading";
 import AutoSlider from "../../components/reusable/AutoSlider";
 import MultiGridSlider from "../../components/reusable/MultiGridSlider";
+import CTA from "../../components/reusable/CTA";
 
 const BusinessModernization = ({container}) => {
   const TechnologiesSection = () => {
@@ -51,9 +52,12 @@ const BusinessModernization = ({container}) => {
     <div>
       <div className={`${container}`}>
         <BusinessModernizationServices />
-        <ReversePartnershipCTA />
+        <div>
+          <CTA image={ctaBanner2} />
+        </div>
+        {/* <ReversePartnershipCTA /> */}
       </div>
-      <div className="mt-10 bg-primary py-10">
+      <div className="mt-16 bg-primary py-10">
         <BusinessModernizationProcess className={`${container}`} />
       </div>
 
@@ -66,9 +70,8 @@ const BusinessModernization = ({container}) => {
 
       <div className={`${container}`}>
         <SectionHeading
-          title="Our Business Modernization Methodologies"
-          subtitle="follows the best app development practices while digitalizing your
-            idea. Here are all the app development services offered by us:"
+          title="Our Industry Specific Mobile App Development Services"
+          subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
           align="center"
         />
         <AutoSlider reverse={true} />

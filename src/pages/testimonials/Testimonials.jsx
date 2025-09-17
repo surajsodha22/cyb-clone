@@ -1,25 +1,33 @@
 import {man3, playIcon} from "../../data/assetes";
 import {testimonialsData} from "../../data/data";
 import VideoSection from "./sections/VideoSection";
+import HeadingSection from "../../components/reusable/SectionHeading";
 
 export default function Testimonials({container}) {
+  let marginTop = "pt-16";
   return (
     <>
-      <div className={`bg-gradient-to-br from-primary to-white`}>
+      <div
+        className={`bg-gradient-to-br from-primary to-white ${marginTop} mb-16`}
+      >
         <VideoSection img={man3} container={container} playIcon={playIcon} />
 
-        <div className={container}>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8">
+        <div className={`${container} ${marginTop}`}>
+          <HeadingSection
+            title="Hear From Those Who've Trusted Us to Bring Their Vision to Life."
+            subtitle="From startups to established enterprises, these videos bring to life the experiences of partners who trusted us to transform their ideas into impactful solutions."
+          />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonialsData?.map((item) => (
               <div
                 key={item.id}
-                className="bg-white rounded-xl shadow-md p-6 flex flex-col justify-between relative mt-10"
+                className="bg-white rounded-xl shadow-md border border-gray-200 p-6 flex flex-col justify-between relative mt-10 "
               >
                 {/* Quote Image */}
                 <img
                   src={item.quote}
                   alt="quote"
-                  className="w-14 h-14  absolute -top-8 left-36"
+                  className="w-14 h-14  absolute -top-8 left-40"
                 />
 
                 {/* Text */}

@@ -1,43 +1,24 @@
 import React from "react";
 import {aiMobFeatures} from "../../../data/data";
+import SectionHeading from "../../../components/reusable/SectionHeading";
+import ServiceCard from "../../../components/reusable/ServiceCard";
 
-const AiFeatures = () => {
+const AiFeatures = ({container}) => {
   return (
-    <section className="py-12 px-6 lg:px-20">
+    <section className={`${container} mt-16 `}>
       {/* Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-          Our AI App Development <span className="text-black">Services</span> to
-          help you to scale <br /> Your Idea
-        </h2>
-        <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
-          follows the best app development practices while digitalizing your
-          idea. Here are all the app development services offered by us:
-        </p>
+        <SectionHeading
+          title="Our AI App Development Services to help you to scale Your Idea"
+          subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
+          align="center"
+        />
       </div>
 
       {/* Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {aiMobFeatures?.map((feature, index) => (
-          <div
-            key={index}
-            className="bg-white border border-orange-200 rounded-xl shadow-sm p-2 pb-12 text-center hover:shadow-lg transition"
-          >
-            {/* Icon */}
-            <div className="mb-4 flex justify-center">
-              <div className="w-16 h-16  rounded-lg flex items-center justify-center">
-                <img
-                  src={feature.icon}
-                  alt={feature.title}
-                  className="w-full"
-                />
-              </div>
-            </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              {feature.title}
-            </h3>
-            <p className="text-gray-600 text-sm">{feature.description}</p>
-          </div>
+          <ServiceCard key={index} feature={feature} />
         ))}
       </div>
     </section>

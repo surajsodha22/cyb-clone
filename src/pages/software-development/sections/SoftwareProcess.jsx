@@ -5,7 +5,7 @@ import SectionHeading from "../../../components/reusable/SectionHeading";
 
 function SoftwareProcess() {
   return (
-    <section className="py-12 px-6 lg:px-20">
+    <section className="py-16 ">
       {/* Heading */}
       <SectionHeading
         title={"Our Software Development Process"}
@@ -21,7 +21,11 @@ function SoftwareProcess() {
           {softwareProcessSteps?.slice(0, 3).map((step, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-[#FFE5BB] to-[#FFFFAF2] border border-gray-200 rounded-xl shadow-sm p-6 hover:shadow-lg transition flex flex-col h-48"
+              className=" border border-gray-200 rounded-xl shadow-md p-6  transition flex flex-col "
+              style={{
+                background:
+                  "linear-gradient(75.3deg, #FFE5BB -23.53%, #FFFAF2 97.47%)",
+              }}
             >
               {/* Heading and Icon */}
               <div className="flex justify-between items-start mb-4">
@@ -32,14 +36,14 @@ function SoftwareProcess() {
                   <img
                     src={step.icon}
                     alt={step.title}
-                    className="w-8 h-8 object-contain"
+                    className="w-10 h-10 object-contain"
                   />
                 </div>
               </div>
 
               {/* Content */}
               <div className="flex-1">
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-base leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -49,11 +53,15 @@ function SoftwareProcess() {
 
         {/* Bottom Row - 2 cards centered */}
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-6xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full ">
             {softwareProcessSteps?.slice(3, 5).map((step, index) => (
               <div
                 key={index + 3}
-                className="bg-gradient-to-br from-[#FFE5BB] to-[#FFFFAF2] border border-gray-200 rounded-xl shadow-sm p-6 hover:shadow-lg transition flex flex-col h-48"
+                className=" border border-gray-200 rounded-xl shadow-md p-6  transition flex flex-col "
+                style={{
+                  background:
+                    "linear-gradient(75.3deg, #FFE5BB -23.53%, #FFFAF2 97.47%)",
+                }}
               >
                 {/* Heading and Icon */}
                 <div className="flex justify-between items-start mb-4">
@@ -64,14 +72,14 @@ function SoftwareProcess() {
                     <img
                       src={step.icon}
                       alt={step.title}
-                      className="w-8 h-8 object-contain"
+                      className="w-10 h-10 object-contain"
                     />
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="flex-1">
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-gray-600 text-base leading-relaxed">
                     {step.description}
                   </p>
                 </div>

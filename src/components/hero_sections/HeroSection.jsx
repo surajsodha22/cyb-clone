@@ -12,51 +12,52 @@ import MultiGridSlider from "../reusable/MultiGridSlider";
 import Section1 from "./Section1";
 
 const HeroSection = ({container}) => {
+  let marginTop = "mt-16";
   return (
     <>
-      {/* <div className="max-w-3xl relative sm:-top-10 -top-5 mx-4 md:mx-auto bg-white p-2  shadow-md rounded">
-        <h1 className="text-center text-lg py-2">
-          Trusted by Corporations, Enterprices, And Startups.
-        </h1>
-        <div className="flex flex-wrap justify-around items-center ">
-          {trustArr.map((logo, index) => (
-            <img
-              key={index}
-              src={logo}
-              alt={`Trusted logo ${index + 1}`}
-              className="sm:size-32 size-20 object-contain"
-            />
-          ))}
-        </div>
-      </div> */}
-      <div className={`sm:px-0 px-5  ${container} mt-5`}>
+      <div className={`sm:px-0 px-5  ${container} ${marginTop}`}>
+        {/* Our Business */}
         <Section1 container={container} />
-        <Section2 />
-        <Section3 />
+        {/* A solution for your software needs. */}
+        <div className={marginTop}>
+          <Section2 />
+        </div>
+        {/* Digital Excellence */}
+        <div className={marginTop}>
+          <Section3 />
+        </div>
       </div>
-      <div className={`bg-primary sm:px-0  sm:pt-4 pt-4 sm:pb-16 pb-10 mt-10 `}>
+      <div
+        className={`bg-primary sm:px-0  sm:pt-4 pt-4 sm:pb-16 pb-10 ${marginTop} `}
+      >
+        {/* Why Cybdeer is the Strategic */}
         <Section4 container={container} />
       </div>
-      <div className={`sm:px-0 px-5  ${container} mt-10`}>
+      <div className={`sm:px-0 px-5  ${container} ${marginTop}`}>
         <Section5 />
       </div>
-      <div className={`sm:px-0 px-5  ${container} mt-10`}>
+      <div className={`sm:px-0 px-5  ${container} ${marginTop}`}>
+        {/* Empowering Digital Transformation with Innovative Tech Solutions */}
         <Section7 />
       </div>
-      <div className="bg-primary sm:px-0 px-5 sm:pt-4 pt-4  pb-6 mt-10 ">
+      <div
+        className={`bg-primary sm:px-0 px-5 sm:pt-4 pt-4  pb-6 ${marginTop} `}
+      >
         <Section8 container={container} />
       </div>
       {/* Our Latest Blog */}
-      <div className={`sm:px-0 px-5  ${container} mt-10`}>
+      <div className={`sm:px-0 px-5  ${container} ${marginTop}`}>
         <Section9 />
         <div className="sm:mt-10 mt-4">
           <Section10 />
         </div>
       </div>
-      <div className="bg-primary sm:px-0 px-5 sm:pt-4 pt-0  pb-16 mt-10 ">
+      <div
+        className={`bg-primary sm:px-0 px-5 sm:pt-4 pt-0  pb-16 ${marginTop} `}
+      >
         <FAQ container={container} />
       </div>
-      <div className={`sm:px-0 px-5  ${container} mt-10`}>
+      <div className={`sm:px-0 px-5  ${container} ${marginTop}`}>
         <MultiGridSlider />
       </div>
       {/* <div className="bg-primary sm:px-0 px-5 sm:pt-4 pt-0  pb-4 mt-10 ">

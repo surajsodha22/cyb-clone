@@ -5,11 +5,16 @@ import {Pagination} from "swiper/modules";
 import {FaStar} from "react-icons/fa";
 
 import {slider} from "../../data/data";
+import SectionHeading from "../reusable/SectionHeading";
 
 const Section8 = ({container}) => {
   return (
     <div className={`${container}`}>
-      <div className="">
+      <div className="my-10">
+        <div className="mb-10">
+          <SectionHeading title="Our clients views on our services" />
+        </div>
+
         <Swiper
           slidesPerView={1}
           spaceBetween={20}
@@ -40,8 +45,12 @@ const Section8 = ({container}) => {
                     <FaStar className="text-secondary" />
                   </h3>
                   <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                    Experience in building iOS applications using Swift,
-                    ensuring high performance and seamless user experience.
+                    &quot; We highly recommend Cybdeer as the best company in
+                    Jaipur for modern app development. Their expert team
+                    delivered the best mobile app development services,
+                    exceeding our expectations. With cutting-edge technology and
+                    a focus on user experience, they provide top- quality
+                    software solutions that truly drive business growth.&quot;
                   </p>
                 </div>
                 <div className="bg-white  ">

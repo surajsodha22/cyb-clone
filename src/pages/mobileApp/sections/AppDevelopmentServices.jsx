@@ -1,21 +1,18 @@
 import React from "react";
 import {bg_yellow} from "../../../data/assetes";
 import {appDevelopmentServices} from "../../../data/data";
+import SectionHeading from "../../../components/reusable/SectionHeading";
 
-function AppDevelopmentServices() {
+function AppDevelopmentServices({container}) {
   return (
-    <div className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className={`pt-16 bg-white `}>
+      <div className={`${container}`}>
         {/* Header Section */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our Mobile App Development Services
-          </h2>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-            follows the best app development practices while digitalizing your
-            idea. Here are all the app development services offered by us:
-          </p>
-        </div>
+        <SectionHeading
+          title="Our Mobile App Development Services"
+          subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
+          align="center"
+        />
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -25,7 +22,7 @@ function AppDevelopmentServices() {
               className="bg-white mb-16 mt-16  rounded-xl border border-gray-200 border-l-4 border-l-orange-300 shadow-lg p-8 relative hover:shadow-xl transition-shadow duration-300"
             >
               {/* Vector 2143 Background with Service Icon */}
-              <div className="absolute -top-24 left-1/2 transform -translate-x-1/2">
+              <div className="absolute -top-[90px] left-1/2 transform -translate-x-1/2">
                 <div className="w-44 h-44 flex items-center justify-center relative">
                   {/* Vector 2143 Background */}
                   <img

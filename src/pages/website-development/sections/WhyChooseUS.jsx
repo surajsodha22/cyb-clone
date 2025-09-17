@@ -8,7 +8,7 @@ import {
 } from "react-icons/fi";
 import {coding} from "../../../data/assetes";
 
-const WhyChooseUS = () => {
+const WhyChooseUS = ({container}) => {
   const features = [
     {
       id: 1,
@@ -48,8 +48,8 @@ const WhyChooseUS = () => {
   ];
 
   return (
-    <div className="py-16 bg-gradient-to-br from-amber-50 to-orange-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="my-16 bg-gradient-to-br from-amber-50 to-orange-100">
+      <div className={`${container} py-16`}>
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Side - Image */}
           <div className="order-1">
@@ -74,12 +74,12 @@ const WhyChooseUS = () => {
             </p>
 
             {/* Features List */}
-            <div className="space-y-4 space-x-4 px-10">
+            <div className="">
               {features.map((feature) => (
-                <div key={feature.id} className="flex items-start space-x-3">
+                <div key={feature.id} className="flex gap-4 items-center mt-4">
                   {/* Icon */}
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center border-2 border-red-300 shadow-lg">
+                  <div className="">
+                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center  shadow-lg">
                       <feature.icon className="w-5 h-5 text-red-500" />
                     </div>
                   </div>

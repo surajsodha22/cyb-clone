@@ -2,22 +2,23 @@ import React from "react";
 import {BusinessPart1, BusinessPart2} from "../../data/assetes";
 import PartnershipCTA from "../../components/reusable/PartnershipCTA";
 import {infoCards} from "../../data/data";
+import HeadingSection from "../../components/reusable/SectionHeading";
 
 const Partnership = ({container}) => {
   return (
-    <div className={``}>
+    <div className={`my-16`}>
       {/* Header */}
-      <h2
-        className={`text-2xl md:text-3xl font-bold text-center my-10 ${container} `}
-      >
-        Our Partnership Programs That Empower Businesses
-      </h2>
+      <HeadingSection
+        title="Our Partnership Programs That Empower Businesses"
+        align="center"
+      />
+
       {/* Partnership Cards */}
       <div
-        className={`mt-12 flex flex-wrap md:gap-20 gap-10 justify-center ${container}  `}
+        className={`mt-12 flex flex-wrap md:gap-20 justify-between ${container} gap-5 `}
       >
         {/* Card 1 */}
-        <div className="bg-[#FFE5E6] shadow-lg w-96 rounded-xl p-6 border border-gray-200 relative">
+        <div className="bg-[#FFE5E6] shadow-lg max-w-xl w-full  rounded-xl p-6 border border-gray-200 relative">
           <span className="text-sm font-bold text-pink-500">
             <img
               src={BusinessPart1}
@@ -41,7 +42,7 @@ const Partnership = ({container}) => {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-[#FFF8E7] shadow-lg w-96 rounded-xl p-6 border border-gray-200 relative">
+        <div className="bg-[#FFF8E7] shadow-lg max-w-xl w-full  rounded-xl p-6 border border-gray-200 relative">
           <span className="text-sm font-bold text-pink-500">
             <img
               src={BusinessPart2}

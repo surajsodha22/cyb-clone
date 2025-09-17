@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-swiper-pagination-fraction,
+.swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -11,4 +11,21 @@ swiper-pagination-fraction,
   left: 0;
   width: 100%;
   position: static;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  margin-top: 20px !important;
+}
+
+/* Pagination bullet styles */
+.swiper-pagination-bullet {
+  background-color: #c2c0bc !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fdc366 !important;
 }

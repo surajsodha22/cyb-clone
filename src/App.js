@@ -37,16 +37,15 @@ const App = () => {
   } else if (
     location.pathname === "/salesforce" ||
     location.pathname === "/ai-development" ||
-    location.pathname === "/software-development"
+    location.pathname === "/software-development" ||
+    location.pathname === "/ui-ux-design"
   ) {
     style = gradientStyle;
-  } else if (location.pathname === "/ui-ux-design") {
-    style = gradientStyle2;
   } else {
     style = {
       backgroundImage: `url(${banner2})`,
       backgroundSize: "cover",
-      backgroundPosition: "center", // yahan empty string tha, center kar diya
+      backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
       width: "100%",
       paddingBottom: "10px",

@@ -6,7 +6,7 @@ const Section3 = () => {
   return (
     <>
       <div
-        className={`h-56 bg-cover bg-center rounded-xl flex sm:flex-row flex-col  justify-between items-center px-6 mt-10 sm:py-0 py-4`}
+        className={`h-56 bg-cover bg-center rounded-xl flex sm:flex-row flex-col  justify-between items-center px-6 md:py-0 py-6`}
         style={{backgroundImage: `url(${digital_excellence_bg})`}}
       >
         <div>
@@ -14,9 +14,8 @@ const Section3 = () => {
           <div className="text-3xl font-bold">Achieve Success through</div>
           <hr className="h-1 border-0 bg-gradient-to-r from-secondary to-white" />
         </div>
-
-        <div className="">
-          <Button text="Get Started Today!" />
+        <div className="md:pr-20">
+          <Button text="let’s go" />
         </div>
       </div>
     </>

@@ -7,6 +7,7 @@ import {
   FaRocket,
 } from "react-icons/fa";
 import {woman3} from "../../../data/assetes";
+import Button from "../../../components/reusable/Button";
 
 const ExpensesSoftware = () => {
   const costFactors = [
@@ -37,8 +38,8 @@ const ExpensesSoftware = () => {
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section className=" bg-white">
+      <div className="">
         {/* Header - Spans over both content and image */}
         <div className=" text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-left">
@@ -52,7 +53,7 @@ const ExpensesSoftware = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-12 justify-between">
           {/* Left Side - Content */}
           <div className="w-full lg:w-1/2">
             {/* Cost Factors Grid */}
@@ -68,21 +69,13 @@ const ExpensesSoftware = () => {
                 </div>
               ))}
             </div>
-
             {/* Call to Action Button */}
-            <button className="bg-red-500 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3">
-              <span>Get the cost of your software</span>
-              <FaRocket className="w-5 h-5" />
-            </button>
+            <Button text="Get the cost of your software" />
           </div>
 
           {/* Right Side - Image */}
-          <div className="w-full lg:w-1/2">
-            <img
-              src={woman3}
-              alt="Professional woman with CYBDEER folder"
-              className="w-full max-w-lg mx-auto lg:mx-0 object-contain"
-            />
+          <div className="w-full lg:w-1/2 flex justify-end items-center">
+            <img src={woman3} alt="img" className="w-96 object-contain" />
           </div>
         </div>
       </div>

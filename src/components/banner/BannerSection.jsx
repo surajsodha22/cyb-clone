@@ -14,7 +14,7 @@ const BannerSection = ({
 }) => {
   return (
     <section
-      className={`flex ${container} flex-col md:flex-row items-center justify-between pt-5`}
+      className={`flex ${container} flex-col md:flex-row items-center justify-between pt-5 md:h-[74vh]`}
     >
       {/* Left Content */}
       {pathname === "/" ? (
@@ -50,12 +50,14 @@ const BannerSection = ({
           <div className="md:w-1/2 space-y-4">
             <h1 className="text-3xl md:text-5xl font-bold">{title}</h1>
             <hr className="border-b-2 border-black w-20" />
-            {description && <p className="mt-4 text-gray-600">{description}</p>}
+            {description && (
+              <p className="mt-4 text-gray-600 max-w-md">{description}</p>
+            )}
           </div>
 
           {/* Right Section */}
           <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center md:justify-end">
-            <div className="rounded-[30px] overflow-hidden max-w-xs md:max-w-sm">
+            <div className="rounded-[30px] overflow-hidden max-w-xl mr-5">
               <img src={image} alt="banner" className="w-full h-auto" />
             </div>
           </div>

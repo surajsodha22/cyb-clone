@@ -1,15 +1,16 @@
 import React from "react";
 import {benefits, jobs} from "../../data/data";
 import {girl} from "../../data/assetes";
+import HeadingSection from "../../components/reusable/SectionHeading";
 
 const Careers = ({container}) => {
   return (
-    <div className="bg-[#fff7f0] py-16 px-4 md:px-10">
+    <div className=" my-16 ">
       <div
-        className={`${container} flex flex-col md:flex-row gap-10 mb-20 justify-between`}
+        className={`${container} flex flex-col md:flex-row gap-10 mb-20 justify-between items-center`}
       >
         {/* Left */}
-        <div className="relative bg-secondary max-w-lg md:w-1/2 rounded-xl flex items-center justify-center overflow-hidden min-h-[300px] sm:min-h-[400px]">
+        <div className="relative bg-secondary max-w-96 h-96 md:w-1/2 rounded-xl flex items-center justify-center overflow-hidden min-h-[300px] sm:min-h-[400px]">
           <h2 className="text-white font-semibold text-lg sm:text-2xl absolute top-4 left-4 leading-snug">
             Based On What <br />
             They Said
@@ -18,73 +19,82 @@ const Careers = ({container}) => {
           <img
             src={girl}
             alt="Employee"
-            className="absolute bottom-0 left-72 w-56 sm:w-72 md:w-96 object-contain"
+            className="absolute bottom-0 left-48 w-96 object-contain"
           />
         </div>
 
         {/* Right */}
-        <div className="w-full md:w-1/2 space-y-6">
-          <h3 className="text-xl sm:text-2xl font-semibold">You Get</h3>
+        <div className="w-full md:w-1/2 space-y-6 bg-[#FDF8F0] p-8 rounded-2xl">
+          <HeadingSection title="You Get" align="left" />
+
           {benefits.map((item, index) => (
             <div
               key={index}
-              className="bg-white flex items-center gap-4 p-4 rounded-lg shadow-sm border"
+              className="bg-white flex items-center gap-4 p-4 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
             >
-              <span className="text-lg sm:text-xl">{item.icon}</span>
-              <p className="text-sm sm:text-base text-gray-700">{item.text}</p>
+              <div className="w-12 h-12 flex items-center justify-center text-2xl">
+                {item.icon}
+              </div>
+              <p className="text-base text-gray-800 font-medium leading-relaxed">
+                {item.text}
+              </p>
             </div>
           ))}
         </div>
       </div>
 
       {/* Current Openings */}
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-900">Current Openings</h2>
-        <p className="text-sm text-gray-600 mt-1">
-          Feel fulfilled. Have fun. Help us to shape the future.
-        </p>
-      </div>
+      <div className="bg-[#FDF8F0] py-16">
+        <HeadingSection
+          title="Current Openings"
+          subtitle="Feel fulfilled. Have fun. Help us to shape the future."
+        />
 
-      {/* Job Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-2">
-        {jobs.map((job, index) => (
-          <div
-            key={index}
-            className="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition flex flex-col"
-          >
-            <div className="">
-              <div className="w-10 h-10 flex items-center justify-center mb-3">
-                <img
-                  src={job.img}
-                  alt={job.title}
-                  className="w-full h-full object-contain"
-                />
+        {/* Job Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-2">
+          {jobs.map((job, index) => {
+            return (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full"
+              >
+                {/* Icon and Title Section */}
+                <div className="mb-4">
+                  <div
+                    className={`w-16 h-16  rounded-xl flex items-center justify-center mb-4`}
+                  >
+                    <img
+                      src={job.img}
+                      alt={job.title}
+                      className="w-14 h-14 object-contain "
+                    />
+                  </div>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">
+                    {job.title}
+                  </h4>
+                  <p className="text-sm text-gray-600">{job.experience}</p>
+                </div>
+
+                {/* Tags Section */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {job.badges.map((badge, idx) => (
+                    <span
+                      key={idx}
+                      className="bg-[#FFE9CA] text-black text-xs font-medium px-3 py-1 rounded-full"
+                    >
+                      {badge}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Apply Button */}
+                <button className="bg-[#F26064] text-white text-sm font-bold py-3 px-6 rounded-full hover:bg-red-600 transition-colors duration-300 w-36">
+                  Apply Now
+                </button>
               </div>
-              <h4 className="text-base sm:text-lg font-semibold text-gray-900">
-                {job.title}
-              </h4>
-            </div>
-
-            <p className="text-xs sm:text-sm text-gray-600 mb-4">
-              {job.experience}
-            </p>
-
-            <div className="flex flex-wrap gap-2 mb-4">
-              {job.badges.map((badge, idx) => (
-                <span
-                  key={idx}
-                  className="bg-[#FFE9CA] shadow-sm border text-xs px-2 py-1 rounded"
-                >
-                  {badge}
-                </span>
-              ))}
-            </div>
-
-            <button className="bg-[#F26064] text-white text-sm font-medium py-2 px-4 rounded-full hover:bg-red-600 self-start">
-              Apply Now
-            </button>
-          </div>
-        ))}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

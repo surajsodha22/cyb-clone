@@ -17,28 +17,26 @@ import {
 } from "../../data/assetes";
 
 import BannerSection from "./BannerSection";
+import AboutHero from "./heroes/AboutHero";
+import HomeHero from "./heroes/HomeHero";
+import TestimonialHero from "./heroes/TestimonialHero";
 
 const Banner = ({container, location}) => {
   return (
     <>
-      <div>
+      <div className="">
         {location?.pathname === "/" ? (
-          <BannerSection
-            title="Driving The"
-            highlight1="Vision"
-            highlight2="Innovators"
-            subtitle="We shape the future by solving business challenges with smart ideas and flexible solutions"
-            description="Our customers love to work with us Clutch 4.9 ★★★★"
+          <HomeHero
             button={{
               text: "Speak to Our Experts",
               icon: FaRocket,
               onClick: () => alert("Experts"),
             }}
             image={image}
-            pathname={location.pathname}
+            container={container}
           />
         ) : location?.pathname === "/about" ? (
-          <BannerSection
+          <AboutHero
             title="About Us"
             image={aboutBanner}
             pathname={location?.pathname}
@@ -134,11 +132,7 @@ const Banner = ({container, location}) => {
             pathname={location.pathname}
           />
         ) : location?.pathname === "/testimonials" ? (
-          <BannerSection
-            title="Testimonial"
-            image={testimoHead}
-            pathname={location.pathname}
-          />
+          <TestimonialHero image={testimoHead} container={container} />
         ) : (
           ""
         )}

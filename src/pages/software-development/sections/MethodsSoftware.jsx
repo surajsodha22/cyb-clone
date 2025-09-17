@@ -2,10 +2,10 @@ import React from "react";
 import {homeMan2} from "../../../data/assetes";
 import SectionHeading from "../../../components/reusable/SectionHeading";
 
-const MethodsSoftware = () => {
+const MethodsSoftware = ({container}) => {
   return (
-    <section className="py-16  sm:px-6 lg:px-8 bg-[#FFFFAF2]">
-      <div className="max-w-7xl mx-auto">
+    <section className="my-16  sm:px-6 lg:px-8 bg-gradient-to-b from-[#FFF8E7] to-[#FFFFFF]">
+      <div className={`${container} pt-16`}>
         <div className="flex flex-col lg:flex-row items-end gap-12">
           {/* Left Side - Image */}
           <div className="w-full lg:w-2/5">

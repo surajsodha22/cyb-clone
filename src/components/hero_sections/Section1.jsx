@@ -6,7 +6,7 @@ const Section1 = ({container}) => {
     <section className={` ${container}  `}>
       <SectionHeading title="Our Business" align="center" />
 
-      <div className="flex flex-col md:flex-row items-center justify-between bg-primary p-14">
+      <div className="flex flex-col md:flex-row items-center justify-between bg-primary px-14 py-16 shadow-md rounded-sm">
         <div className="">
           <div className="w-72 bg-white border shadow-sm rounded-sm">
             <img src={homeMan} className="w-full" alt="" />

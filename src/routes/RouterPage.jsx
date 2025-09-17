@@ -1,7 +1,5 @@
 import React, {Suspense, lazy} from "react";
 import {Routes, Route} from "react-router-dom";
-import BusinessModernization from "../pages/business-modernization/BusinessModernization";
-import UiUxDesign from "../pages/uiUxDesign/UiUxDesign";
 
 const Home = lazy(() => import("../pages/home/Home"));
 const About = lazy(() => import("../pages/about/About"));
@@ -22,12 +20,22 @@ const AIDevelopment = lazy(() =>
 );
 const Testimonials = lazy(() => import("../pages/testimonials/Testimonials"));
 
+const BusinessModernization = lazy(() =>
+  import("../pages/business-modernization/BusinessModernization")
+);
+const UiUxDesign = lazy(() => import("../pages/uiUxDesign/UiUxDesign"));
+
 const RouterPage = ({container}) => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         <Route path="/" element={<Home container={container} />} />
         <Route path="/about" element={<About container={container} />} />
+        <Route
+          path="/testimonials"
+          element={<Testimonials container={container} />}
+        />
+        <Route path="/contact-us" element={<Contact container={container} />} />
         <Route path="/careers" element={<Careers container={container} />} />
         <Route
           path="/partnership"
@@ -49,11 +57,7 @@ const RouterPage = ({container}) => {
           path="/ui-ux-design"
           element={<UiUxDesign container={container} />}
         />
-        <Route path="/contact-us" element={<Contact container={container} />} />
-        <Route
-          path="/testimonials"
-          element={<Testimonials container={container} />}
-        />
+
         <Route
           path="/mobile-app-development"
           element={<MobileApp container={container} />}
