@@ -13,7 +13,7 @@ import CTA from "../../components/reusable/CTA";
 const BusinessModernization = ({container}) => {
   const TechnologiesSection = () => {
     return (
-      <section className="py-16 px-4 bg-white">
+      <section className="py-72 px-4 bg-white">
         <SectionHeading
           title="Technologies we use for Business Modernization"
           subtitle="Follows the best app development practices while digitalizing your
@@ -57,7 +57,7 @@ const BusinessModernization = ({container}) => {
         </div>
         {/* <ReversePartnershipCTA /> */}
       </div>
-      <div className="mt-16 bg-primary py-10">
+      <div className="mt-72 bg-primary py-10">
         <BusinessModernizationProcess className={`${container}`} />
       </div>
 

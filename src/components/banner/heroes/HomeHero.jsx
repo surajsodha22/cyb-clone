@@ -4,7 +4,7 @@ import Button from "../../reusable/Button";
 const HomeHero = ({container = "container mx-auto px-6", button, image}) => {
   return (
     <section
-      className={`flex ${container} flex-col md:flex-row items-center justify-between pt-5 md:h-[75vh]`}
+      className={`flex ${container} flex-col md:flex-row items-center justify-between pt-5 min-h-screen`}
     >
       {/* Left Content */}
       <div className="md:w-1/2 space-y-4">
@@ -21,16 +21,32 @@ const HomeHero = ({container = "container mx-auto px-6", button, image}) => {
         </p>
 
         <p className="text-gray-500">
-          Our customers love to work with us Clutch 4.9 ★★★★
+          Our customers love to work with us Clutch 4.9{" "}
+          <span className="text-[#F26064] text-lg">★★★★</span>
         </p>
 
         {button && (
-          <Button text={button.text} onClick={button.onClick} className="" />
+          <div>
+            <Button text={button.text} onClick={button.onClick} className="" />
+          </div>
         )}
       </div>
+
+      {/* Right Image - Fixed dimensions to prevent layout shift */}
       <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-        <div className="rounded-[30px] overflow-hidden">
-          <img src={image} alt="banner" className="w-full h-auto" />
+        <div className="rounded-[30px] overflow-hidden w-full max-w-md">
+          <img
+            src={image}
+            alt="banner"
+            className="w-full h-auto object-cover"
+            loading="lazy"
+            decoding="async"
+            style={{
+              aspectRatio: "1/1",
+              maxHeight: "500px",
+              width: "100%",
+            }}
+          />
         </div>
       </div>
     </section>

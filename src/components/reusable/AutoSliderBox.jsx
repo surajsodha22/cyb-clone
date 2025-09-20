@@ -36,7 +36,7 @@ const AutoSliderBox = () => {
                 <img
                   src={card?.image}
                   alt={card?.title}
-                  className="mx-auto mb-4 h-12 w-12 object-contain"
+                  className=" h-16 w-16 object-contain mx-auto"
                 />
                 <h3 className="text-lg font-semibold mb-2 w-48 mx-auto">
                   {card?.title}

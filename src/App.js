@@ -12,7 +12,7 @@ import Section13 from "./components/hero_sections/Section13";
 import Section6 from "./components/hero_sections/Section6";
 
 const App = () => {
-  let container = "max-w-7xl mx-auto px-4";
+  let container = "max-w-7xl mx-auto px-5 sm:px-0";
 
   const location = useLocation();
 

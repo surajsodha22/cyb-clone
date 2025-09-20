@@ -1,13 +1,23 @@
-import {FaRocket} from "react-icons/fa";
+import {LuRocket} from "react-icons/lu";
 
 const Button = ({variant = "", text, icon: Icon, onClick, className = ""}) => {
-  let style = variant || "bg-red-400 hover:bg-red-500 text-white"; // Default to 'red' variant if none provided
+  let style = variant || "bg-[#F26064] text-white";
+
   return (
     <button
       onClick={onClick}
-      className={` ${style} flex items-center gap-2 px-6 py-2   rounded-full shadow-md transition-all ${className}`}
+      className={`
+        ${style} 
+        flex items-center justify-center gap-[10px]
+        px-[38px] py-[22px]
+        rounded-[43px]
+        shadow-custom
+        opacity-100
+        font-montserrat font-medium text-[18px] leading-[100%] tracking-[0]
+        ${className}
+      `}
     >
-      {text} {(Icon && <Icon size={16} />) || <FaRocket size={16} />}
+      {text} {(Icon && <Icon size={16} />) || <LuRocket size={16} />}
     </button>
   );
 };

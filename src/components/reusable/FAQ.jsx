@@ -42,7 +42,7 @@ const FAQ = ({container}) => {
   ];
 
   return (
-    <div className={`${container} my-16`}>
+    <div className={`${container}`}>
       <SectionHeading title="Frequently Asked Questions" align="center" />
 
       <div className="space-y-4">

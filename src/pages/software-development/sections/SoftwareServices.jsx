@@ -8,7 +8,7 @@ function SoftwareServices() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section className="py-16 ">
+    <section className="py-72 ">
       {/* Heading */}
       <SectionHeading
         title={"Our Software Development Services"}
@@ -18,7 +18,7 @@ function SoftwareServices() {
       />
 
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8  mx-auto">
         {softwareServices.map((service, index) => (
           <div
             key={index}

@@ -4,8 +4,8 @@ import {devOpsServices} from "../../../data/data";
 
 const ServicesDevOps = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white relative">
-      <div className="max-w-7xl mx-auto relative z-10">
+    <section className="py-72 relative">
+      <div className="">
         {/* Header Section */}
         <SectionHeading
           title="Our DevOps Services"
@@ -17,19 +17,17 @@ const ServicesDevOps = () => {
           {devOpsServices.map((service, index) => (
             <div
               key={service.id}
-              className={` border-3 border-[#FFE5BB] rounded-xl shadow-lg p-8 relative hover:shadow-xl hover:border-3 hover:border-[#FFE5BB] hover:border-b-yellow-500 transition-all duration-300 ${
-                index === 0 ? "bg-white" : "bg-white"
-              }`}
+              className={`border-b-4 hover:border-b-4 border-white rounded-xl 
+               shadow-custom p-8 relative  hover:border-[#FFE5BB] hover:border-b-yellow-500 transition-all duration-300 hover:bg-[#FFFAF3] cursor-pointer mt-4`}
             >
               {/* Red Circular Icon */}
-              <div className=" ">
-                <div className="w-14 h-14  rounded-full flex items-center justify-center ">
-                  <img
-                    src={service.icon}
-                    alt={service.title}
-                    className="w-14 h-14"
-                  />
-                </div>
+
+              <div className="w-14 h-14  rounded-full flex items-center justify-center absolute -top-6 left-6 ">
+                <img
+                  src={service.icon}
+                  alt={service.title}
+                  className="w-14 h-14"
+                />
               </div>
 
               {/* Content */}

@@ -26,7 +26,7 @@ const MobileApp = ({container}) => {
 
       <DevelopmentProcess container={container} />
 
-      <div className={`${container} mt-16`}>
+      <div className={`${container} mt-72`}>
         <SectionHeading
           title="Our Industry Specific Mobile App Development Services"
           subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"

@@ -4,11 +4,11 @@ import VideoSection from "./sections/VideoSection";
 import HeadingSection from "../../components/reusable/SectionHeading";
 
 export default function Testimonials({container}) {
-  let marginTop = "pt-16";
+  let marginTop = "pt-72";
   return (
     <>
       <div
-        className={`bg-gradient-to-br from-primary to-white ${marginTop} mb-16`}
+        className={`bg-gradient-to-br from-primary to-white ${marginTop} mb-72`}
       >
         <VideoSection img={man3} container={container} playIcon={playIcon} />
 

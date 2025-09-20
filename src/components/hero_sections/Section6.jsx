@@ -9,7 +9,7 @@ const Section6 = ({container}) => {
   return (
     <>
       <div
-        className={`${container} px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center`}
+        className={`${container} px-4 py-72 grid grid-cols-1 md:grid-cols-2 gap-10 items-center`}
       >
         <div className="max-w-96">
           <SectionHeading

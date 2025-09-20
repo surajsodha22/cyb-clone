@@ -49,10 +49,10 @@ function DevelopmentProcess({container}) {
   ];
 
   return (
-    <div className="mt-16 bg-primary">
+    <div className="mt-72 bg-primary">
       <div className={`${container}`}>
         {/* Header Section */}
-        <div className="py-16">
+        <div className="py-72">
           <SectionHeading
             title="Our Mobile App Development Process"
             subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"

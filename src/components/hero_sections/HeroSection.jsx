@@ -5,62 +5,55 @@ import Section5 from "./Section5";
 import Section7 from "./Section7";
 import Section8 from "./Section8";
 import Section9 from "./Section9";
-import Section10 from "./Section10";
 
 import FAQ from "../reusable/FAQ";
 import MultiGridSlider from "../reusable/MultiGridSlider";
 import Section1 from "./Section1";
 
+import PartnershipCTA from "../reusable/PartnershipCTA";
 const HeroSection = ({container}) => {
-  let marginTop = "mt-16";
   return (
     <>
-      <div className={`sm:px-0 px-5  ${container} ${marginTop}`}>
+      <div className={`  ${container} mt-72`}>
         {/* Our Business */}
         <Section1 container={container} />
         {/* A solution for your software needs. */}
-        <div className={marginTop}>
+        <div className="mt-72">
           <Section2 />
         </div>
         {/* Digital Excellence */}
-        <div className={marginTop}>
+        <div className="mt-72">
           <Section3 />
         </div>
       </div>
-      <div
-        className={`bg-primary sm:px-0  sm:pt-4 pt-4 sm:pb-16 pb-10 ${marginTop} `}
-      >
+      <div className={`bg-primary py-[72px] mt-72 `}>
         {/* Why Cybdeer is the Strategic */}
         <Section4 container={container} />
       </div>
-      <div className={`sm:px-0 px-5  ${container} ${marginTop}`}>
+      <div className={` ${container} mt-72`}>
         <Section5 />
       </div>
-      <div className={`sm:px-0 px-5  ${container} ${marginTop}`}>
+      <div className={` ${container} mt-72`}>
         {/* Empowering Digital Transformation with Innovative Tech Solutions */}
         <Section7 />
       </div>
-      <div
-        className={`bg-primary sm:px-0 px-5 sm:pt-4 pt-4  pb-6 ${marginTop} `}
-      >
+      <div className={`bg-primary  mt-72 `}>
         <Section8 container={container} />
       </div>
       {/* Our Latest Blog */}
-      <div className={`sm:px-0 px-5  ${container} ${marginTop}`}>
+      <div className={`  ${container} mt-72`}>
         <Section9 />
-        <div className="sm:mt-10 mt-4">
-          <Section10 />
+        <div className="mt-72">
+          <PartnershipCTA />
         </div>
       </div>
-      <div
-        className={`bg-primary sm:px-0 px-5 sm:pt-4 pt-0  pb-16 ${marginTop} `}
-      >
+      <div className={` sm:pt-4 pt-0 mt-72 `}>
         <FAQ container={container} />
       </div>
-      <div className={`sm:px-0 px-5  ${container} ${marginTop}`}>
+      <div className={`my-72`}>
         <MultiGridSlider />
       </div>
-      {/* <div className="bg-primary sm:px-0 px-5 sm:pt-4 pt-0  pb-4 mt-10 ">
+      {/* <div className="bg-primary sm:pt-4 pt-0  pb-4 mt-10 ">
         <Section13 container={container} />
       </div> */}
     </>

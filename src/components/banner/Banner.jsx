@@ -17,9 +17,7 @@ import {
 } from "../../data/assetes";
 
 import BannerSection from "./BannerSection";
-import AboutHero from "./heroes/AboutHero";
 import HomeHero from "./heroes/HomeHero";
-import TestimonialHero from "./heroes/TestimonialHero";
 
 const Banner = ({container, location}) => {
   return (
@@ -28,7 +26,7 @@ const Banner = ({container, location}) => {
         {location?.pathname === "/" ? (
           <HomeHero
             button={{
-              text: "Speak to Our Experts",
+              text: "Ready to go to!!",
               icon: FaRocket,
               onClick: () => alert("Experts"),
             }}
@@ -36,7 +34,7 @@ const Banner = ({container, location}) => {
             container={container}
           />
         ) : location?.pathname === "/about" ? (
-          <AboutHero
+          <BannerSection
             title="About Us"
             image={aboutBanner}
             pathname={location?.pathname}
@@ -132,7 +130,11 @@ const Banner = ({container, location}) => {
             pathname={location.pathname}
           />
         ) : location?.pathname === "/testimonials" ? (
-          <TestimonialHero image={testimoHead} container={container} />
+          <BannerSection
+            title="Testimonial"
+            image={testimoHead}
+            container={container}
+          />
         ) : (
           ""
         )}

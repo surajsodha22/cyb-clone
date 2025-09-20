@@ -51,8 +51,8 @@ function CarouselAppServices() {
   const currentItem = carouselData[currentIndex];
 
   return (
-    <div className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="py-72 bg-white">
+      <div className=" px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <SectionHeading
           title="Our Industry Specific Mobile App Development Services"
@@ -78,7 +78,7 @@ function CarouselAppServices() {
           </button>
 
           {/* Main Carousel Card */}
-          <div className="mx-16">
+          <div className="mx-72">
             <div className="bg-gradient-to-r from-orange-200 to-white-200 rounded-3xl shadow-xl p-8 lg:p-12">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 {/* Left Side - Text Content */}

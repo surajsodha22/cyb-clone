@@ -1,4 +1,4 @@
-import {FaRocket, FaBars, FaTimes} from "react-icons/fa";
+import {FaBars, FaTimes} from "react-icons/fa";
 import {FaAngleDown, FaAngleUp} from "react-icons/fa6";
 import {logo} from "../../data/assetes";
 import Button from "../reusable/Button";
@@ -19,8 +19,11 @@ const Navbar = () => {
       <div className="sm:px-0 px-5">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
+
           <div className="flex items-center gap-2">
-            <img src={logo} alt="logo" />
+            <Link to={"/"} className="cursor-pointer">
+              <img src={logo} alt="logo" />
+            </Link>
           </div>
 
           {/* Desktop Menu */}
@@ -56,11 +59,7 @@ const Navbar = () => {
 
           {/* Contact Button */}
           <div className="hidden lg:flex">
-            <Button
-              text="Contact Us"
-              icon={FaRocket}
-              onClick={() => alert("Clicked!")}
-            />
+            <Button text="Contact Us" onClick={() => alert("Clicked!")} />
           </div>
 
           {/* Mobile menu button */}
@@ -109,11 +108,7 @@ const Navbar = () => {
             Blog
           </Link>
 
-          <Button
-            text="Contact Us"
-            icon={FaRocket}
-            onClick={() => alert("Clicked!")}
-          />
+          <Button text="Contact Us" onClick={() => alert("Clicked!")} />
         </div>
       )}
     </nav>

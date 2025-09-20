@@ -5,7 +5,7 @@ import HeadingSection from "../../components/reusable/SectionHeading";
 
 const Careers = ({container}) => {
   return (
-    <div className=" my-16 ">
+    <div className=" my-72 ">
       <div
         className={`${container} flex flex-col md:flex-row gap-10 mb-20 justify-between items-center`}
       >
@@ -44,14 +44,14 @@ const Careers = ({container}) => {
       </div>
 
       {/* Current Openings */}
-      <div className="bg-[#FDF8F0] py-16">
+      <div className="bg-[#FDF8F0] py-72">
         <HeadingSection
           title="Current Openings"
           subtitle="Feel fulfilled. Have fun. Help us to shape the future."
         />
 
         {/* Job Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  px-2">
           {jobs.map((job, index) => {
             return (
               <div

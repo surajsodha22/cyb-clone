@@ -6,7 +6,7 @@ import HeadingSection from "../../components/reusable/SectionHeading";
 
 const Partnership = ({container}) => {
   return (
-    <div className={`my-16`}>
+    <div className={`my-72`}>
       {/* Header */}
       <HeadingSection
         title="Our Partnership Programs That Empower Businesses"

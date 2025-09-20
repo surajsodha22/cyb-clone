@@ -5,7 +5,7 @@ import SectionHeading from "../../../components/reusable/SectionHeading";
 
 function AppDevelopmentServices({container}) {
   return (
-    <div className={`pt-16 bg-white `}>
+    <div className={`pt-72 bg-white `}>
       <div className={`${container}`}>
         {/* Header Section */}
         <SectionHeading
@@ -19,7 +19,7 @@ function AppDevelopmentServices({container}) {
           {appDevelopmentServices.map((service) => (
             <div
               key={service.id}
-              className="bg-white mb-16 mt-16  rounded-xl border border-gray-200 border-l-4 border-l-orange-300 shadow-lg p-8 relative hover:shadow-xl transition-shadow duration-300"
+              className="bg-white mb-72 mt-72  rounded-xl border border-gray-200 border-l-4 border-l-orange-300 shadow-lg p-8 relative hover:shadow-xl transition-shadow duration-300"
             >
               {/* Vector 2143 Background with Service Icon */}
               <div className="absolute -top-[90px] left-1/2 transform -translate-x-1/2">

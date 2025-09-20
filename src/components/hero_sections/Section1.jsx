@@ -6,18 +6,18 @@ const Section1 = ({container}) => {
     <section className={` ${container}  `}>
       <SectionHeading title="Our Business" align="center" />
 
-      <div className="flex flex-col md:flex-row items-center justify-between bg-primary px-14 py-16 shadow-md rounded-sm">
-        <div className="">
-          <div className="w-72 bg-white border shadow-sm rounded-sm">
+      <div className="flex flex-col lg:flex-row items-center justify-between bg-primary px-4 sm:px-8 lg:px-14 py-16 sm:py-24 lg:py-72 shadow-md rounded-xl gap-6 sm:gap-8 lg:gap-10">
+        <div className="w-full lg:w-auto">
+          <div className="w-full max-w-[390px] mx-auto lg:mx-0 bg-white shadow-[0px_4px_16px_0px_#2A2A2A1A] rounded-xl">
             <img src={homeMan} className="w-full" alt="" />
           </div>
         </div>
-        <div>
-          <div className="max-w-2xl">
-            <div>
-              <img src={payvendor} alt="" />
+        <div className="w-full lg:w-auto">
+          <div className="text-center lg:text-left">
+            <div className="w-[100px] sm:w-[131px] mx-auto lg:mx-0">
+              <img src={payvendor} alt="" className="w-full" />
             </div>
-            <div className="mt-5 font-sans text-gray-700">
+            <div className="mt-4 sm:mt-5 text-base sm:text-lg lg:text-xl font-sans text-gray-700 leading-relaxed">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
               vero perferendis ducimus recusandae unde porro molestiae alias,
               repellendus earum eius illo facilis deserunt accusamus officia non

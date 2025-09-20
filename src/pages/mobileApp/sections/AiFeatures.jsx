@@ -5,7 +5,7 @@ import ServiceCard from "../../../components/reusable/ServiceCard";
 
 const AiFeatures = ({container}) => {
   return (
-    <section className={`${container} mt-16 `}>
+    <section className={`${container} mt-72 `}>
       {/* Heading */}
       <div className="text-center mb-12">
         <SectionHeading

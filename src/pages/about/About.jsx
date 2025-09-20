@@ -105,7 +105,7 @@ const About = ({container}) => {
 
   return (
     <>
-      <div className={`${container} px-6 py-16 space-y-16`}>
+      <div className={`${container} px-6 py-72 space-y-72`}>
         <div className="space-y-10">
           <InfoSection
             title="Company Overview"

@@ -9,7 +9,7 @@ import CTA from "../../components/reusable/CTA";
 
 const Salesforce = ({container}) => {
   return (
-    <div className={"pt-16"}>
+    <div className={"pt-72"}>
       <div className={`${container}`}>
         <SectionHeading
           title="Our Prompt Engineering Services"
@@ -44,11 +44,11 @@ const Salesforce = ({container}) => {
           ))}
         </div>
       </div>
-      <div className={`sm:mt-16 mt-10 ${container}`}>
+      <div className={`sm:mt-72 mt-10 ${container}`}>
         <CTA image={ctaBanner} />
       </div>
 
-      <div className={`${container} mt-16`}>
+      <div className={`${container} mt-72`}>
         <SectionHeading
           title="We Follow a Trusted Blockchain Development Process Built By Industry Leaders"
           align="center"
@@ -58,31 +58,41 @@ const Salesforce = ({container}) => {
           {SalesIndustary.map((step, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-lg transition p-6 text-center"
+              className="border-r border-l cursor-pointer group relative bg-white border-t-4 hover:border-t-0  hover:border-b-4 border-secondary rounded-xl  transition-all duration-300 p-6 text-center h-48 overflow-hidden"
             >
-              {/* Icon image */}
-              <div className="mb-4 flex justify-center">
-                <img
-                  src={step.icon}
-                  alt={step.title}
-                  className="size-20 object-contain"
-                />
+              {/* Normal state - Icon and Title */}
+              <div className="absolute inset-0 flex flex-col justify-center items-center p-6 transition-all duration-100 group-hover:opacity-0 group-hover:translate-y-[-20px]">
+                {/* Icon image */}
+                <div className="mb-4 flex justify-center">
+                  <img
+                    src={step.icon}
+                    alt={step.title}
+                    className="size-20 object-contain"
+                  />
+                </div>
+                <h3 className="text-sm font-semibold text-gray-800">
+                  {step.title}
+                </h3>
               </div>
-              <h3 className="text-sm font-semibold text-gray-800">
-                {step.title}
-              </h3>
+
+              {/* Hover state - Description */}
+              <div className="absolute inset-0 flex items-center justify-center p-6 transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-[20px]">
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {step.desc}
+                </p>
+              </div>
             </div>
           ))}
         </div>
       </div>
 
-      <div className={` mt-16 ${container}`}>
+      <div className={` mt-72 ${container}`}>
         <SectionHeading
           title="Web3 Services we have Expertise In"
           align="center"
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
           {web3services.map((service, index) => (
             <div
               key={index}
@@ -103,15 +113,15 @@ const Salesforce = ({container}) => {
           ))}
         </div>
       </div>
-      <div className={`mt-16  ${container}`}>
+      <div className={`mt-72  ${container}`}>
         <CTA image={ctaBanner2} />
       </div>
 
-      <div className={` mt-16 ${container}`}>
+      <div className={` mt-72 ${container}`}>
         <TalentNetwork />
       </div>
 
-      <div className={` mt-16 ${container}`}>
+      <div className={` mt-72 ${container}`}>
         <FAQ />
       </div>
     </div>

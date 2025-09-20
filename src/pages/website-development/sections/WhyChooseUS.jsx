@@ -48,8 +48,8 @@ const WhyChooseUS = ({container}) => {
   ];
 
   return (
-    <div className="my-16 bg-gradient-to-br from-amber-50 to-orange-100">
-      <div className={`${container} py-16`}>
+    <div className="my-72 bg-gradient-to-br from-amber-50 to-orange-100">
+      <div className={`${container} py-72`}>
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Side - Image */}
           <div className="order-1">

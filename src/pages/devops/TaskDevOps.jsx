@@ -1,5 +1,6 @@
 import React from "react";
 import {check} from "../../data/assetes";
+import SectionHeading from "../../components/reusable/SectionHeading";
 
 const TaskDevOps = () => {
   const tasks = [
@@ -90,58 +91,52 @@ const TaskDevOps = () => {
   const rightColumnTasks = tasks.slice(8, 16);
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Tasks Our DevOps Engineers Can work On
-          </h2>
+    <section className="py-72 ">
+      {/* Header */}
+      <SectionHeading
+        title="Tasks Our DevOps Engineers Can work On"
+        subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
+        align="center"
+      />
+
+      {/* Two Column Layout */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Left Column */}
+        <div className="space-y-4 bg-white p-4 rounded-xl shadow-custom">
+          {leftColumnTasks.map((task) => (
+            <div
+              key={task.id}
+              className={`flex items-center p-4 rounded-lg shadow-sm ${
+                task.isOrange ? "bg-[#FEBB4D2E]" : "bg-[#F260640A]"
+              }`}
+            >
+              <div className="flex-shrink-0 mr-4">
+                <div className="w-6 h-6  rounded-full flex items-center justify-center">
+                  <img src={check} alt="Check" className="w-6 h-6" />
+                </div>
+              </div>
+              <span className="text-gray-900 font-medium">{task.title}</span>
+            </div>
+          ))}
         </div>
 
-        {/* Two Column Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Left Column */}
-          <div className="space-y-4">
-            {leftColumnTasks.map((task) => (
-              <div
-                key={task.id}
-                className={`flex items-center p-4 rounded-lg shadow-sm ${
-                  task.isOrange
-                    ? "bg-gradient-to-r from-orange-100 to-orange-50"
-                    : "bg-white border border-gray-200"
-                }`}
-              >
-                <div className="flex-shrink-0 mr-4">
-                  <div className="w-6 h-6  rounded-full flex items-center justify-center">
-                    <img src={check} alt="Check" className="w-6 h-6" />
-                  </div>
+        {/* Right Column */}
+        <div className="space-y-4 bg-white p-4 rounded-xl shadow-custom">
+          {rightColumnTasks.map((task) => (
+            <div
+              key={task.id}
+              className={`flex items-center p-4 rounded-lg shadow-sm ${
+                task.isOrange ? "bg-[#FEBB4D2E]" : "bg-[#F260640A]"
+              }`}
+            >
+              <div className="flex-shrink-0 mr-4">
+                <div className=" rounded-full flex items-center justify-center">
+                  <img src={check} alt="Check" className="w-6 h-6" />
                 </div>
-                <span className="text-gray-900 font-medium">{task.title}</span>
               </div>
-            ))}
-          </div>
-
-          {/* Right Column */}
-          <div className="space-y-4">
-            {rightColumnTasks.map((task) => (
-              <div
-                key={task.id}
-                className={`flex items-center p-4 rounded-lg shadow-sm ${
-                  task.isOrange
-                    ? "bg-gradient-to-r from-orange-100 to-orange-50"
-                    : "bg-white border border-gray-200"
-                }`}
-              >
-                <div className="flex-shrink-0 mr-4">
-                  <div className=" rounded-full flex items-center justify-center">
-                    <img src={check} alt="Check" className="w-6 h-6" />
-                  </div>
-                </div>
-                <span className="text-gray-900 font-medium">{task.title}</span>
-              </div>
-            ))}
-          </div>
+              <span className="text-gray-900 font-medium">{task.title}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>

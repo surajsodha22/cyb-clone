@@ -4,7 +4,7 @@ import SectionHeading from "../../../components/reusable/SectionHeading";
 
 const Collaborate = () => {
   return (
-    <div className="py-16 ">
+    <div className="py-72 ">
       <div className="">
         {/* Header */}
         <SectionHeading title="Collaborate with the Experts" align="center" />

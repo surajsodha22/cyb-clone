@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading";
 
 const BusinessModernizationMethodologies = ({container}) => {
   return (
-    <section className={`py-16 px-4 ${container}`}>
+    <section className={`py-72 px-4 ${container}`}>
       <div className=" flex flex-col lg:flex-row items-center gap-10">
         {/* Left: Image with icons */}
 

@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import {services} from "../../data/data";
 import SectionHeading from "../reusable/SectionHeading";
 
 const Section2 = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   return (
     <section className="">
       <SectionHeading
@@ -15,15 +17,20 @@ const Section2 = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className={`p-6 rounded-lg shadow-md transition-all hover:shadow-xl hover:bg-secondary hover:cursor-pointer`}
+            className={`p-6 rounded-lg transition-all  hover:bg-[#FEBB4DDE] hover:cursor-pointer backdrop-blur-2xl shadow-custom`}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
           >
             <div className="mb-4 ">
-              <span className="p-2 bg-yellow-50 rounded-full inline-block">
-                <img src={service.img} alt="" />
-              </span>
+              <img
+                src={hoveredIndex === index ? service.hoverImg : service.img}
+                alt=""
+              />
             </div>
-            <h3 className="text-xl  font-semibold mb-2">{service.title}</h3>
-            <p className="text-sm text-gray-600">{service.desc}</p>
+            <h3 className="text-[28px]  font-semibold mb-2">{service.title}</h3>
+            <p className="text-[18px] font-[400] text-gray-600 font-montserrat">
+              {service.desc}
+            </p>
           </div>
         ))}
       </div>

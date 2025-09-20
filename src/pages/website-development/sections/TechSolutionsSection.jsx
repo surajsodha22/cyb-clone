@@ -262,7 +262,7 @@ const TechSolutionsSection = () => {
   const items = useMemo(() => categories[active] || [], [active]);
 
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white py-72 px-4 sm:px-6 lg:px-8">
       <div className="max-w-10xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">

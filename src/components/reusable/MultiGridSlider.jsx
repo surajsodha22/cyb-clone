@@ -8,8 +8,8 @@ import {techItems} from "../../data/data";
 import SectionHeading from "./SectionHeading";
 const MultiGridSlider = () => {
   return (
-    <div>
-      <section className="py-16  px-4 text-center">
+    <div className="max-w-[1448px] mx-auto">
+      <section className=" px-4 text-center">
         <SectionHeading
           title="Technologies and Platforms We Use"
           subtitle=" follows the best app development practices while digitalizing your

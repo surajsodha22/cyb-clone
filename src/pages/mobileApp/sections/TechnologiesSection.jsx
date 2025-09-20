@@ -70,7 +70,7 @@ const TechnologiesSection = () => {
   const defaultLogo = "../../src/assets/react.svg";
 
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white py-72 px-4 sm:px-6 lg:px-8">
       <style>{`
         @keyframes scroll-left {
           0% { transform: translateX(0); }
@@ -81,7 +81,7 @@ const TechnologiesSection = () => {
           100% { transform: translateX(0); }
         }
       `}</style>
-      <div className="max-w-7xl mx-auto">
+      <div className="">
         {/* Header Section */}
         <div className="text-center mb-10">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-2">

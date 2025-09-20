@@ -4,26 +4,39 @@ import paydeer from "../assetes/paydeer.png";
 import payvendor from "../assetes/payvendor.png";
 import webhub from "../assetes/webhub.png";
 import findeer from "../assetes/findeer.png";
-import Frame from "../assetes/Frame.png";
 import Frame1 from "../assetes/Frame1.png";
 import Frame2 from "../assetes/Frame2.png";
 import Frame3 from "../assetes/Frame3.png";
 import Frame4 from "../assetes/Frame4.png";
 import Frame5 from "../assetes/Frame5.png";
+import Frame6 from "../assetes/Frame6.png";
+import Frame7 from "../assetes/Frame7.png";
+import Frame8 from "../assetes/Frame8.png";
+import Frame9 from "../assetes/Frame9.png";
+import FrameHover from "../assetes/FrameHover.png";
+import FrameHover1 from "../assetes/FrameHover1.png";
+import FrameHover2 from "../assetes/FrameHover2.png";
+import FrameHover3 from "../assetes/FrameHover3.png";
+import FrameHover4 from "../assetes/FrameHover4.png";
+import FrameHover5 from "../assetes/FrameHover5.png";
+import FrameHover6 from "../assetes/FrameHover6.png";
+import FrameHover7 from "../assetes/FrameHover7.png";
+import FrameHover8 from "../assetes/FrameHover8.png";
+
 import digital_excellence_bg from "../assetes/digital_excellence_bg1.png";
 import meet from "../assetes/meet.png";
 
-import app1 from "../assetes/app1.png";
-import app2 from "../assetes/app2.png";
-import app3 from "../assetes/app3.png";
-import app4 from "../assetes/app4.png";
+import app1 from "../assetes/app1.svg";
+import app2 from "../assetes/app2.svg";
+import app3 from "../assetes/app3.svg";
+import app4 from "../assetes/app4.svg";
 
-import d1 from "../assetes/d1.png";
-import d2 from "../assetes/d2.png";
-import d3 from "../assetes/d3.png";
-import d4 from "../assetes/d4.png";
-import d5 from "../assetes/d5.png";
-import d6 from "../assetes/d6.png";
+import d1 from "../assetes/d1.svg";
+import d2 from "../assetes/d2.svg";
+import d3 from "../assetes/d3.svg";
+import d4 from "../assetes/d4.svg";
+import d5 from "../assetes/d5.svg";
+import d6 from "../assetes/d6.svg";
 
 import avatar1 from "../assetes/Avatar1.png";
 import avatar2 from "../assetes/Avatar2.png";
@@ -33,6 +46,7 @@ import image1 from "../assetes/Image1.png";
 import image2 from "../assetes/Image2.png";
 import image3 from "../assetes/Image3.png";
 
+import whiteLine from "../assetes/white_line.png";
 import women from "../assetes/women.png";
 import women2 from "../assetes/women2.png";
 import banner2 from "../assetes/banner2.jpg";
@@ -131,11 +145,11 @@ import iconInsta from "../assetes/icons_instagram.png";
 
 import ManImg from "../assetes/manImg.png";
 
-import tech1 from "../assetes/tech_ai.png";
-import tech2 from "../assetes/tech_figma.png";
-import tech3 from "../assetes/tech_proto.png";
-import tech4 from "../assetes/tech_ps.png";
-import tech5 from "../assetes/tech_xd.png";
+import tech1 from "../assetes/tech_figma.png";
+import tech2 from "../assetes/tech_xd.png";
+import tech3 from "../assetes/tech_ps.png";
+import tech4 from "../assetes/tech_ai.png";
+import tech5 from "../assetes/tech_proto.png";
 
 import UIUXProcess from "../assetes/UIUX_process.png";
 
@@ -270,7 +284,7 @@ import man3 from "../assetes/man3.jpg";
 
 import boxBG from "../assetes/boxBG.png";
 import boxBGHover from "../assetes/boxBgHover.jpeg";
-import ctaBanner from "../assetes/ctaBanner.png";
+import ctaBanner from "../assetes/ctaBanner.svg";
 import ctaBanner2 from "../assetes/ctaBanner2.png";
 import ctaBanner3 from "../assetes/ctaBanner3.png";
 import businessProcess from "../assetes/businessProcess.png";
@@ -292,7 +306,22 @@ import techIcon14 from "../assetes/tech/laravel.png";
 import techIcon15 from "../assetes/tech/vue.png";
 import techIcon16 from "../assetes/tech/blockChain.png";
 
+import cybdeerIcon1 from "../assetes/icons/Boxes.png";
+import cybdeerIcon2 from "../assetes/icons/project.png";
+import cybdeerIcon3 from "../assetes/icons/profile.png";
+import cybdeerIcon4 from "../assetes/icons/team.png";
+import cta_bg from "../assetes/cta_bg.png";
+
+import rightUpArrow from "../assetes/rightUpArrow.png";
+
 export {
+  rightUpArrow,
+  whiteLine,
+  cta_bg,
+  cybdeerIcon1,
+  cybdeerIcon2,
+  cybdeerIcon3,
+  cybdeerIcon4,
   businessProcess,
   techIcon1,
   techIcon2,
@@ -492,12 +521,24 @@ export {
   BusinessPart2,
   partner,
   headSalesForces,
-  Frame,
   Frame1,
   Frame2,
   Frame3,
   Frame4,
   Frame5,
+  Frame6,
+  Frame7,
+  Frame8,
+  Frame9,
+  FrameHover,
+  FrameHover1,
+  FrameHover2,
+  FrameHover3,
+  FrameHover4,
+  FrameHover5,
+  FrameHover6,
+  FrameHover7,
+  FrameHover8,
   app1,
   app2,
   app3,

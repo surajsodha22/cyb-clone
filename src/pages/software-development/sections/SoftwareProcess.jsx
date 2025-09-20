@@ -5,7 +5,7 @@ import SectionHeading from "../../../components/reusable/SectionHeading";
 
 function SoftwareProcess() {
   return (
-    <section className="py-16 ">
+    <section className="py-72 ">
       {/* Heading */}
       <SectionHeading
         title={"Our Software Development Process"}

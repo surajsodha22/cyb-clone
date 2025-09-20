@@ -6,153 +6,103 @@ import {
   devOffer4,
   devOffer5,
 } from "../../data/assetes";
+import SectionHeading from "../../components/reusable/SectionHeading";
 
 const ServicesManagedDevOps = () => {
+  const servicesData = [
+    {
+      id: 1,
+      title: "Containerization and Orchestration",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      image: devOffer1,
+      imagePosition: "left", // Image on left, text on right
+    },
+    {
+      id: 2,
+      title: "Microservices",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      image: devOffer2,
+      imagePosition: "right", // Image on right, text on left
+    },
+    {
+      id: 3,
+      title: "Release Management",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      image: devOffer3,
+      imagePosition: "left", // Image on left, text on right
+    },
+    {
+      id: 4,
+      title: "Security Management",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      image: devOffer4,
+      imagePosition: "right", // Image on right, text on left
+    },
+    {
+      id: 5,
+      title: "IT Infrastructure Management",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      image: devOffer5,
+      imagePosition: "left", // Image on left, text on right
+    },
+  ];
+
   return (
-    <div className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pb-72">
+      <div className="">
         {/* Header Section */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our DevOps Services Managed Offering
-          </h2>
-          <p className="text-lg text-gray-700 max-w-4xl mx-auto">
-            follows the best app development practices while digitalizing your
-            idea. Here are all the app development services offered by us
-          </p>
-        </div>
+        <SectionHeading
+          title="Our DevOps Services Managed Offering"
+          subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us"
+          align="center"
+        />
 
         {/* Service Sections */}
-        <div className="space-y-16">
-          {/* Section 1: Containerization and Orchestration */}
-          <div className="bg-amber-50 rounded-2xl p-8 md:p-12 shadow-xl">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="order-2 md:order-1">
-                <img
-                  src={devOffer1}
-                  alt="Containerization and Orchestration"
-                  className="w-full h-80 object-cover rounded-xl shadow-lg"
-                />
-              </div>
-              <div className="order-1 md:order-2 text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                  Containerization and Orchestration
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div>
-            </div>
-          </div>
+        <div className="space-y-8">
+          {servicesData.map((service) => (
+            <div
+              key={service.id}
+              className="bg-[#FEF8EF] rounded-2xl p-6 md:p-8 lg:p-12 shadow-custom"
+            >
+              <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+                {/* Image Section */}
+                <div
+                  className={`${
+                    service.imagePosition === "left"
+                      ? "order-2 md:order-1"
+                      : "order-2 md:order-2"
+                  }`}
+                >
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-64 md:h-80 object-cover rounded-xl shadow-lg"
+                  />
+                </div>
 
-          {/* Section 2: Microservices */}
-          <div className="bg-amber-50 rounded-2xl p-8 md:p-12 shadow-xl">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                  Microservices
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div>
-              <div>
-                <img
-                  src={devOffer2}
-                  alt="Microservices"
-                  className="w-full h-80 object-cover rounded-xl shadow-lg"
-                />
+                {/* Text Section */}
+                <div
+                  className={`${
+                    service.imagePosition === "left"
+                      ? "order-1 md:order-2"
+                      : "order-1 md:order-1"
+                  } text-left`}
+                >
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-
-          {/* Section 3: Release Management */}
-          <div className="bg-amber-50 rounded-2xl p-8 md:p-12 shadow-xl">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="order-2 md:order-1">
-                <img
-                  src={devOffer3}
-                  alt="Release Management"
-                  className="w-full h-80 object-cover rounded-xl shadow-lg"
-                />
-              </div>
-              <div className="order-1 md:order-2 text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                  Release Management
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Section 4: Security Management */}
-          <div className="bg-amber-50 rounded-2xl p-8 md:p-12 shadow-xl">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                  Security Management
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div>
-              <div>
-                <img
-                  src={devOffer4}
-                  alt="Security Management"
-                  className="w-full h-80 object-cover rounded-xl shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Section 5: IT Infrastructure Management */}
-          <div className="bg-amber-50 rounded-2xl p-8 md:p-12 shadow-xl">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="order-2 md:order-1">
-                <img
-                  src={devOffer5}
-                  alt="IT Infrastructure Management"
-                  className="w-full h-80 object-cover rounded-xl shadow-lg"
-                />
-              </div>
-              <div className="order-1 md:order-2 text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                  IT Infrastructure Management
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

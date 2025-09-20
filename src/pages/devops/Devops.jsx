@@ -10,16 +10,18 @@ import TaskDevOps from "./TaskDevOps";
 import ServicesManagedDevOps from "./ServicesManagedDevOps";
 import ManagementTools from "./ManagementTools";
 import MultiGridSlider from "../../components/reusable/MultiGridSlider";
+import {ctaBanner, ctaBanner3} from "../../data/assetes";
+import CTA from "../../components/reusable/CTA";
 
 const Devops = ({container}) => {
   return (
     <>
       <div className={`${container}`}>
         <ServicesDevOps />
-        <PartnershipCTA />
+        <CTA image={ctaBanner} />
         <WhatDevOps />
         <Implimentation />
-        <ReversePartnershipCTA />
+        <CTA image={ctaBanner3} />
       </div>
       <Benefits container={container} />
       <div className={container}>

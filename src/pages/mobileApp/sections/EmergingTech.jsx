@@ -4,8 +4,8 @@ import SectionHeading from "../../../components/reusable/SectionHeading";
 
 function EmergingTech({container}) {
   return (
-    <div className="py-16 bg-white">
-      <div className={`${container} max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`}>
+    <div className="py-72 bg-white">
+      <div className={`${container}  mx-auto px-4 sm:px-6 lg:px-8`}>
         {/* Header Section */}
         <div className="text-center mb-12">
           <SectionHeading

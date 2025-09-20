@@ -1,11 +1,12 @@
 import React from "react";
 import {FaRocket} from "react-icons/fa";
 import {devops_1} from "../../../data/assetes";
+import Button from "../../../components/reusable/Button";
 
 const WhatDevOps = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white relative">
-      <div className="max-w-7xl mx-auto relative z-10">
+    <section className="py-72 px-4 sm:px-6 lg:px-8 bg-white relative">
+      <div className=" relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Left Side - Content */}
           <div className="w-full lg:w-1/2">
@@ -24,13 +25,7 @@ const WhatDevOps = () => {
             </p>
 
             {/* Call to Action Button */}
-            <button
-              className="text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3"
-              style={{backgroundColor: "#F26064"}}
-            >
-              <span>Get Actual Cost of Development</span>
-              <FaRocket className="w-5 h-5" />
-            </button>
+            <Button text="Get Actual Cost of Development" />
           </div>
 
           {/* Right Side - Conceptual Image */}

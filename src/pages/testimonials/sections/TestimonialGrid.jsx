@@ -91,9 +91,9 @@ const TestimonialGrid = () => {
 
   return (
     <div className="bg-gray-50 py-20">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className=" px-4">
         {/* Header Section */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-72">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
             Hear From Those Who've Trusted Us to Bring Their Vision to Life.
           </h2>

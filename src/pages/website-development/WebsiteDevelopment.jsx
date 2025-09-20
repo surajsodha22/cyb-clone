@@ -30,10 +30,10 @@ const WebsiteDevelopment = ({container}) => {
             "follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
           }
         />
-        <div className="mt-16">
+        <div className="mt-72">
           <CTA image={ctaBanner3} />
         </div>
-        <div className="mt-16">
+        <div className="mt-72">
           <SectionHeading
             title={"Our Industry Specific Mobile App Development Services"}
             subtitle={

@@ -4,12 +4,24 @@ import {
   payvendor,
   findeer,
   webhub,
-  Frame,
+  Frame6,
+  Frame7,
+  Frame8,
+  Frame9,
   Frame1,
   Frame2,
   Frame3,
   Frame4,
   Frame5,
+  FrameHover,
+  FrameHover1,
+  FrameHover2,
+  FrameHover3,
+  FrameHover4,
+  FrameHover5,
+  FrameHover6,
+  FrameHover7,
+  FrameHover8,
   app1,
   app2,
   app3,
@@ -180,6 +192,10 @@ import {
   techIcon14,
   techIcon15,
   techIcon16,
+  cybdeerIcon1,
+  cybdeerIcon2,
+  cybdeerIcon3,
+  cybdeerIcon4,
 } from "./assetes";
 
 export const navMenu = [
@@ -233,47 +249,72 @@ export const trustArr = [paydeer, payvendor, findeer, webhub];
 
 export const services = [
   {
-    img: Frame,
-    title: "Mobile App Development",
-    desc: "With our custom you get a responsive, future-proof, and cyber-secure app that gives you an advantage over your competitors. No matter how complex your idea is, our development services will scale it for you.",
-  },
-  {
     img: Frame1,
-    title: "Software Development",
-    desc: "We build custom software tailored to your industry boosting efficiency while we handle the tech, so you can focus on growth.",
+    hoverImg: FrameHover,
+    title: "Mobile app creation",
+    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
   },
   {
     img: Frame2,
-    title: "AI Development Services",
-    desc: "At Cybdeer, we turn digital disruption into growth with data-driven marketing, seamless customer journeys, and strategies that deliver real, scalable results.",
+    hoverImg: FrameHover1,
+    title: "Software creation",
+    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
   },
   {
     img: Frame3,
-    title: "Digital Transformation",
-    desc: "Transform your legacy or old software into new, technologically leading software. We help you adapt, and scale your software with ease.",
+    hoverImg: FrameHover2,
+    title: "AI creation",
+    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
   },
   {
     img: Frame4,
-    title: "DevOps Services",
-    desc: "Our DevOps services combine development and operations to enhance the software development lifecycle through automation, collaboration, and continuous improvement.",
+    hoverImg: FrameHover3,
+    title: "Website Development",
+    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
   },
   {
     img: Frame5,
-    title: "Hire Dedicated Developers",
-    desc: "At Cybdeer, we turn digital disruption into growth with data-driven marketing, seamless customer journeys, and strategies that deliver real, scalable results.",
+    hoverImg: FrameHover4,
+    title: "DevOps",
+    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
+  },
+  {
+    img: Frame6,
+    hoverImg: FrameHover5,
+    title: "UX UI Design ",
+    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
+  },
+  {
+    img: Frame7,
+    hoverImg: FrameHover6,
+    title: "Business modernization",
+    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
+  },
+  {
+    img: Frame8,
+    hoverImg: FrameHover7,
+    title: "Salesforce",
+    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
+  },
+  {
+    img: Frame9,
+    hoverImg: FrameHover8,
+    title: "ON Demand ",
+    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
   },
 ];
 
 export const cybdeerProjects = [
   {
-    title: "Years of Experience",
+    title: "Experience matters for your projects",
     num: "10+",
+    icon: cybdeerIcon1,
   },
-  {title: "Countries Served", num: "40+"},
-  {title: "Projects Completed", num: "1000+"},
-  {title: "Client Ratention Rate", num: "98%"},
-  {title: "Clinets Worldwide", num: "500+"},
-  {title: "Team", num: "100+"},
+  {title: "countries trusted customer", num: "40+", icon: cybdeerIcon1},
+  {title: "projects done by us", num: "1000+", icon: cybdeerIcon2},
+  {title: "client retention", num: "98%", icon: cybdeerIcon3},
+  {title: "global clients", num: "500+", icon: cybdeerIcon4},
+  {title: "Team", num: "100+", icon: cybdeerIcon4},
 ];
 
 export const apps = [app1, app2, app3, app4];
@@ -289,26 +330,56 @@ export const features = [
 
 export const features2 = [
   {title: "Swift", img: d1},
-  {title: "React Native", img: d2},
-  {title: "xcode", img: d3},
-  {title: "kotlin", img: d4},
-  {title: "Ionic", img: d5},
-  {title: "Xamarin", img: d6},
+  {title: "Xcode", img: d2},
+  {title: "Kotlin", img: d3},
+  {title: "Ionic", img: d4},
+  {title: "Xamarin", img: d5},
+  {title: "React Native", img: d6},
 ];
 
 export const slider = [
-  {img: avatar1, name: "Name 1", role: "CEO, Cybdeer"},
-  {img: avatar2, name: "Name 2", role: "CTO, Cybdeer"},
-  {img: avatar3, name: "Name 3", role: "CFO, Cybdeer"},
-  {img: avatar2, name: "Name 4", role: "CTO, Cybdeer"},
-  {img: avatar1, name: "Name 5", role: "CEO, Cybdeer"},
+  {
+    img: avatar1,
+    name: "Minal",
+    role: "Product Manager",
+    rating: 4.5,
+    desc: "You are one of the best IT solution providers in India, offering excellent services that are a result of your forward-thinking ideas and innovation. This gives us the power to survive in a competitive AI environment, as your higher level of innovation allows you to solve our problems efficiently and on time.",
+  },
+  {
+    img: avatar2,
+    name: "Rahul Sharma",
+    role: "Product Manager",
+    rating: 4.5,
+    desc: "We highly recommend Cybdeer as the best company in Jaipur for modern app development. Their expert team delivered the best mobile app development services, exceeding our expectations. With cutting-edge technology and a focus on user experience, they provide top-quality software solutions that truly drive business growth.",
+  },
+  {
+    img: avatar3,
+    name: "Maxin Will",
+    role: "Product Manager",
+    rating: 4.5,
+    desc: "I have been eagerly waiting for this moment to express my satisfaction with their services. As one of the top software companies in Jaipur, they have helped us achieve more website traffic through their digital transformation services. This has significantly boosted our brand awareness. A huge thank you to the team at Cybdeer.  ",
+  },
+  {
+    img: avatar2,
+    name: "Shivam Sharma",
+    role: "Product Manager",
+    rating: 4.5,
+    desc: "I have been eagerly waiting for this moment to express my satisfaction with their services. As one of the top software companies in Jaipur, they have helped us achieve more website traffic through their digital transformation services. This has significantly boosted our brand awareness. A huge thank you to the team at Cybdeer.  ",
+  },
+  {
+    img: avatar1,
+    name: "Sneha Patel",
+    role: "CEO, Cybdeer",
+    rating: 4.5,
+    desc: "We highly recommend Cybdeer as the best company in Jaipur for modern app development. Their expert team delivered the best mobile app development services, exceeding our expectations. With cutting-edge technology and a focus on user experience, they provide top- quality software solutions that truly drive business growth.",
+  },
 ];
 
 export const blogs = [
   {
     image: image1,
     category: "Design",
-    title: "How AI is Changing the World",
+    title: "UX review presentations",
     description:
       "How do you create compelling presentations that wow your colleagues and impress your managers wow your colleagues and your managers?  ",
     author: {
@@ -320,7 +391,7 @@ export const blogs = [
   {
     image: image2,
     category: "Product",
-    title: "Exploring the Himalayas",
+    title: "Migrating to Linear 101",
     description:
       "How do you create compelling presentations that wow your colleagues and impress your managers wow your colleagues and your managers?  ",
     author: {
@@ -333,7 +404,7 @@ export const blogs = [
   {
     image: image3,
     category: "Software Engineering",
-    title: "How AI is Changing the World",
+    title: "Building your API Stack",
     description:
       "How do you create compelling presentations that wow your colleagues and impress your managers wow your colleagues and your managers?",
     author: {
@@ -571,11 +642,31 @@ export const salesServices = [
 ];
 
 export const SalesIndustary = [
-  {title: "Requirement Analysis", icon: salesForIcon1},
-  {title: "Model Selection", icon: salesForIcon2},
-  {title: "Data Integration", icon: salesForIcon3},
-  {title: "Testing and Evaluation", icon: salesForIcon4},
-  {title: "Support and Maintenance", icon: salesForIcon5},
+  {
+    title: "Requirement Analysis",
+    icon: salesForIcon1,
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incipor incididunt.  tempor incipor incididun",
+  },
+  {
+    title: "Model Selection",
+    icon: salesForIcon2,
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incipor incididunt.  tempor incipor incididun",
+  },
+  {
+    title: "Data Integration",
+    icon: salesForIcon3,
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incipor incididunt.  tempor incipor incididun",
+  },
+  {
+    title: "Testing and Evaluation",
+    icon: salesForIcon4,
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incipor incididunt.  tempor incipor incididun",
+  },
+  {
+    title: "Support and Maintenance",
+    icon: salesForIcon5,
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incipor incididunt.  tempor incipor incididun",
+  },
 ];
 
 export const web3services = [
@@ -912,27 +1003,27 @@ export const UiUxProcessSteps = [
   {
     title: "Empathize",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   {
     title: "Define",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   {
     title: "Ideate",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   {
     title: "Design",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   {
     title: "Test",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
 ];
 

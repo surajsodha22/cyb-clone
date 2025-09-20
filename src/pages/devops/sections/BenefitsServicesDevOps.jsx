@@ -3,8 +3,8 @@ import {devLeft, devRight} from "../../../data/assetes";
 
 const BenefitsServicesDevOps = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-72 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="">
         {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">

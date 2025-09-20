@@ -1,27 +1,29 @@
 import React from "react";
-import {women} from "../../data/assetes";
+import {cta_bg, women, whiteLine} from "../../data/assetes";
 import Button from "./Button";
 
 const PartnershipCTA = () => {
   return (
-    <div className="mt-6">
-      <div className="flex justify-between sm:items-center items-start bg-gradient-to-r from-secondary to-yellow-100 sm:p-10 p-5 rounded-2xl gap-4 flex-col sm:flex-row relative ">
+    <div className="h-[200px] sm:h-[253px] flex justify-between sm:items-center items-start bg-gradient-to-r from-[#FDC366] to-[#FFECCE] p-4 sm:p-10 rounded-2xl gap-3 sm:gap-4 flex-col sm:flex-row relative">
+      <img
+        src={whiteLine}
+        alt=""
+        className="w-[100px] sm:w-[148px] absolute top-6 sm:top-10 left-0 z-0"
+      />
+      <div className="relative z-10 ml-[5%] sm:ml-[10%]">
+        <div className="text-sm sm:text-lg md:text-2xl max-w-40 sm:max-w-48 md:max-w-lg font-semibold pb-3 sm:pb-4">
+          Tech Powered Success Awaites. Empower Your Digital Journey.
+        </div>
         <div>
-          <div className="sm:text-2xl text-sm max-w-48 font-semibold pb-4 sm:max-w-lg">
-            Tech Powered Success Awaites. Empower Your Digital Journey.
-          </div>
-          <div>
-            <Button
-              text={"Schedule a Call"}
-              onClick={() => alert("Schedule a Call")}
-              variant={"bg-gray-200 text-[black] hover:bg-gray-300"}
-              className={""}
-            />
-          </div>
+          <Button
+            text={"Schedule a Call"}
+            onClick={() => alert("Schedule a Call")}
+            variant={"bg-white text-[black]"}
+          />
         </div>
-        <div className="absolute sm:right-10 -right-5 bottom-0 -top-22 sm:w-72 w-36">
-          <img src={women} alt="" />
-        </div>
+      </div>
+      <div className="absolute sm:right-10 -right-5 bottom-0 -top-22 w-[250px] sm:w-[330px]">
+        <img src={women} alt="" />
       </div>
     </div>
   );

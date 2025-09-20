@@ -22,7 +22,7 @@ const SoftwareDevelopment = ({container}) => {
         </div>
         <SoftwareProcess />
         <AdvanceTech />
-        <div className="mt-16">
+        <div className="mt-72">
           <CTA image={ctaBanner2} />
           {/* <ReversePartnershipCTA /> */}
         </div>
