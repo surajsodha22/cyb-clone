@@ -1,7 +1,7 @@
-import logo from "../assetes/logo_of Cybdeer.png";
-import image from "../assetes/image.png";
+import logo from "../assetes/logo.svg";
+import image from "../assetes/image.svg";
 import paydeer from "../assetes/paydeer.png";
-import payvendor from "../assetes/payvendor.png";
+import payvendor from "../assetes/payvendor.svg";
 import webhub from "../assetes/webhub.png";
 import findeer from "../assetes/findeer.png";
 import Frame1 from "../assetes/Frame1.png";
@@ -24,7 +24,7 @@ import FrameHover7 from "../assetes/FrameHover7.png";
 import FrameHover8 from "../assetes/FrameHover8.png";
 
 import digital_excellence_bg from "../assetes/digital_excellence_bg1.png";
-import meet from "../assetes/meet.png";
+import meet from "../assetes/meet.svg";
 
 import app1 from "../assetes/app1.svg";
 import app2 from "../assetes/app2.svg";
@@ -137,11 +137,11 @@ import uiUxSer2 from "../assetes/ui_ux_ser2.png";
 import iconMail from "../assetes/icon_mail.png";
 import iconPhone from "../assetes/icon_phone.png";
 
-import iconFacebook from "../assetes/icon_facebook.png";
-import iconGoogle from "../assetes/icon_google.png";
-import iconLinkedin from "../assetes/icon_linkedin.png";
-import iconPinterest from "../assetes/icon_pint.png";
-import iconInsta from "../assetes/icons_instagram.png";
+import iconFacebook from "../assetes/icon_facebook.svg";
+import iconGoogle from "../assetes/icon_google.svg";
+import iconLinkedin from "../assetes/icon_linkedin.svg";
+import iconPinterest from "../assetes/icon_pint.svg";
+import iconInsta from "../assetes/icons_instagram.svg";
 
 import ManImg from "../assetes/manImg.png";
 
@@ -154,11 +154,11 @@ import tech5 from "../assetes/tech_proto.png";
 import UIUXProcess from "../assetes/UIUX_process.png";
 
 import fintechImg from "../assetes/fintech_img.png";
-import location1 from "../assetes/location1.png";
-import location2 from "../assetes/location2.png";
-import location3 from "../assetes/location3.png";
+import location1 from "../assetes/location1.svg";
+import location2 from "../assetes/location2.svg";
+import location3 from "../assetes/location3.svg";
 
-import homeMan from "../assetes/home_man.png";
+import homeMan from "../assetes/home_man.svg";
 import homeMan2 from "../assetes/homeMen2.png";
 
 import lableIcon from "../assetes/lable.png";
@@ -311,10 +311,58 @@ import cybdeerIcon2 from "../assetes/icons/project.png";
 import cybdeerIcon3 from "../assetes/icons/profile.png";
 import cybdeerIcon4 from "../assetes/icons/team.png";
 import cta_bg from "../assetes/cta_bg.png";
+import inputPerson from "../assetes/input/inputPerson.svg";
+import inputEmail from "../assetes/input/inputEmail.svg";
+import inputPhone from "../assetes/input/inputPhone.svg";
 
 import rightUpArrow from "../assetes/rightUpArrow.png";
 
+import location_Icon from "../assetes/location_Icon.svg";
+
+import cardImg1 from "../assetes/ourBusiness/cardImg1.svg";
+import cardImg2 from "../assetes/ourBusiness/cardImg2.svg";
+import cardImg3 from "../assetes/ourBusiness/cardImg3.svg";
+import cardImg4 from "../assetes/ourBusiness/cardImg4.svg";
+
+import ourBusinessimg1 from "../assetes/ourBusiness/ourBusinessimg1.svg";
+import ourBusinessimg2 from "../assetes/ourBusiness/ourBusinessimg2.svg";
+import ourBusinessimg3 from "../assetes/ourBusiness/ourBusinessimg3.svg";
+import ourBusinessimg4 from "../assetes/ourBusiness/ourBusinessimg4.svg";
+
+import bgSection4 from "../assetes/bgSection4.svg";
+
+import Mobilty from "../assetes/innovation_it/Mobilty.svg";
+import Frontend from "../assetes/innovation_it/Frontend.svg";
+import Backend from "../assetes/innovation_it/Backend.svg";
+import AI from "../assetes/innovation_it/AI.svg";
+import ML from "../assetes/innovation_it/ML.svg";
+import CMS from "../assetes/innovation_it/CMS.svg";
+import Data_Analytics from "../assetes/innovation_it/Data_Analytics.svg";
+
+import BG_section8 from "../assetes/BG_section8.jpg";
+
 export {
+  Mobilty,
+  Frontend,
+  Backend,
+  AI,
+  ML,
+  CMS,
+  Data_Analytics,
+  bgSection4,
+  BG_section8,
+  cardImg1,
+  cardImg2,
+  cardImg3,
+  cardImg4,
+  ourBusinessimg1,
+  ourBusinessimg2,
+  ourBusinessimg3,
+  ourBusinessimg4,
+  location_Icon,
+  inputPerson,
+  inputEmail,
+  inputPhone,
   rightUpArrow,
   whiteLine,
   cta_bg,

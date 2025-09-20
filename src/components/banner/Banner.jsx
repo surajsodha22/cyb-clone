@@ -27,7 +27,6 @@ const Banner = ({container, location}) => {
           <HomeHero
             button={{
               text: "Ready to go to!!",
-              icon: FaRocket,
               onClick: () => alert("Experts"),
             }}
             image={image}

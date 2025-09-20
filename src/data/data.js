@@ -196,11 +196,36 @@ import {
   cybdeerIcon2,
   cybdeerIcon3,
   cybdeerIcon4,
+  location3,
+  ourBusinessimg1,
+  ourBusinessimg2,
+  ourBusinessimg3,
+  ourBusinessimg4,
+  cardImg1,
+  cardImg2,
+  cardImg3,
+  cardImg4,
+  Mobilty,
+  Frontend,
+  Backend,
+  AI,
+  ML,
+  CMS,
 } from "./assetes";
 
 export const navMenu = [
   {
     id: 1,
+    name: "Our Company",
+    submenu: [
+      {name: "About Us", link: "/about"},
+      {name: "Testimonials", link: "/testimonials"},
+      {name: "Contact Us", link: "/contact-us"},
+      {name: "Career", link: "/careers"},
+    ],
+  },
+  {
+    id: 2,
     name: "Services",
     submenu: [
       {name: "Software Development", link: "/software-development"},
@@ -215,7 +240,7 @@ export const navMenu = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "Industries",
     submenu: [
       {name: "Fintech", link: "/fintech"},
@@ -226,21 +251,11 @@ export const navMenu = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: "Platform",
     submenu: [
       {name: "DevOps", link: "/devops"},
       {name: "Salesforce", link: "/salesforce"},
-    ],
-  },
-  {
-    id: 4,
-    name: "Our Company",
-    submenu: [
-      {name: "About Us", link: "/about"},
-      {name: "Testimonials", link: "/testimonials"},
-      {name: "Contact Us", link: "/contact-us"},
-      {name: "Career", link: "/careers"},
     ],
   },
 ];
@@ -320,12 +335,12 @@ export const cybdeerProjects = [
 export const apps = [app1, app2, app3, app4];
 
 export const features = [
-  {title: "Mobility"},
-  {title: "Froented"},
-  {title: "Backend"},
-  {title: "AI"},
-  {title: "ML"},
-  {title: "CMS"},
+  {title: "Mobility", img: Mobilty},
+  {title: "Froented", img: Frontend},
+  {title: "Backend", img: Backend},
+  {title: "AI", img: AI},
+  {title: "ML", img: ML},
+  {title: "CMS", img: CMS},
 ];
 
 export const features2 = [
@@ -446,7 +461,7 @@ export const locations = [
       "Meydan Grandstand, 6th floor, Meydan Road, Nad AI Sheba, Dubai, U.A.E",
   },
   {
-    img: location1,
+    img: location3,
     address: "#254 Vision Exchange 2 Venture Drive, Singapore 608526",
   },
 ];
@@ -1488,5 +1503,36 @@ export const sliderDataMobApp = [
     title: "Education",
     img: fintechImg,
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+  },
+];
+
+export const ourBusiness = [
+  {
+    id: 1,
+    image: ourBusinessimg1,
+    cardIcon: cardImg1,
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 2,
+    image: ourBusinessimg2,
+    cardIcon: cardImg2,
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 3,
+    image: ourBusinessimg3,
+    cardIcon: cardImg3,
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 4,
+    image: ourBusinessimg4,
+    cardIcon: cardImg4,
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
 ];

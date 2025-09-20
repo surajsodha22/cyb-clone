@@ -11,11 +11,11 @@ const Input = ({
 }) => {
   return (
     <div
-      className={`flex gap-2 border border-gray-300 max-w-96 mx-auto items-center rounded-lg px-3 py-2 bg-white ${className} `}
+      className={`flex gap-2 border border-[#AC9797] max-w-96 mx-auto items-center rounded-lg px-3 py-2 bg-white ${className} `}
     >
       {Icon && (
-        <span className="text-gray-600">
-          <Icon />
+        <span className="text-gray-600 w-[14px] h-[14px]">
+          <img src={Icon} alt="icon" className="w-full h-full" />
         </span>
       )}
       <input
@@ -23,7 +23,7 @@ const Input = ({
         value={value}
         placeholder={placeholder}
         onChange={onChange}
-        className="outline-none border-none bg-transparent w-full text-sm"
+        className="outline-none border-none bg-transparent w-full text-[14px]"
       />
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import {lableIcon, meet} from "../../data/assetes";
+import {lableIcon, meet, bgSection4} from "../../data/assetes";
 import {cybdeerProjects} from "../../data/data";
 import SectionHeading from "../reusable/SectionHeading";
 
@@ -7,12 +7,15 @@ const Section4 = ({container}) => {
   return (
     <>
       <section
-        className={`flex ${container} flex-col md:flex-row items-center justify-between`}
+        className={`flex ${container} flex-col md:flex-row items-center justify-between bg-cover bg-center bg-no-repeat`}
+        style={{
+          backgroundImage: `url(${bgSection4})`,
+        }}
       >
         <div className="w-full">
           <div className="flex flex-col lg:flex-row justify-between gap-4 sm:gap-6 md:gap-8 lg:gap-5 flex-wrap items-center lg:items-end">
-            <div className="max-w-xl mb-4 sm:mb-6 lg:mb-0">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-black">
+            <div className="max-w-lg mb-4 sm:mb-6 lg:mb-0">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-black line-height-[52px] letter-spacing-[0%]">
                 Why Cybdeer only for your digital world?
               </h2>
             </div>
@@ -21,7 +24,7 @@ const Section4 = ({container}) => {
                 {cybdeerProjects.map((project, index) => (
                   <div
                     key={index}
-                    className="relative w-[160px] sm:w-[180px] md:w-[194px] h-24 sm:h-28 md:h-[108px] rounded-xl shadow-sm p-[1px]"
+                    className="relative w-[160px] sm:w-[180px] md:w-[196px] rounded-xl shadow-sm p-[1px]"
                     style={{
                       background:
                         "linear-gradient(180deg, #EEF1F2 0%, #F26064 100%)",
@@ -44,7 +47,7 @@ const Section4 = ({container}) => {
                           alt=""
                           className="w-3 sm:w-4 h-3 sm:h-4"
                         />
-                        <div className="text-[10px] sm:text-xs md:text-[14px] font-medium text-gray-500">
+                        <div className="text-[10px] sm:text-xs md:text-[14px]  text-gray-500">
                           {project.title}
                         </div>
                       </div>
@@ -52,7 +55,7 @@ const Section4 = ({container}) => {
                   </div>
                 ))}
               </div>
-              <div className="w-full lg:w-auto flex justify-center lg:justify-end">
+              <div className="w-full lg:w-auto flex justify-center lg:justify-end ">
                 <img
                   src={meet}
                   alt=""

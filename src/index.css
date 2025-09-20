@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
 .swiper-pagination-fraction,
 .swiper-pagination-custom,
@@ -17,13 +23,19 @@
 .swiper-pagination-custom,
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  margin-top: 20px !important;
 }
 
 /* Pagination bullet styles */
 .swiper-pagination-bullet {
   background-color: #c2c0bc !important;
   opacity: 1 !important;
+  margin-top: 60px !important;
+}
+
+@media (max-width: 768px) {
+  .swiper-pagination-bullet {
+    margin-top: 75px !important;
+  }
 }
 
 .swiper-pagination-bullet-active {

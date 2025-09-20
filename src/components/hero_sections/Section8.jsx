@@ -10,25 +10,29 @@ import SectionHeading from "../reusable/SectionHeading";
 const Section8 = ({container}) => {
   return (
     <div className={`${container}`}>
-      <div className="py-72">
+      <div className="py-16 sm:py-24 lg:py-72 rounded-[20px]">
         <SectionHeading title="Our clients views on our services" />
 
         <Swiper
           slidesPerView={1}
           spaceBetween={20}
+          centeredSlides={true}
           pagination={{clickable: true}}
           breakpoints={{
             640: {
               slidesPerView: 1,
               spaceBetween: 20,
+              centeredSlides: true,
             },
             768: {
               slidesPerView: 2,
               spaceBetween: 30,
+              centeredSlides: false,
             },
             1024: {
               slidesPerView: 3,
               spaceBetween: 40,
+              centeredSlides: false,
             },
           }}
           modules={[Pagination]}
@@ -36,7 +40,7 @@ const Section8 = ({container}) => {
         >
           {slider.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-secondary shadow-lg  rounded-[20px] w-[385px] h-[490px] ">
+              <div className="bg-secondary shadow-[0px_2px_12px_0px_#1F2D3D40] m-2  rounded-[20px] sm:w-[385px] h-[490px] ">
                 <div className="bg-white p-6 rounded-br-[50px] rounded-t-[20px]">
                   <h3 className="text-lg font-semibold mb-2 flex items-center gap-4">
                     <div className="flex items-center gap-2 text-[18px]">
@@ -52,7 +56,7 @@ const Section8 = ({container}) => {
                     </div>
                   </h3>
                   <p
-                    className="font-dm-sans font-[400] text-[18px] leading-[24px] tracking-[0%] mt-4"
+                    className="font-dm-sans font-[400] text-[18px] leading-[24px] tracking-[0%] mt-4 h-[250px] overflow-hidden text-black"
                     style={{
                       letterSpacing: "0%",
                       verticalAlign: "middle",
@@ -62,7 +66,7 @@ const Section8 = ({container}) => {
                     &quot;
                   </p>
                 </div>
-                <div className="bg-white rounded-b-[20px]">
+                <div className="bg-white rounded-b-[20px] shadow-[0_4px_6px_0px_#1F2D3D40]">
                   <div className="flex bg-secondary items-center gap-4 py-16 px-6 rounded-tl-[50px] justify-center  rounded-b-[20px]">
                     <img
                       src={slide.img}

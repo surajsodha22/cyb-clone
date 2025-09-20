@@ -11,6 +11,7 @@ module.exports = {
         sans: ["Helvetica", "Arial", "sans-serif"],
         serif: ["Georgia", "serif"],
         mono: ["Courier New", "monospace"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       boxShadow: {
         custom: "0px 4px 4px 0px #00000040",

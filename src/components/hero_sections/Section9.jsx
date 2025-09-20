@@ -5,7 +5,7 @@ import SectionHeading from "../reusable/SectionHeading";
 
 const Section9 = () => {
   return (
-    <div>
+    <div className="max-w-6xl mx-auto">
       <SectionHeading title="Our Latest Blog" />
 
       <div>
@@ -13,7 +13,7 @@ const Section9 = () => {
           {blogs.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col gap-3 sm:gap-4 py-4 sm:py-6 px-4 sm:px-6 rounded-[30px] border h-[500px] sm:h-[550px] md:h-[580px] w-full max-w-[360px] mx-auto sm:mx-0 shadow-[0_4px_6px_-2px_#10182808,0_12px_16px_-4px_#10182814]"
+              className="flex flex-col gap-3 sm:gap-4 p-6 rounded-[30px] border h-[380px] sm:h-[430px] md:h-[510px] w-full max-w-[368px] mx-auto sm:mx-0 shadow-[0_4px_6px_-2px_#10182808,0_12px_16px_-4px_#10182814]"
             >
               <div className="w-full h-[200px] sm:h-[240px] md:h-[280px] overflow-hidden">
                 <img
@@ -38,11 +38,13 @@ const Section9 = () => {
                       />
                     </div>
                     <div className="text-gray-500 text-sm sm:text-base md:text-[16px] mt-1">
-                      {item.description}
+                      {item.description.length > 140
+                        ? item.description.slice(0, 140) + "..."
+                        : item.description}
                     </div>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 sm:gap-4 pb-2">
+                <div className="flex items-center gap-3 sm:gap-4 ">
                   <div>
                     <img
                       src={item.author.avtar}

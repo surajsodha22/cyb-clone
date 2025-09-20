@@ -1,18 +1,18 @@
 import React from "react";
 import {locations} from "../../data/data";
-import {MdLocationOn} from "react-icons/md";
+import {location_Icon} from "../../data/assetes";
 
 const Section13 = ({container}) => {
   return (
     <>
-      <div className={`${container} mt-10`}>
-        <div className="flex flex-wrap justify-between gap-8">
+      <div className={`${container} `}>
+        <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-between gap-6 sm:gap-8">
           {locations?.map((data, index) => (
             <div
               key={index}
-              className="bg-white w-96 shadow-sm rounded-2xl text-center px-6 py-8 border border-gray-200"
+              className="bg-white w-full max-w-sm sm:w-80 lg:w-96 shadow-sm rounded-2xl text-center px-4 sm:px-6 py-6 sm:py-8 border border-gray-200 mx-auto sm:mx-0"
             >
-              <div className="mb-6 h-32 w-32 mx-auto flex items-center justify-center">
+              <div className="mb-4 sm:mb-6 mx-auto flex items-center justify-center h-20 sm:h-24">
                 <img
                   className="w-full h-full object-contain"
                   src={data?.img}
@@ -21,8 +21,8 @@ const Section13 = ({container}) => {
               </div>
 
               <div className="flex items-start justify-center gap-2 text-sm text-gray-700">
-                <MdLocationOn className="text-orange-500 text-lg flex-shrink-0 mt-1" />
-                <p className="max-w-xs text-center text-lg leading-relaxed">
+                <img src={location_Icon} alt="location" />
+                <p className="max-w-xs text-center text-sm sm:text-base lg:text-lg leading-relaxed">
                   {data?.address}
                 </p>
               </div>

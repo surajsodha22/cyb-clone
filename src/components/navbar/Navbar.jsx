@@ -8,7 +8,7 @@ import {useState} from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [activeMenu, setActiveMenu] = useState(null); // track open submenu in mobile
+  const [activeMenu, setActiveMenu] = useState(null);
 
   const toggleSubMenu = (index) => {
     setActiveMenu(activeMenu === index ? null : index);
@@ -19,7 +19,6 @@ const Navbar = () => {
       <div className="sm:px-0 px-5">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-
           <div className="flex items-center gap-2">
             <Link to={"/"} className="cursor-pointer">
               <img src={logo} alt="logo" />
@@ -27,8 +26,8 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex space-x-6 text-gray-800 ">
-            <ul className="flex items-center gap-6">
+          <div className="hidden lg:flex space-x-6  text-[18px]">
+            <ul className="flex items-center gap-6 ">
               {navMenu.map((item, index) => (
                 <li key={index} className="relative group">
                   <div className="flex items-center gap-1 cursor-pointer hover:font-semibold">
@@ -41,7 +40,7 @@ const Navbar = () => {
                     <ul className="absolute left-0 mt-2 w-48 z-50 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                       {item.submenu.map((sub, i) => (
                         <Link to={sub?.link} key={i}>
-                          <li className="px-4 py-2 hover:bg-orange-100 cursor-pointer">
+                          <li className="px-4 py-2 hover:bg-[#FEBB4DE0] cursor-pointer">
                             {sub?.name}
                           </li>
                         </Link>

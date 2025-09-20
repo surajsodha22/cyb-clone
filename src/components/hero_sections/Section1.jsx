@@ -1,33 +1,71 @@
 import {homeMan, payvendor} from "../../data/assetes";
 import SectionHeading from "../reusable/SectionHeading";
+import {ourBusiness} from "../../data/data";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Navigation, Autoplay} from "swiper/modules";
 
 const Section1 = ({container}) => {
   return (
     <section className={` ${container}  `}>
       <SectionHeading title="Our Business" align="center" />
 
-      <div className="flex flex-col lg:flex-row items-center justify-between bg-primary px-4 sm:px-8 lg:px-14 py-16 sm:py-24 lg:py-72 shadow-md rounded-xl gap-6 sm:gap-8 lg:gap-10">
-        <div className="w-full lg:w-auto">
-          <div className="w-full max-w-[390px] mx-auto lg:mx-0 bg-white shadow-[0px_4px_16px_0px_#2A2A2A1A] rounded-xl">
-            <img src={homeMan} className="w-full" alt="" />
-          </div>
-        </div>
-        <div className="w-full lg:w-auto">
-          <div className="text-center lg:text-left">
-            <div className="w-[100px] sm:w-[131px] mx-auto lg:mx-0">
-              <img src={payvendor} alt="" className="w-full" />
-            </div>
-            <div className="mt-4 sm:mt-5 text-base sm:text-lg lg:text-xl font-sans text-gray-700 leading-relaxed">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-              vero perferendis ducimus recusandae unde porro molestiae alias,
-              repellendus earum eius illo facilis deserunt accusamus officia non
-              culpa quis ipsa nobis! Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Sed, vel? Sed commodi nemo omnis in eligendi
-              consequatur dolorum, voluptate pariatur, mollitia vitae assumenda
-              nobis. Unde sequi amet repellendus dicta quod.
-            </div>
-          </div>
-        </div>
+      <div className="bg-primary px-4 sm:px-8 lg:px-14 py-8 sm:py-12 lg:py-72 shadow-md rounded-xl">
+        <Swiper
+          modules={[Navigation, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={1}
+          navigation={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 1,
+              spaceBetween: 40,
+            },
+          }}
+        >
+          {ourBusiness.map((business) => (
+            <SwiperSlide key={business.id}>
+              <div className="flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 lg:gap-20">
+                <div className="w-full lg:w-1/3 order-2 lg:order-1">
+                  <div className="w-full max-w-[300px] sm:max-w-[390px] h-[300px] sm:h-[390px] mx-auto lg:mx-0 bg-white shadow-[0px_4px_16px_0px_#2A2A2A1A] rounded-xl overflow-hidden">
+                    <img
+                      src={business.image}
+                      className="w-full h-full object-cover"
+                      alt={`Business`}
+                    />
+                  </div>
+                </div>
+                <div className="w-full lg:w-2/3 order-1 lg:order-2">
+                  <div className="text-center lg:text-left">
+                    <div className="w-[80px] sm:w-[100px] lg:w-[131px] mx-auto lg:mx-0">
+                      <img
+                        src={business.cardIcon}
+                        alt={`Icon`}
+                        className="w-full"
+                      />
+                    </div>
+                    <div className="mt-4 sm:mt-5 text-sm sm:text-base lg:text-xl font-sans text-gray-700 leading-relaxed">
+                      {business.description.length > 500
+                        ? business.description.slice(0, 500) + "..."
+                        : business.description}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

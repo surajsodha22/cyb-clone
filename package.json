@@ -1,5 +1,6 @@
 {
-  "name": "my-app",
+  "short_name": "Cybdeer",
+  "name": "Cybdeer : Technology That Drives Growth",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
