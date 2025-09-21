@@ -4,7 +4,7 @@ import Button from "../../reusable/Button";
 const HomeHero = ({container = "container mx-auto px-6", button, image}) => {
   return (
     <section
-      className={`flex ${container} flex-col lg:flex-row items-center justify-between pt-5 min-h-[70vh] lg:min-h-[80vh]`}
+      className={`flex ${container} flex-col lg:flex-row items-center justify-between py-16 sm:py-20 md:py-24 lg:py-32`}
     >
       {/* Left Content */}
       <div className="w-full lg:w-[60%] space-y-3 sm:space-y-4 text-center lg:text-left">

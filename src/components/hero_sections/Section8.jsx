@@ -30,17 +30,22 @@ const Section8 = ({container}) => {
               centeredSlides: false,
             },
             1024: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+              centeredSlides: false,
+            },
+            1150: {
               slidesPerView: 3,
               spaceBetween: 40,
               centeredSlides: false,
             },
           }}
           modules={[Pagination]}
-          className="mySwiper"
+          className="mySwiper flex justify-center"
         >
           {slider.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-secondary shadow-[0px_2px_12px_0px_#1F2D3D40] m-2  rounded-[20px] sm:w-[385px] h-[490px] ">
+              <div className="bg-secondary shadow-[0px_2px_12px_0px_#1F2D3D40] m-2 rounded-[20px]  h-[490px] ">
                 <div className="bg-white p-6 rounded-br-[50px] rounded-t-[20px]">
                   <h3 className="text-lg font-semibold mb-2 flex items-center gap-4">
                     <div className="flex items-center gap-2 text-[18px]">
