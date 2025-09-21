@@ -7,12 +7,12 @@ const HomeHero = ({container = "container mx-auto px-6", button, image}) => {
       className={`flex ${container} flex-col lg:flex-row items-center justify-between pt-5 min-h-[70vh] lg:min-h-[80vh]`}
     >
       {/* Left Content */}
-      <div className="w-full lg:w-1/2 space-y-3 sm:space-y-4 text-center lg:text-left">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
-          A <span className="font-bold">collection</span> of{" "}
-          <span className="text-[#F26064] font-bold">Innovation,</span>{" "}
-          <span className="font-bold text-[#FFAD32]">Future Version</span> and
-          your growth. Version and your growth.
+      <div className="w-full lg:w-[60%] space-y-3 sm:space-y-4 text-center lg:text-left">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] lg:leading-[52px]">
+          A <span className="font-bold">collection</span> of
+          <span className="text-[#F26064] font-bold"> Innovation,</span>
+          <span className="font-bold text-[#FFAD32]"> Future Version</span> and
+          your growth.
         </h1>
 
         <p className="text-gray-600 text-base sm:text-lg lg:text-xl">
@@ -38,7 +38,7 @@ const HomeHero = ({container = "container mx-auto px-6", button, image}) => {
       </div>
 
       {/* Right Image - Fixed dimensions to prevent layout shift */}
-      <div className="w-full lg:w-1/2 mt-6 sm:mt-8 lg:mt-0 flex justify-center">
+      <div className="lg:w-1/3  mt-6 sm:mt-8 lg:mt-0 flex justify-center">
         <div className="rounded-[20px] sm:rounded-[30px] overflow-hidden w-full max-w-sm sm:max-w-md">
           <img
             src={image}

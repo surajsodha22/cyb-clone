@@ -338,9 +338,9 @@ export const features = [
   {title: "Mobility", img: Mobilty},
   {title: "Froented", img: Frontend},
   {title: "Backend", img: Backend},
-  {title: "AI", img: AI},
-  {title: "ML", img: ML},
-  {title: "CMS", img: CMS},
+  {title: "Artificial Intelligence", img: AI},
+  {title: "Machine Learning", img: ML},
+  {title: "CMS & E-Commerce", img: CMS},
 ];
 
 export const features2 = [
@@ -399,8 +399,8 @@ export const blogs = [
       "How do you create compelling presentations that wow your colleagues and impress your managers wow your colleagues and your managers?  ",
     author: {
       avtar: avatar1,
-      name: "John Doe",
-      date: "2025-08-28",
+      name: "Admin",
+      date: "20 Jan 2025",
     },
   },
   {
@@ -410,9 +410,9 @@ export const blogs = [
     description:
       "How do you create compelling presentations that wow your colleagues and impress your managers wow your colleagues and your managers?  ",
     author: {
-      avtar: avatar2,
-      name: "Jane Smith",
-      date: "2025-08-20",
+      avtar: avatar3,
+      name: "Admin",
+      date: "19 Jan 2025",
     },
   },
 
@@ -423,9 +423,9 @@ export const blogs = [
     description:
       "How do you create compelling presentations that wow your colleagues and impress your managers wow your colleagues and your managers?",
     author: {
-      avtar: avatar3,
-      name: "John Doe",
-      date: "2025-08-28",
+      avtar: avatar2,
+      name: "Admin",
+      date: "18 Jan 2025",
     },
   },
 ];

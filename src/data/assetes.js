@@ -1,5 +1,5 @@
 import logo from "../assetes/logo.svg";
-import image from "../assetes/image.svg";
+import image from "../assetes/image.png";
 import paydeer from "../assetes/paydeer.png";
 import payvendor from "../assetes/payvendor.svg";
 import webhub from "../assetes/webhub.png";

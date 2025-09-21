@@ -11,7 +11,22 @@ const PartnershipCTA = () => {
         className="w-[100px] sm:w-[148px] absolute top-6 sm:top-10 left-0 z-0"
       />
       <div className="relative z-10 ml-[2%] mt-4 sm:mt-0 sm:ml-[10%] flex flex-col justify-center">
-        <div className="text-sm sm:text-lg md:text-2xl max-w-40 sm:max-w-48 md:max-w-lg font-semibold pb-3 sm:pb-4">
+        <div
+          className="
+            text-sm 
+            sm:text-lg 
+            md:text-[29px] 
+            w-full 
+            sm:w-2/3 
+            pb-3 
+            sm:pb-4 
+            font-montserrat 
+            font-bold 
+            leading-[25px] 
+            sm:leading-[35px] 
+            tracking-normal
+            "
+        >
           Tech Powered Success Awaites. Empower Your Digital Journey.
         </div>
         <div>

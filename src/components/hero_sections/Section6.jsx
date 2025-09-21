@@ -11,16 +11,15 @@ const Section6 = ({container}) => {
       >
         <div className="max-w-lg">
           <h2
-            className="font-montserrat font-[700] text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+            className="font-montserrat font-[700] text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-8 sm:leading-9 md:leading-[44px] lg:leading-[52px]"
             style={{
-              lineHeight: "52px",
               letterSpacing: "0%",
             }}
           >
             Our Technology Experts are Catalysts for Digital Transformation
           </h2>
 
-          <p className="text-gray-600 max-w-2xl text-xs sm:text-sm md:text-base leading-relaxed mt-5 line-height-[30px] pr-10">
+          <p className="text-gray-600 max-w-2xl text-xs sm:text-sm md:text-base leading-5 sm:leading-6 md:leading-7 lg:leading-[30px] mt-5 pr-10">
             Book a Free call with Our Experts and Start Building the future
             Today.
           </p>
