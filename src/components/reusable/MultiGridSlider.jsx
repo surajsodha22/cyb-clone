@@ -1,6 +1,6 @@
 import React from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Autoplay, Grid, Pagination} from "swiper/modules";
+import {Autoplay} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
@@ -18,12 +18,12 @@ const MultiGridSlider = () => {
         />
         {/* Left Gradient Overlay */}
         <div
-          className="absolute top-24 sm:top-0 left-0 sm:w-[357px] w-[200px] sm:h-full h-[200px] z-10 pointer-events-none 
+          className="absolute top-18 sm:top-0 left-0 sm:w-[357px] w-[200px] sm:h-full h-[200px] z-10 pointer-events-none 
   bg-gradient-to-r from-white to-transparent"
         />
         {/* Right Gradient Overlay */}
         <div
-          className="absolute sm:top-0 top-24 right-0 sm:w-[357px] w-[200px] sm:h-full h-[200px] z-10 pointer-events-none 
+          className="absolute sm:top-0 top-18 right-0 sm:w-[357px] w-[200px] sm:h-full h-[200px] z-10 pointer-events-none 
   bg-gradient-to-l from-white to-transparent"
         />
         <div className="flex flex-col sm:gap-10 gap-6 mt-5 sm:mt-0">

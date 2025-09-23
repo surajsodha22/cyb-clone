@@ -10,6 +10,7 @@ import {useLocation} from "react-router-dom";
 import Banner from "./components/banner/Banner";
 import Section13 from "./components/hero_sections/Section13";
 import Section6 from "./components/hero_sections/Section6";
+import DelayedQuotePopup from "./components/popup/DelayedQuotePopup";
 
 const App = () => {
   let container = "max-w-7xl mx-auto";
@@ -26,7 +27,7 @@ const App = () => {
 
   if (location.pathname === "/") {
     style = {
-      backgroundColor: "#FFFAF4",
+      backgroundColor: "#FFFAF3",
     };
   } else if (
     location.pathname === "/salesforce" ||
@@ -50,6 +51,7 @@ const App = () => {
 
   return (
     <div>
+      <DelayedQuotePopup />
       {/* Header */}
       <div className="" style={style}>
         <div className={container}>
@@ -64,7 +66,7 @@ const App = () => {
       </div>
 
       {/*Footer */}
-      <div className="bg-primary">
+      <div className="bg-primary border-t-4 border-secondary">
         <div className={container}>
           <Section6 />
           <Section13 />

@@ -340,8 +340,13 @@ import CMS from "../assetes/innovation_it/CMS.svg";
 import Data_Analytics from "../assetes/innovation_it/Data_Analytics.svg";
 
 import BG_section8 from "../assetes/BG_section8.jpg";
+import callcenter_popup from "../assetes/callcenter_popup.svg";
+
+import hand from "../assetes/hand.svg";
 
 export {
+  callcenter_popup,
+  hand,
   Mobilty,
   Frontend,
   Backend,

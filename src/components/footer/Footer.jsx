@@ -64,7 +64,7 @@ const Footer = ({container}) => {
                 href={social.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full"
+                className="w-6 h-6 flex items-center justify-center rounded-full"
               >
                 <img src={social.icon} alt="social" className="w-full h-full" />
               </a>

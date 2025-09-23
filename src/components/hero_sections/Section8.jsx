@@ -45,7 +45,7 @@ const Section8 = ({container}) => {
         >
           {slider.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-secondary shadow-[0px_2px_12px_0px_#1F2D3D40] m-2 rounded-[20px]  h-[490px] ">
+              <div className="bg-secondary shadow-[0px_2px_12px_0px_#1F2D3D40] m-2 rounded-[20px] ">
                 <div className="bg-white p-6 rounded-br-[50px] rounded-t-[20px]">
                   <h3 className="text-lg font-semibold mb-2 flex items-center gap-4">
                     <div className="flex items-center gap-2 text-[18px]">
@@ -61,17 +61,20 @@ const Section8 = ({container}) => {
                     </div>
                   </h3>
                   <p
-                    className="font-dm-sans font-[400] text-[18px] leading-[24px] tracking-[0%] mt-4 h-[250px] overflow-hidden text-black"
+                    className="font-dm-sans font-[400] text-base sm:text-[18px] leading-[24px] tracking-[0%] mt-4 h-[250px] overflow-hidden text-black"
                     style={{
                       letterSpacing: "0%",
                       verticalAlign: "middle",
                     }}
                   >
-                    &quot;{slide.desc}
+                    &quot;
+                    {slide.desc.length > 355
+                      ? slide.desc.slice(0, 355) + "..."
+                      : slide.desc}
                     &quot;
                   </p>
                 </div>
-                <div className="bg-white rounded-b-[20px] shadow-[0_4px_6px_0px_#1F2D3D40]">
+                <div className="bg-white border-none rounded-b-[20px] ">
                   <div className="flex bg-secondary items-center gap-4 py-16 px-6 rounded-tl-[50px] justify-center  rounded-b-[20px]">
                     <img
                       src={slide.img}

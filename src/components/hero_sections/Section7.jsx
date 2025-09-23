@@ -21,12 +21,12 @@ const Section7 = () => {
             </div>
           ))}
         </div>
-        <div className="bg-primary flex-1 border-[#DFDFDF] lg:border-t-4 ">
+        <div className="bg-primary flex-1 border-[#DFDFDF] lg:border-t-4 rounded-l-2xl sm:rounded-l-none">
           <div className="flex w-full flex-wrap justify-center items-center gap-3 sm:gap-4 max-w-2xl mx-auto p-3 sm:p-4 mt-6 sm:mt-10">
             {features2.map((feature, index) => (
               <div
                 key={index}
-                className="flex w-full sm:w-52 lg:w-[241px] h-[65px] sm:h-[75px] bg-white border border-[#FDC366] shadow-[0px_4px_4px_0px_#00000040] rounded-[14px] gap-2 items-center py-3 sm:py-4 pl-3 sm:pl-4"
+                className="flex w-40 sm:w-52 lg:w-[241px] h-[65px] sm:h-[75px] bg-white border border-[#FDC366] shadow-[0px_4px_4px_0px_#00000040] rounded-[14px] gap-2 items-center py-3 sm:py-4 pl-3 sm:pl-4"
               >
                 <div className="w-8 sm:w-10">
                   <img

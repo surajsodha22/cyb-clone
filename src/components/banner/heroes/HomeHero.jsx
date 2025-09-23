@@ -4,10 +4,10 @@ import Button from "../../reusable/Button";
 const HomeHero = ({container = "container mx-auto px-6", button, image}) => {
   return (
     <section
-      className={`flex ${container} flex-col lg:flex-row items-center justify-between py-16 sm:py-20 md:py-24 lg:py-32`}
+      className={`flex ${container} flex-col lg:flex-row items-center justify-between py-8 sm:py-20 md:py-24 px-2 sm:px-0`}
     >
       {/* Left Content */}
-      <div className="w-full lg:w-[60%] space-y-3 sm:space-y-4 text-center lg:text-left">
+      <div className="w-full lg:w-[60%] space-y-1 sm:space-y-4 text-center lg:text-left">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] lg:leading-[52px]">
           A <span className="font-bold">collection</span> of
           <span className="text-[#F26064] font-bold"> Innovation,</span>

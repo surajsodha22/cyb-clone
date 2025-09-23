@@ -53,16 +53,12 @@ const FAQ = ({container}) => {
             open={index === 0}
           >
             <summary
-              className="flex items-center gap-4 rounded-lg p-6 text-gray-800 cursor-pointer transition-all duration-300"
+              className="flex items-center gap-4 rounded-lg p-6 text-gray-800 cursor-pointer transition-all duration-300 bg-[#FFF7EA] "
               style={{
-                backgroundColor: "#FFFBF5",
                 border: "1px solid transparent",
               }}
             >
-              <div
-                className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0 border-4 border-[#E5B15F]"
-                style={{backgroundColor: "#FDC366"}}
-              >
+              <div className="bg-secondary w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0 border-4 border-[#E5B15F]">
                 {faq.id}
               </div>
               <h2 className="text-lg font-semibold flex-1">{faq.question}</h2>
@@ -82,10 +78,7 @@ const FAQ = ({container}) => {
               </svg>
             </summary>
 
-            <div
-              className="px-6 pb-6 text-gray-600 leading-relaxed "
-              style={{backgroundColor: "#FFFBF5"}}
-            >
+            <div className="px-6 pb-6 text-gray-600 leading-relaxed bg-[#FFF7EA] ">
               <p className="text-justify">{faq.answer}</p>
             </div>
           </details>

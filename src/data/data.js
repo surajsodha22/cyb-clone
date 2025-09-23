@@ -336,7 +336,7 @@ export const apps = [app1, app2, app3, app4];
 
 export const features = [
   {title: "Mobility", img: Mobilty},
-  {title: "Froented", img: Frontend},
+  {title: "Frontend", img: Frontend},
   {title: "Backend", img: Backend},
   {title: "Artificial Intelligence", img: AI},
   {title: "Machine Learning", img: ML},

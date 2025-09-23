@@ -14,7 +14,7 @@ const BannerSection = ({
 }) => {
   return (
     <section
-      className={`flex ${container} flex-col lg:flex-row items-center justify-between  py-16 sm:py-20 md:py-24 lg:py-32`}
+      className={`flex ${container} flex-col lg:flex-row items-center justify-between  py-16 sm:py-20 md:py-24 `}
     >
       {/* Left Content */}
       {pathname === "/" ? (

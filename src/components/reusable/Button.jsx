@@ -29,7 +29,7 @@ const Button = ({
         transition-all duration-300
         overflow-hidden
         ${className}
-        ${effect ? "hover:pr-4 sm:hover:pr-[16px]" : ""}
+        ${effect ? " lg:hover:pr-[16px]" : ""}
       `}
       style={{minWidth: "fit-content"}}
       onMouseEnter={() => setIsHovered(true)}
@@ -44,7 +44,7 @@ const Button = ({
           mr-2
           ${
             effect
-              ? "opacity-0 -translate-x-3 group-hover:opacity-100 group-hover:translate-x-0"
+              ? "opacity-0 -translate-x-3 lg:group-hover:opacity-100 lg:group-hover:translate-x-0"
               : "opacity-0 "
           }
         `}
@@ -69,7 +69,7 @@ const Button = ({
           ml-2
           ${
             effect
-              ? "opacity-100 translate-x-0 group-hover:opacity-0 group-hover:translate-x-3"
+              ? "opacity-100 translate-x-0 lg:group-hover:opacity-0 lg:group-hover:translate-x-3"
               : "opacity-100 translate-x-0"
           }
         `}

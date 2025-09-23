@@ -1,4 +1,3 @@
-import {homeMan, payvendor} from "../../data/assetes";
 import SectionHeading from "../reusable/SectionHeading";
 import {ourBusiness} from "../../data/data";
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -9,7 +8,7 @@ const Section1 = ({container}) => {
     <section className={` ${container}  `}>
       <SectionHeading title="Our Business" align="center" />
 
-      <div className="bg-primary px-4 sm:px-8 lg:px-14 py-8 sm:py-12 lg:py-72 shadow-md rounded-xl">
+      <div className="bg-gradient-to-r from-[#FFF7E9] to-[#FFFFFF] px-4 sm:px-8 lg:px-14 py-8 sm:py-12 lg:py-72 shadow-md rounded-xl">
         <Swiper
           modules={[Navigation, Autoplay]}
           spaceBetween={30}
@@ -48,7 +47,7 @@ const Section1 = ({container}) => {
                 </div>
                 <div className="w-full lg:w-2/3 order-1 lg:order-2">
                   <div className="text-center lg:text-left">
-                    <div className="w-[80px] sm:w-[100px] lg:w-[131px] mx-auto lg:mx-0">
+                    <div className="w-[131px] mx-auto lg:mx-0">
                       <img
                         src={business.cardIcon}
                         alt={`Icon`}

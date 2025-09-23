@@ -15,8 +15,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full pt-4">
-      <div className="sm:px-0 px-5">
+    <nav className="w-full pt-2 sm:pt-4 px-2 lg:px-0        ">
+      <div className="">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
@@ -64,7 +64,7 @@ const Navbar = () => {
           {/* Mobile menu button */}
           <div className="lg:hidden">
             <button onClick={() => setOpen(!open)}>
-              {open ? <FaTimes size={22} /> : <FaBars size={22} />}
+              {open ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
           </div>
         </div>

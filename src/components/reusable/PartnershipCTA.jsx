@@ -1,16 +1,16 @@
 import React from "react";
-import {cta_bg, women, whiteLine} from "../../data/assetes";
+import {women, whiteLine} from "../../data/assetes";
 import Button from "./Button";
 
 const PartnershipCTA = () => {
   return (
-    <div className="h-[200px] sm:h-[253px] flex justify-between sm:items-center items-start bg-gradient-to-r from-[#FDC366] to-[#FFECCE] p-4 sm:p-10 rounded-[45px] gap-3 sm:gap-4 flex-col sm:flex-row relative max-w-6xl sm:mx-auto mx-8">
+    <div className="h-[200px] sm:h-[253px] flex justify-center sm:justify-between items-center  bg-gradient-to-r from-secondary to-[#FFECCE] p-4 sm:p-10 rounded-[45px] gap-3 sm:gap-4 flex-col sm:flex-row relative max-w-6xl sm:mx-auto ">
       <img
         src={whiteLine}
         alt=""
         className="w-[100px] sm:w-[148px] absolute top-6 sm:top-10 left-0 z-0"
       />
-      <div className="relative z-10 ml-[2%] mt-4 sm:mt-0 sm:ml-[10%] flex flex-col justify-center">
+      <div className="relative z-10  sm:mt-0 sm:ml-[10%] flex flex-col justify-center items-center sm:items-start">
         <div
           className="
             text-sm 
@@ -25,6 +25,7 @@ const PartnershipCTA = () => {
             leading-[25px] 
             sm:leading-[35px] 
             tracking-normal
+            text-center sm:text-left
             "
         >
           Tech Powered Success Awaites. Empower Your Digital Journey.
@@ -37,7 +38,7 @@ const PartnershipCTA = () => {
           />
         </div>
       </div>
-      <div className="absolute sm:right-10 -right-5 bottom-0 -top-22 w-[250px] sm:w-[330px]">
+      <div className="absolute sm:right-10 -right-5 bottom-0 -top-22 w-[250px] sm:w-[330px] hidden sm:block">
         <img src={women} alt="" />
       </div>
     </div>
