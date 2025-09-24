@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from "react";
 import {AiOutlineUser, AiOutlineMail} from "react-icons/ai";
-import {FiPhone, FiGlobe} from "react-icons/fi";
-import {RiMoneyDollarCircleLine} from "react-icons/ri";
-import {BsCardText} from "react-icons/bs";
-import {IoMdClose} from "react-icons/io";
+import {FiPhone} from "react-icons/fi";
+import {IoIosGlobe, IoMdClose} from "react-icons/io";
 import Button from "../reusable/Button";
 import {callcenter_popup} from "../../data/assetes";
 import {LiaPiggyBankSolid} from "react-icons/lia";
+
+import {IoBagOutline} from "react-icons/io5";
+import {MdOutlineLocalPhone} from "react-icons/md";
 
 const DelayedQuotePopup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,11 +23,11 @@ const DelayedQuotePopup = () => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-gray-800/50 flex items-center justify-center z-20 p-2 sm:p-4 overflow-y-auto">
-      <div className="bg-white w-full max-w-4xl rounded-[8px] shadow-2xl flex flex-col lg:flex-row relative animate-fadeIn my-4 lg:my-0 sm:h-[90vh] h-96 ">
+    <div className="fixed inset-0  bg-gray-800/50 flex items-center justify-center z-20 p-2 sm:p-4 overflow-y-auto">
+      <div className="bg-white w-full max-w-4xl rounded-[8px] shadow-2xl flex flex-col lg:flex-row relative animate-fadeIn my-4 lg:my-0 lg:h-[550px] min-h-96  ">
         {/* Close Btn */}
         <button
-          className="absolute top-2 right-2 sm:-top-4 sm:-right-4 bg-yellow-400 text-gray-800 rounded-full p-1 sm:p-2 hover:bg-yellow-500 z-50 w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center"
+          className="absolute top-1 right-1 sm:-top-4 sm:-right-4 bg-yellow-400 text-gray-800 rounded-full p-1 sm:p-2 hover:bg-yellow-500 z-50 w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center"
           onClick={() => setIsOpen(false)}
         >
           <IoMdClose size={12} className="sm:hidden" />
@@ -34,7 +35,7 @@ const DelayedQuotePopup = () => {
         </button>
 
         {/* Left Side */}
-        <div className="bg-white px-4 pt-4 sm:px-8 sm:pt-8 lg:px-12 lg:pt-12 flex flex-col justify-between relative w-full lg:w-96 border rounded-t-[8px] lg:min-h-[300px] sm:rounded-[8px]">
+        <div className="bg-white px-4 py-6  w-full lg:w-96 border rounded-t-[8px] lg:min-h-[300px] sm:rounded-[8px] md:relative lg:block hidden ">
           <div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-yellow-500 mb-2">
               Wait
@@ -75,9 +76,9 @@ const DelayedQuotePopup = () => {
               Let's start your journey today!
             </p>
           </div>
-          <div className="relative flex justify-center items-end mt-4 sm:mt-8 w-full">
+          <div className="absolute bottom-0 flex justify-center items-end left-8 ">
             {/* Main image with background circle */}
-            <div className="w-full max-w-xs sm:max-w-sm lg:max-w-none">
+            <div className="w-80">
               <img
                 src={callcenter_popup}
                 alt="girl"
@@ -88,7 +89,10 @@ const DelayedQuotePopup = () => {
         </div>
 
         {/* Right Side */}
-        <div className="p-4 sm:p-8 lg:p-12 bg-[#fffaf5] flex-1 rounded-b-[8px] lg:rounded-b-none lg:rounded-r-[8px] lg:overflow-y-auto">
+        <div
+          className="py-6 px-4 bg-[#FFF9F0] flex-1 rounded-b-[8px] xl:rounded-b-none xl:rounded-r-[8px] xl:rounded-t-none
+        rounded-t-[8px]  xl:overflow-y-auto"
+        >
           <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-1 ">
             Get a Perfect Quote
           </h2>
@@ -97,23 +101,29 @@ const DelayedQuotePopup = () => {
             within 24 hours. We ensure to provide 100% return on investment.
           </p>
 
-          <form className="space-y-3 sm:space-y-4">
+          <form className="space-y-3 sm:space-y-3">
             {/* Row 1 */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               <div className="relative">
-                <AiOutlineUser className="absolute left-3 top-3" size={18} />
+                <AiOutlineUser
+                  className="absolute left-3 sm:top-3 top-2"
+                  size={18}
+                />
                 <input
                   type="text"
                   placeholder="Full Name"
-                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-400 outline-none text-xs sm:text-sm bg-white"
+                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white"
                 />
               </div>
               <div className="relative">
-                <FiPhone className="absolute left-3 top-3 " size={18} />
+                <MdOutlineLocalPhone
+                  className="absolute left-3 sm:top-3 top-2"
+                  size={18}
+                />
                 <input
                   type="text"
                   placeholder="Phone Number"
-                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-400 outline-none text-xs sm:text-sm bg-white"
+                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white"
                 />
               </div>
             </div>
@@ -121,40 +131,52 @@ const DelayedQuotePopup = () => {
             {/* Row 2 */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               <div className="relative">
-                <AiOutlineMail className="absolute left-3 top-3 t" size={18} />
+                <AiOutlineMail
+                  className="absolute left-3 sm:top-3 top-2"
+                  size={18}
+                />
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-400 outline-none text-xs sm:text-sm bg-white"
+                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white"
                 />
               </div>
               <div className="relative">
-                <FiGlobe className="absolute left-3 top-3" size={18} />
+                <IoIosGlobe
+                  className="absolute left-3 sm:top-3 top-2"
+                  size={18}
+                />
                 <input
                   type="text"
                   placeholder="Select Country"
-                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-400 outline-none text-xs sm:text-sm bg-white"
+                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white"
                 />
               </div>
             </div>
 
             {/* Budget */}
             <div className="relative">
-              <LiaPiggyBankSolid className="absolute left-3 top-3 " size={18} />
+              <LiaPiggyBankSolid
+                className="absolute left-3 sm:top-3 top-2"
+                size={18}
+              />
               <input
                 type="text"
                 placeholder="Budget Range"
-                className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-400 outline-none text-xs sm:text-sm bg-white"
+                className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white"
               />
             </div>
 
             {/* Outline */}
             <div className="relative">
-              <BsCardText className="absolute left-3 top-3 " size={18} />
+              <IoBagOutline
+                className="absolute left-3 sm:top-3 top-2"
+                size={18}
+              />
               <textarea
                 placeholder="Project Outline"
                 rows={3}
-                className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-400 outline-none text-xs sm:text-sm resize-none bg-white"
+                className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm resize-none bg-white"
               ></textarea>
             </div>
 

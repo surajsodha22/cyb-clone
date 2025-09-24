@@ -15,7 +15,7 @@ const Section4 = ({container}) => {
         <div className="w-full">
           <div className="flex flex-col lg:flex-row justify-between gap-4 sm:gap-6 md:gap-8 lg:gap-5 flex-wrap items-center lg:items-end">
             <div className="lg:max-w-lg mb-4 sm:mb-6 lg:mb-0 max-w-96 mx-auto lg:mx-0">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-black line-height-[52px] letter-spacing-[0%] text-center lg:text-left">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-black line-height-[52px] letter-spacing-[0%] text-center xl:text-left">
                 Why Cybdeer only for your digital world?
               </h2>
             </div>

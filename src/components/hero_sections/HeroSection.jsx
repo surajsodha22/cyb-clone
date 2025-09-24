@@ -19,11 +19,11 @@ const HeroSection = ({container}) => {
         {/* Our Business */}
         <Section1 container={container} />
         {/* A solution for your software needs. */}
-        <div className="mt-16 sm:mt-24 lg:mt-72 px-2 sm:px-0">
+        <div className="mt-16 sm:mt-24 lg:mt-72 px-2 xl:px-0">
           <Section2 />
         </div>
         {/* Digital Excellence */}
-        <div className="mt-16 sm:mt-24 lg:mt-72 px-2 sm:px-0">
+        <div className="mt-16 sm:mt-24 lg:mt-72 px-2 xl:px-0">
           <Section3 />
         </div>
       </div>
@@ -36,7 +36,7 @@ const HeroSection = ({container}) => {
       <div className={`${container} mt-16 sm:mt-24 lg:mt-72`}>
         <Section5 />
       </div>
-      <div className={`${container} mt-16 sm:mt-24 lg:mt-72 px-2 sm:px-0`}>
+      <div className={`${container} mt-16 sm:mt-24 lg:mt-72 px-2 xl:px-0`}>
         {/* Go digital with innovation IT solution */}
         <Section7 />
       </div>
@@ -53,7 +53,7 @@ const HeroSection = ({container}) => {
       {/* Our Latest Blog */}
       <div className={`${container} mt-16 sm:mt-24 lg:mt-72`}>
         <Section9 />
-        <div className="mt-16 sm:mt-24 lg:mt-72 px-2 sm:px-0">
+        <div className="mt-16 sm:mt-24 lg:mt-72 px-2 xl:px-0">
           <PartnershipCTA />
         </div>
       </div>

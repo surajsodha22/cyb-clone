@@ -18,6 +18,7 @@ import {
 
 import BannerSection from "./BannerSection";
 import HomeHero from "./heroes/HomeHero";
+import AboutHero from "./heroes/AboutHero";
 
 const Banner = ({container, location}) => {
   return (
@@ -33,7 +34,7 @@ const Banner = ({container, location}) => {
             container={container}
           />
         ) : location?.pathname === "/about" ? (
-          <BannerSection
+          <AboutHero
             title="About Us"
             image={aboutBanner}
             pathname={location?.pathname}

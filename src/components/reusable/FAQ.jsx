@@ -78,7 +78,7 @@ const FAQ = ({container}) => {
               </svg>
             </summary>
 
-            <div className="px-6 pb-6 text-gray-600 leading-relaxed bg-[#FFF7EA] ">
+            <div className="px-6 pb-6 text-gray-600 rounded-b-lg leading-relaxed bg-[#FFF7EA] ">
               <p className="text-justify">{faq.answer}</p>
             </div>
           </details>

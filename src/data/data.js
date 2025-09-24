@@ -519,25 +519,25 @@ export const journeys = [
   {
     year: "2016",
     description:
-      "We started our journey with 10 employees working passionately...",
+      "We started our journey with 10 employees working passionately emplo with a vision dedication to grow With utmost We started our journey with 10 employees working passionately emplo with a vision dedication to grow With utmost",
     image: journey1,
   },
   {
     year: "2017-2018",
     description:
-      "We started our journey with 10 employees working passionately...",
+      "We started our journey with 10 employees working passionately emplo with a vision dedication to grow With utmost We started our journey with 10 employees working passionately emplo with a vision dedication to grow With utmost",
     image: journey2,
   },
   {
     year: "2019-2020",
     description:
-      "We started our journey with 10 employees working passionately...",
+      "We started our journey with 10 employees working passionately emplo with a vision dedication to grow With utmost",
     image: journey3,
   },
   {
     year: "2021-2022",
     description:
-      "We started our journey with 10 employees working passionately...",
+      "We started our journey with 10 employees working passionately emplo with a vision dedication to grow With utmost",
     image: journey4,
   },
 ];

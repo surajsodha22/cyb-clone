@@ -344,7 +344,10 @@ import callcenter_popup from "../assetes/callcenter_popup.svg";
 
 import hand from "../assetes/hand.svg";
 
+import bgBlur from "../assetes/bgBlur.png";
+
 export {
+  bgBlur,
   callcenter_popup,
   hand,
   Mobilty,
