@@ -1,9 +1,9 @@
 import React from "react";
 
-const BannerSection = ({title, description, image}) => {
+const ContactHero = ({title, description, image}) => {
   return (
     <section
-      className={`flex  flex-col lg:flex-row items-center justify-between  py-16 sm:py-20 md:py-24 `}
+      className={`flex  flex-col lg:flex-row items-center justify-between  py-14  `}
     >
       {/* Left Section */}
       <div className="w-full lg:w-1/2 space-y-4 text-center lg:text-left">
@@ -28,4 +28,4 @@ const BannerSection = ({title, description, image}) => {
   );
 };
 
-export default BannerSection;
+export default ContactHero;

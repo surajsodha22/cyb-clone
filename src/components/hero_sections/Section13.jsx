@@ -6,7 +6,7 @@ const Section13 = ({container}) => {
   return (
     <>
       <div className={`${container} `}>
-        <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-between gap-6 sm:gap-8">
+        <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-between gap-6 sm:gap-8 lg:px-4">
           {locations?.map((data, index) => (
             <div
               key={index}

@@ -14,11 +14,15 @@ import {
   webHead,
   devopsHead,
   testimoHead,
+  headCareers,
 } from "../../data/assetes";
 
 import BannerSection from "./BannerSection";
 import HomeHero from "./heroes/HomeHero";
 import AboutHero from "./heroes/AboutHero";
+import CareerHero from "./heroes/CareerHero";
+import ContactHero from "./heroes/ContactHero";
+import TestimonialsHero from "./heroes/TestimonialsHero";
 
 const Banner = ({container, location}) => {
   return (
@@ -40,9 +44,9 @@ const Banner = ({container, location}) => {
             pathname={location?.pathname}
           />
         ) : location?.pathname === "/careers" ? (
-          <BannerSection
+          <CareerHero
             title="Carrier"
-            image={aboutBanner}
+            image={headCareers}
             pathname={location?.pathname}
           />
         ) : location?.pathname === "/partnership" ? (
@@ -88,7 +92,7 @@ const Banner = ({container, location}) => {
             pathname={location?.pathname}
           />
         ) : location?.pathname === "/contact-us" ? (
-          <BannerSection
+          <ContactHero
             title="Get in Touch "
             image={contactHead}
             pathname={location?.pathname}
@@ -130,7 +134,7 @@ const Banner = ({container, location}) => {
             pathname={location.pathname}
           />
         ) : location?.pathname === "/testimonials" ? (
-          <BannerSection
+          <TestimonialsHero
             title="Testimonial"
             image={testimoHead}
             container={container}

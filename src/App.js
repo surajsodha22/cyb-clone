@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import RouterPage from "./routes/RouterPage";
 import Footer from "./components/footer/Footer";
-import {bgBlur, footImg} from "./data/assetes";
+import {bgBlur, footImg, bgBlur2} from "./data/assetes";
 
 import {banner2} from "./data/assetes";
 import {useLocation} from "react-router-dom";
@@ -53,7 +53,7 @@ const App = () => {
     <div>
       <DelayedQuotePopup />
       {/* Header */}
-      <div className="relative" style={style}>
+      <div className="relative px-2" style={style}>
         <div className={container}>
           <Navbar />
           <Banner container={container} location={location} />
@@ -63,6 +63,14 @@ const App = () => {
             src={bgBlur}
             alt="bgBlur"
             className="absolute bottom-0 right-0 w-48 "
+          />
+        )}
+
+        {location.pathname === "/testimonials" && (
+          <img
+            src={bgBlur2}
+            alt="bgBlur2"
+            className="absolute bottom-0 right-20 h-[270px] w-[45%] z-50 "
           />
         )}
       </div>

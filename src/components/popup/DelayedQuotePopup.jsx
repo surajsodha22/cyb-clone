@@ -112,7 +112,7 @@ const DelayedQuotePopup = () => {
                 <input
                   type="text"
                   placeholder="Full Name"
-                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white"
+                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white placeholder-black"
                 />
               </div>
               <div className="relative">
@@ -123,7 +123,7 @@ const DelayedQuotePopup = () => {
                 <input
                   type="text"
                   placeholder="Phone Number"
-                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white"
+                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white placeholder-black"
                 />
               </div>
             </div>
@@ -138,7 +138,7 @@ const DelayedQuotePopup = () => {
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white"
+                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white placeholder-black"
                 />
               </div>
               <div className="relative">
@@ -146,11 +146,23 @@ const DelayedQuotePopup = () => {
                   className="absolute left-3 sm:top-3 top-2"
                   size={18}
                 />
-                <input
-                  type="text"
-                  placeholder="Select Country"
-                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white"
-                />
+                <select
+                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white placeholder-black"
+                  defaultValue=""
+                >
+                  <option value="" disabled className="">
+                    Select Country
+                  </option>
+                  <option value="United States">United States</option>
+                  <option value="Canada">Canada</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Australia">Australia</option>
+                  <option value="India">India</option>
+                  <option value="Germany">Germany</option>
+                  <option value="France">France</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Other">Other</option>
+                </select>
               </div>
             </div>
 
@@ -163,7 +175,7 @@ const DelayedQuotePopup = () => {
               <input
                 type="text"
                 placeholder="Budget Range"
-                className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white"
+                className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white placeholder-black"
               />
             </div>
 
@@ -176,7 +188,7 @@ const DelayedQuotePopup = () => {
               <textarea
                 placeholder="Project Outline"
                 rows={3}
-                className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm resize-none bg-white"
+                className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm resize-none bg-white placeholder-black"
               ></textarea>
             </div>
 

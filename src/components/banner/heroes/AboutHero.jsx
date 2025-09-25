@@ -1,17 +1,9 @@
 import React from "react";
-import {bgBlur} from "../../../data/assetes";
 
-const AboutHero = ({
-  container = "container mx-auto px-6",
-  title,
-
-  description,
-
-  image,
-}) => {
+const AboutHero = ({title, description, image}) => {
   return (
     <section
-      className={`flex ${container} flex-col lg:flex-row items-center justify-between  py-16 sm:py-20 md:py-24 relative 2xl:overflow-hidden`}
+      className={`flex flex-col lg:flex-row items-center justify-between  py-16 sm:py-20 md:py-24 relative 2xl:overflow-hidden`}
     >
       {/* Left Section */}
       <div className="w-full lg:w-1/2 space-y-4 text-center lg:text-left">

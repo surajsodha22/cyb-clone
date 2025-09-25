@@ -30,31 +30,28 @@ const VideoSection = ({img, container, playIcon}) => {
           />
 
           {/* Testimonial Cards */}
-          <div className="flex flex-wrap justify-between">
+          <div className="flex flex-col md:flex-row flex-wrap items-center justify-center md:justify-between p-2 gap-4">
             {testimonialData.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="bg-white rounded-2xl border shadow-xl max-w-[385px]"
+                className="bg-white rounded-2xl border shadow-xl md:max-w-96 sm:w-80 lg:w-96 relative"
                 style={{boxShadow: "0px 4px 4px 0px #00000040"}}
               >
-                <div className="relative">
+                <div className="">
                   <img
                     src={testimonial.image}
                     alt="Client Testimonial"
-                    className="w-full  object-cover rounded-t-2xl"
+                    className="w-full  object-cover rounded-lg"
                   />
                   {/* Play Button */}
-                  <div className="absolute bottom-4 right-4">
-                    <div
-                      className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all cursor-pointer"
-                      style={{backgroundColor: "#FDC366"}}
-                    >
+                  <div className="absolute bottom-[53px] right-1">
+                    <div className="w-12 h-12 bg-secondary border-[3px] border-solid border-[#FFF6E6] p-1 rounded-full flex items-center justify-center hover:scale-105 transition-all cursor-pointer">
                       <img src={playIcon} alt="Play" className="w-6 h-6" />
                     </div>
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-800">
+                  <h3 className="text-lg font-semibold ">
                     {testimonial.title}
                   </h3>
                 </div>

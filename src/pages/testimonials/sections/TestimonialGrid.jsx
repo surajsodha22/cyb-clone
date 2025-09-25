@@ -1,155 +1,56 @@
 import React from "react";
 
-const TestimonialGrid = () => {
-  const testimonials = [
-    {
-      text: "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines. We've received numerous compliments on the new site, and it's easier for customers to navigate.",
-      author: "Jane Cooper",
-      title: "President of Sales",
-      rating: 5,
-    },
-    {
-      text: "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines. We've received numerous compliments on the new site, and it's easier for customers to navigate.",
-      author: "Jane Cooper",
-      title: "President of Sales",
-      rating: 5,
-    },
-    {
-      text: "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines. We've received numerous compliments on the new site, and it's easier for customers to navigate.",
-      author: "Jane Cooper",
-      title: "President of Sales",
-      rating: 5,
-    },
-    {
-      text: "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines. We've received numerous compliments on the new site, and it's easier for customers to navigate.",
-      author: "Jane Cooper",
-      title: "President of Sales",
-      rating: 5,
-    },
-    {
-      text: "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines. We've received numerous compliments on the new site, and it's easier for customers to navigate.",
-      author: "Jane Cooper",
-      title: "President of Sales",
-      rating: 5,
-    },
-    {
-      text: "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines. We've received numerous compliments on the new site, and it's easier for customers to navigate.",
-      author: "Jane Cooper",
-      title: "President of Sales",
-      rating: 5,
-    },
-  ];
-
-  const renderStars = (rating) => {
-    const fullStars = Math.floor(rating);
-    const hasHalfStar = rating % 1 !== 0;
-    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
-
-    return (
-      <div className="flex text-amber-500">
-        {[...Array(fullStars)].map((_, i) => (
-          <svg
-            key={`full-${i}`}
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="w-5 h-5"
-          >
-            <path d="M11.48 3.499a.562.562 0 011.04 0l2.123 5.158 5.402.405a.562.562 0 01.32.996l-4.113 3.535 1.257 5.051a.562.562 0 01-.86.611l-4.64-2.885-4.64 2.885a.562.562 0 01-.86-.61l1.257-5.051-4.113-3.535a.562.562 0 01.32-.996l5.402-.405 2.123-5.158z" />
-          </svg>
-        ))}
-        {hasHalfStar && (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="w-5 h-5"
-          >
-            <path d="M11.48 3.499a.562.562 0 011.04 0l2.123 5.158 5.402.405a.562.562 0 01.32.996l-4.113 3.535 1.257 5.051a.562.562 0 01-.86.611l-4.64-2.885-4.64 2.885a.562.562 0 01-.86-.61l1.257-5.051-4.113-3.535a.562.562 0 01.32-.996l5.402-.405 2.123-5.158z" />
-          </svg>
-        )}
-        {[...Array(emptyStars)].map((_, i) => (
-          <svg
-            key={`empty-${i}`}
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-5 h-5 text-gray-400"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M11.48 3.499a.562.562 0 011.04 0l2.123 5.158 5.402.405a.562.562 0 01.32.996l-4.113 3.535 1.257 5.051a.562.562 0 01-.86.611l-4.64-2.885-4.64 2.885a.562.562 0 01-.86-.61l1.257-5.051-4.113-3.535a.562.562 0 01.32-.996l5.402-.405 2.123-5.158z"
-            />
-          </svg>
-        ))}
-      </div>
-    );
-  };
-
+const TestimonialGrid = ({testimonialsData}) => {
   return (
-    <div className="bg-gray-50 py-20">
-      <div className=" px-4">
-        {/* Header Section */}
-        <div className="text-center mb-72">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            Hear From Those Who've Trusted Us to Bring Their Vision to Life.
-          </h2>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            From startups to established enterprises, these videos bring to life
-            the experiences of partners who trusted us to transform their ideas
-            into impactful solutions.
-          </p>
-        </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+      {testimonialsData?.map((item) => (
+        <div
+          key={item.id}
+          className="relative bg-white rounded-xl border border-[#E5E7EB] shadow-[0px_0px_8px_0px_#00000040] flex flex-col justify-between  pt-10  min-h-[320px] mt-2 lg:mt-5 "
+        >
+          {/* Quote Icon */}
+          <div
+            className="absolute left-1/2 -top-6 transform -translate-x-1/2 rounded-full"
+            style={{zIndex: 2}}
+          >
+            <img
+              src={item.quote}
+              alt="quote"
+              className="w-12 h-12 object-contain"
+            />
+          </div>
 
-        {/* Testimonial Grid - Using Frame 427318979 Image */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="">
-            <img
-              src="/src/assetes/testimonial/frame 427318979.png"
-              alt="Testimonial Cards"
-              className="w-full h-auto  "
-            />
-          </div>
-          <div className="col-span-1">
-            <img
-              src="/src/assetes/testimonial/frame 427318979.png"
-              alt="Testimonial Cards"
-              className="w-full h-auto "
-            />
-          </div>
-          <div className="col-span-1">
-            <img
-              src="/src/assetes/testimonial/frame 427318979.png"
-              alt="Testimonial Cards"
-              className="w-full h-auto "
-            />
-          </div>
-          <div className="col-span-1">
-            <img
-              src="/src/assetes/testimonial/frame 427318979.png"
-              alt="Testimonial Cards"
-              className="w-full h-auto "
-            />
-          </div>
-          <div className="col-span-1">
-            <img
-              src="/src/assetes/testimonial/frame 427318979.png"
-              alt="Testimonial Cards"
-              className="w-full h-auto "
-            />
-          </div>
-          <div className="col-span-1">
-            <img
-              src="/src/assetes/testimonial/frame 427318979.png"
-              alt="Testimonial Cards"
-              className="w-full h-auto "
-            />
+          {/* Testimonial Text */}
+          <p className="text-gray-600 text-[15px] leading-relaxed mb-8 min-h-[90px] px-4 text-left">
+            {item.text}
+          </p>
+
+          {/* Footer */}
+          <div className="  bg-[#FFF7E9]">
+            <div className="px-4 py-4 flex items-center justify-between">
+              <div className="flex items-center ">
+                <img
+                  src={item.avatar}
+                  alt={item.name}
+                  className="w-10 h-10 rounded-full border-2 border-white shadow mr-3 object-cover"
+                />
+                <div>
+                  <h3 className="font-semibold text-gray-800 text-[15px] leading-tight">
+                    {item.name}
+                  </h3>
+                  <p className="text-xs text-gray-500">{item.role}</p>
+                </div>
+              </div>
+              {/* Stars */}
+              <img
+                src={item.stars}
+                alt="stars"
+                className="w-20 h-5 object-contain"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 };

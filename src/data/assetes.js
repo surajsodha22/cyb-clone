@@ -343,11 +343,47 @@ import BG_section8 from "../assetes/BG_section8.jpg";
 import callcenter_popup from "../assetes/callcenter_popup.svg";
 
 import hand from "../assetes/hand.svg";
+import headCareers from "../assetes/headCareers.png";
 
 import bgBlur from "../assetes/bgBlur.png";
+import girlCareer from "../assetes/girlCareer.png";
+
+import benefitIcon1 from "../assetes/benefitIcon1.svg";
+import benefitIcon2 from "../assetes/benefitIcon2.svg";
+import benefitIcon3 from "../assetes/benefitIcon3.svg";
+import benefitIcon4 from "../assetes/benefitIcon4.svg";
+
+import careerTech1 from "../assetes/careers/careerTech1.svg";
+import careerTech2 from "../assetes/careers/careerTech2.svg";
+import careerTech3 from "../assetes/careers/careerTech3.svg";
+import careerTech4 from "../assetes/careers/careerTech4.svg";
+import careerTech5 from "../assetes/careers/careerTech5.svg";
+import careerTech6 from "../assetes/careers/careerTech6.svg";
+import careerTech7 from "../assetes/careers/careerTech7.svg";
+import careerTech8 from "../assetes/careers/careerTech8.svg";
+import careerTech9 from "../assetes/careers/careerTech9.svg";
+import bgContact from "../assetes/bgContact.png";
+import bgBlur2 from "../assetes/bgBlur2.png";
 
 export {
+  careerTech1,
+  careerTech2,
+  careerTech3,
+  careerTech4,
+  careerTech5,
+  careerTech6,
+  careerTech7,
+  careerTech8,
+  careerTech9,
+  bgContact,
+  bgBlur2,
+  benefitIcon1,
+  benefitIcon2,
+  benefitIcon3,
+  benefitIcon4,
+  girlCareer,
   bgBlur,
+  headCareers,
   callcenter_popup,
   hand,
   Mobilty,
