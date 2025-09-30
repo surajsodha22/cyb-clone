@@ -386,6 +386,8 @@ import d4_mean from "../assetes/d4_mean.svg";
 import d5_angular from "../assetes/d5_angular.svg";
 import d6_vue from "../assetes/d6_vue.svg";
 
+import ds from "../assetes/ds.png";
+
 import bgOurTeam from "../assetes/bgOurTeam.png";
 
 import teamPerson1 from "../assetes/teamPerson1.png";
@@ -403,6 +405,7 @@ export {
   d4_mean,
   d5_angular,
   d6_vue,
+  ds,
   webIcon1,
   webIcon2,
   webIcon3,

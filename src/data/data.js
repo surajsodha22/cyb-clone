@@ -236,6 +236,7 @@ import {
   d6_vue,
   teamPerson1,
   teamPerson2,
+  ds,
 } from "./assetes";
 
 export const navMenu = [
@@ -365,6 +366,7 @@ export const features = [
   {title: "Backend", img: Backend},
   {title: "Artificial Intelligence", img: AI},
   {title: "Machine Learning", img: ML},
+  {title: "Data Analytics", img: ds},
   {title: "CMS & E-Commerce", img: CMS},
 ];
 
