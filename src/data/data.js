@@ -367,6 +367,62 @@ export const features = [
   {title: "Machine Learning", img: ML},
   {title: "CMS & E-Commerce", img: CMS},
 ];
+
+export const contentData = {
+  Mobility: [
+    {title: "Swift", img: "d1"},
+    {title: "Xcode", img: "d2"},
+    {title: "Kotlin", img: "d3"},
+    {title: "Ionic", img: "d4"},
+    {title: "Xamarin", img: "d5"},
+    {title: "React Native", img: "d6"},
+  ],
+  Frontend: [
+    {title: "HTML", img: "f1"},
+    {title: "CSS", img: "f2"},
+    {title: "JavaScript", img: "f3"},
+    {title: "React.js", img: "f4"},
+    {title: "Angular", img: "f5"},
+    {title: "Vue.js", img: "f6"},
+  ],
+  Backend: [
+    {title: "Node.js", img: "b1"},
+    {title: "Python", img: "b2"},
+    {title: "Spring Boot", img: "b3"},
+    {title: "PHP (Laravel)", img: "b4"},
+    {title: "Ruby on Rails", img: "b5"},
+    {title: ".NET", img: "b6"},
+  ],
+  "Artificial Intelligence": [
+    {title: "Open AI", img: "a1"},
+    {title: "Meta", img: "a2"},
+    {title: "Hugging Face", img: "a3"},
+    {title: "Mistral AI", img: "a4"},
+    {title: "NLP", img: "a5"},
+    {title: "PyTorch", img: "a6"},
+  ],
+  "Machine Learning": [
+    {title: "Jupyter Notebook", img: "m1"},
+    {title: "PyTorch", img: "m2"},
+    {title: "Scikit-learn", img: "m3"},
+    {title: "TensorFlow", img: "m4"},
+  ],
+  "Data Analytics": [
+    {title: "Python", img: "da1"},
+    {title: "SQL", img: "da2"},
+    {title: "Spark", img: "da3"},
+    {title: "Power BI", img: "da4"},
+    {title: "Excel", img: "da5"},
+  ],
+  "CMS & E-Commerce": [
+    {title: "WordPress", img: "c1"},
+    {title: "Drupal", img: "c2"},
+    {title: "Joomla", img: "c3"},
+    {title: "Magento", img: "c4"},
+    {title: "Ghost", img: "c5"},
+  ],
+};
+
 export const features2 = [
   {title: "Swift", img: d1},
   {title: "Xcode", img: d2},
