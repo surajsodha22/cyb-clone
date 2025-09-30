@@ -2,9 +2,9 @@ import React from "react";
 import SectionHeading from "../../../components/reusable/SectionHeading";
 import {devOpsServices} from "../../../data/data";
 
-const ServicesDevOps = () => {
+const ServicesDevOps = ({container}) => {
   return (
-    <section className="py-72 relative">
+    <section className={`py-72 relative max-w-6xl mx-auto xl:px-0 px-2`}>
       <div className="">
         {/* Header Section */}
         <SectionHeading
@@ -18,7 +18,7 @@ const ServicesDevOps = () => {
             <div
               key={service.id}
               className={`border-b-4 hover:border-b-4 border-white rounded-xl 
-               shadow-custom p-8 relative  hover:border-[#FFE5BB] hover:border-b-yellow-500 transition-all duration-300 hover:bg-[#FFFAF3] cursor-pointer mt-4`}
+               shadow-[0px_1px_4px_0px_#00000040] p-8 relative  hover:border-[#FFE5BB] hover:border-b-yellow-500 transition-all duration-300 hover:bg-[#FFFAF3] cursor-pointer mt-4`}
             >
               {/* Red Circular Icon */}
 

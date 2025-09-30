@@ -26,7 +26,7 @@ const TestimonialGrid = ({testimonialsData}) => {
           </p>
 
           {/* Footer */}
-          <div className="  bg-[#FFF7E9]">
+          <div className="  bg-[#FFF7E9] rounded-b-xl">
             <div className="px-4 py-4 flex items-center justify-between">
               <div className="flex items-center ">
                 <img

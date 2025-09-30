@@ -3,12 +3,11 @@ import BusinessModernizationProcess from "../../components/reusable/BusinessMode
 import BusinessModernizationServices from "../../components/reusable/BusinessModernizationServices";
 import ReversePartnershipCTA from "../../components/reusable/ReversePartnershipCTA";
 import {BusinessTechnologies} from "../../data/data";
-import {businessAiImg, ctaBanner2} from "../../data/assetes";
+import {businessAiImg, bgBlur} from "../../data/assetes";
 import BusinessModernizationMethodologies from "../../components/reusable/BusinessModernizationMethodologies";
 import SectionHeading from "../../components/reusable/SectionHeading";
 import AutoSlider from "../../components/reusable/AutoSlider";
 import MultiGridSlider from "../../components/reusable/MultiGridSlider";
-import CTA from "../../components/reusable/CTA";
 
 const BusinessModernization = ({container}) => {
   const TechnologiesSection = () => {
@@ -29,9 +28,9 @@ const BusinessModernization = ({container}) => {
           {/* Right side: technology list */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-20 gap-y-8 ">
             {BusinessTechnologies.map((tech, index) => (
-              <div key={index} className="flex items-start gap-4 max-w-72 ">
+              <div key={index} className="flex items-start gap-4 max-w-80 ">
                 <div className="w-28 flex  justify-center ">
-                  <img src={tech.icon} alt={tech.title} className="" />
+                  <img src={tech.icon} alt={tech.title} className="w-full" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-sm sm:text-base">
@@ -50,15 +49,16 @@ const BusinessModernization = ({container}) => {
   };
   return (
     <div>
-      <div className={`${container}`}>
-        <BusinessModernizationServices />
-        <div>
-          <CTA image={ctaBanner2} />
+      <div className={`relative max-w-[1500px] mx-auto`}>
+        <img src={bgBlur} alt="" className="absolute top-20 right-0 w-40" />
+        <div className={`${container} xl:px-0 px-2`}>
+          <BusinessModernizationServices />
+
+          <ReversePartnershipCTA />
         </div>
-        {/* <ReversePartnershipCTA /> */}
       </div>
       <div className="mt-72 bg-primary py-10">
-        <BusinessModernizationProcess className={`${container}`} />
+        <BusinessModernizationProcess container={`${container}`} />
       </div>
 
       <div className={`${container}`}>
@@ -74,9 +74,9 @@ const BusinessModernization = ({container}) => {
           subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
           align="center"
         />
-        <AutoSlider reverse={true} />
+        <AutoSlider />
       </div>
-      <div className="mt-5">
+      <div className="my-72">
         <MultiGridSlider />
       </div>
     </div>

@@ -2,16 +2,15 @@ import React from "react";
 import {Ai_Process, Ai_Services, Ai_services2} from "../../data/data";
 import PartnershipCTA from "../../components/reusable/PartnershipCTA";
 import AutoSlider from "../../components/reusable/AutoSlider";
-import {ai_img2, ctaBanner} from "../../data/assetes";
+import {ai_img2} from "../../data/assetes";
 import AutoSliderBox from "../../components/reusable/AutoSliderBox";
 import MultiGridSlider from "../../components/reusable/MultiGridSlider";
 import SectionHeading from "../../components/reusable/SectionHeading";
-import CTA from "../../components/reusable/CTA";
 
 const AIDevelopment = ({container}) => {
   return (
     <div className="pt-72">
-      <div className={`${container}`}>
+      <div className={`max-w-6xl mx-auto xl:px-0 px-2 sm:pb-72`}>
         <SectionHeading
           title="Our Prompt Engineering Services"
           align="center"
@@ -45,24 +44,21 @@ const AIDevelopment = ({container}) => {
         </div>
       </div>
 
-      <div className={`mt-72 ${container}`}>
-        <CTA image={ctaBanner} />
+      <div className={`mt-72 ${container} xl:px-0 px-2`}>
+        <PartnershipCTA />
       </div>
 
-      <div className={`${container}`}>
+      <div className={`max-w-6xl mx-auto xl:px-0 px-2`}>
         <div className="mt-72">
           <SectionHeading title="AI Development Process" align="center" />
-          <div className="flex flex-wrap md:flex-nowrap justify-between items-center gap-6 relative">
+          <div className="flex flex-wrap  justify-center md:justify-between items-start gap-6 relative">
             {/* Desktop horizontal line - hidden on mobile */}
             <hr className="hidden md:block border border-dashed w-[90%] border-[#F15E5F] absolute top-8 left-10 z-0" />
-
-            {/* Mobile vertical line - hidden on desktop */}
-            <div className="md:hidden absolute left-1/2 top-0 bottom-0 w-0.5 h-[90%] bg-[#F15E5F] border-dashed transform -translate-x-1/2 z-0"></div>
 
             {Ai_Process.map((step, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center z-10 w-full md:w-auto"
+                className="flex flex-col items-center justify-start text-center z-10  md:w-auto "
               >
                 {/* Icon */}
                 <div
@@ -81,16 +77,16 @@ const AIDevelopment = ({container}) => {
         </div>
       </div>
 
-      <div className={`${container} mt-72`}>
+      <div className={`${container} mt-72 xl:px-0 px-2`}>
         <SectionHeading
           title="Our Industry Specific Mobile App Development Services"
           subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
           align="center"
         />
-        <AutoSlider />
+        <AutoSlider reverse={true} />
       </div>
 
-      <div className={`${container} mt-72`}>
+      <div className={`${container} mt-72 xl:px-0 px-2`}>
         <SectionHeading
           title="Trending AI Technologies we used to Build an AI Apps"
           subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
@@ -124,10 +120,12 @@ const AIDevelopment = ({container}) => {
         </div>
       </div>
 
-      <div className={`${container} mt-72`}>
+      <div className={`mt-72 xl:px-0 px-2`}>
         <AutoSliderBox />
       </div>
-      <MultiGridSlider />
+      <div className={` my-72 xl:px-0 px-2`}>
+        <MultiGridSlider />
+      </div>
     </div>
   );
 };

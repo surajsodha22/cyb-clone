@@ -14,25 +14,26 @@ import CTA from "../../components/reusable/CTA";
 const SoftwareDevelopment = ({container}) => {
   return (
     <>
-      <div className={`${container}`}>
+      <div className={`${container} px-2 xl:px-0`}>
         <SoftwareServices />
-        <div className="">
-          <CTA image={ctaBanner} />
-          {/* <PartnershipCTA /> */}
+        <div className="mt-72">
+          <PartnershipCTA />
         </div>
         <SoftwareProcess />
         <AdvanceTech />
         <div className="mt-72">
-          <CTA image={ctaBanner2} />
-          {/* <ReversePartnershipCTA /> */}
+          <ReversePartnershipCTA />
         </div>
       </div>
       <MethodsSoftware container={container} />
       <SoftwareCarusole container={container} />
-      <div className={`${container}`}>
+      <div className={`${container} px-2 xl:px-0`}>
         <ExpensesSoftware />
       </div>
-      <MultiGridSlider />
+
+      <div className="my-72">
+        <MultiGridSlider />
+      </div>
     </>
   );
 };

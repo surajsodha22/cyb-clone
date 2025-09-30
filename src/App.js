@@ -3,7 +3,16 @@ import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import RouterPage from "./routes/RouterPage";
 import Footer from "./components/footer/Footer";
-import {bgBlur, footImg, bgBlur2} from "./data/assetes";
+import {
+  bgBlur,
+  footImg,
+  bgBlur2,
+  devopsBG,
+  businessBG,
+  websiteBG,
+  uiUxBG,
+  bgOurTeam,
+} from "./data/assetes";
 
 import {banner2} from "./data/assetes";
 import {useLocation} from "react-router-dom";
@@ -25,17 +34,79 @@ const App = () => {
     paddingBottom: "10px",
   };
 
+  const gradientStyle2 = {
+    background:
+      "linear-gradient(261.39deg, rgba(255, 235, 203, 0.5) 0.6%, rgba(250, 219, 169, 0.5) 15.85%, rgba(255, 217, 154, 0.5) 46.07%, rgba(255, 216, 153, 0.306318) 80.92%, rgba(255, 233, 196, 0.1) 100%)",
+    width: "100%",
+    paddingBottom: "10px",
+  };
+
+  const gradientStyle3 = {
+    backgroundImage: `url(${devopsBG})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    width: "100%",
+    paddingBottom: "10px",
+  };
+
+  const gradientStyle4 = {
+    backgroundImage: `url(${businessBG})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    width: "100%",
+    paddingBottom: "10px",
+  };
+
+  const gradientStyle5 = {
+    backgroundImage: `url(${websiteBG})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    width: "100%",
+    paddingBottom: "10px",
+  };
+
+  const gradientStyle6 = {
+    backgroundImage: `url(${uiUxBG})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    width: "100%",
+    paddingBottom: "10px",
+  };
+
+  const gradientStyle7 = {
+    backgroundImage: `url(${bgOurTeam})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    width: "100%",
+    paddingBottom: "10px",
+  };
+
   if (location.pathname === "/") {
     style = {
       backgroundColor: "#FFFAF3",
     };
-  } else if (
-    location.pathname === "/salesforce" ||
-    location.pathname === "/ai-development" ||
-    location.pathname === "/software-development" ||
-    location.pathname === "/ui-ux-design"
-  ) {
+  } else if (location.pathname === "/ai-development") {
     style = gradientStyle;
+  } else if (location.pathname === "/software-development") {
+    style = gradientStyle2;
+  } else if (
+    location.pathname === "/devops" ||
+    location.pathname === "/salesforce"
+  ) {
+    style = gradientStyle3;
+  } else if (location.pathname === "/business-modernization") {
+    style = gradientStyle4;
+  } else if (location.pathname === "/website-development") {
+    style = gradientStyle5;
+  } else if (location.pathname === "/ui-ux-design") {
+    style = gradientStyle6;
+  } else if (location.pathname === "/our-team") {
+    style = gradientStyle7;
   } else {
     style = {
       backgroundImage: `url(${banner2})`,
@@ -87,12 +158,11 @@ const App = () => {
           <Section13 />
           <Footer container={container} />
         </div>
-        <div className="w-full">
-          <img
-            src={footImg}
-            alt="Footer background"
-            className="w-full object-cover"
-          />
+        <div
+          className="w-full h-[173px] bg-cover bg-center bg-no-repeat flex justify-center items-end"
+          style={{backgroundImage: `url(${footImg})`}}
+        >
+          <div className=" text-center text-sm">Copyright © 2025 Cybdeer</div>
         </div>
       </div>
     </div>

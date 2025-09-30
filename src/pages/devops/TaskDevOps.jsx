@@ -91,7 +91,7 @@ const TaskDevOps = () => {
   const rightColumnTasks = tasks.slice(8, 16);
 
   return (
-    <section className="py-72 ">
+    <section className="py-72">
       {/* Header */}
       <SectionHeading
         title="Tasks Our DevOps Engineers Can work On"
@@ -102,7 +102,7 @@ const TaskDevOps = () => {
       {/* Two Column Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Column */}
-        <div className="space-y-4 bg-white p-4 rounded-xl shadow-custom">
+        <div className="space-y-4 bg-white p-4 rounded-xl shadow-[0px_4px_80px_0px_#0000000F]">
           {leftColumnTasks.map((task) => (
             <div
               key={task.id}
@@ -121,7 +121,7 @@ const TaskDevOps = () => {
         </div>
 
         {/* Right Column */}
-        <div className="space-y-4 bg-white p-4 rounded-xl shadow-custom">
+        <div className="space-y-4 bg-white p-4 rounded-xl shadow-[0px_4px_80px_0px_#0000000F]">
           {rightColumnTasks.map((task) => (
             <div
               key={task.id}

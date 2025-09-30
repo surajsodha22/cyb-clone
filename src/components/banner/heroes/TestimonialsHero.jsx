@@ -3,7 +3,7 @@ import React from "react";
 const TestimonialsHero = ({title, description, image}) => {
   return (
     <section
-      className={`flex  flex-col lg:flex-row items-center justify-between  py-16 `}
+      className={`flex  flex-col lg:flex-row items-center justify-between  py-10 `}
     >
       {/* Left Section */}
       <div className="w-full lg:w-1/2 space-y-4 text-center lg:text-left">

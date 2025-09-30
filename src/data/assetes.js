@@ -199,7 +199,7 @@ import leftArrow from "../assetes/left_arrow.png";
 import rightArrow from "../assetes/right_arrow.png";
 import woman3 from "../assetes/woman3.png";
 import bg_yellow from "../assetes/bg_yellow.png";
-import appIcon1 from "../assetes/appIcon2.png";
+import appIcon1 from "../assetes/appIcon1.png";
 import appIcon2 from "../assetes/appIcon2.png";
 import appIcon3 from "../assetes/appIcon3.png";
 import appIcon4 from "../assetes/appIcon4.png";
@@ -267,7 +267,7 @@ import devOffer4 from "../assetes/devOffer4.jpg";
 import devOffer5 from "../assetes/devOffer5.jpg";
 
 import coding from "../assetes/coding.png";
-import devops_1 from "../assetes/devops_1.png";
+import devops_1 from "../assetes/dev_img.png";
 
 import cloud1 from "../assetes/cloud1.png";
 import cloud2 from "../assetes/cloud2.png";
@@ -365,7 +365,53 @@ import careerTech9 from "../assetes/careers/careerTech9.svg";
 import bgContact from "../assetes/bgContact.png";
 import bgBlur2 from "../assetes/bgBlur2.png";
 
+import devopsBG from "../assetes/devopsBG.png";
+
+import businessProcessImg from "../assetes/businessProcessImg.svg";
+import businessBG from "../assetes/businessBG.png";
+
+import websiteBG from "../assetes/websiteBG.png";
+import uiUxBG from "../assetes/uiUxBG.png";
+
+import webIcon1 from "../assetes/webIcon1.svg";
+import webIcon2 from "../assetes/webIcon2.svg";
+import webIcon3 from "../assetes/webIcon3.svg";
+import webIcon4 from "../assetes/webIcon4.svg";
+import webIcon5 from "../assetes/webIcon5.svg";
+
+import d1_html from "../assetes/d1_html.svg";
+import d2_reachjs from "../assetes/d2_react.svg";
+import d3_mern from "../assetes/d3_mern.svg";
+import d4_mean from "../assetes/d4_mean.svg";
+import d5_angular from "../assetes/d5_angular.svg";
+import d6_vue from "../assetes/d6_vue.svg";
+
+import bgOurTeam from "../assetes/bgOurTeam.png";
+
+import teamPerson1 from "../assetes/teamPerson1.png";
+import teamPerson2 from "../assetes/teamPerson2.png";
+
+import headOurTeam from "../assetes/headOurTeam.png";
 export {
+  teamPerson1,
+  teamPerson2,
+  bgOurTeam,
+  headOurTeam,
+  d1_html,
+  d2_reachjs,
+  d3_mern,
+  d4_mean,
+  d5_angular,
+  d6_vue,
+  webIcon1,
+  webIcon2,
+  webIcon3,
+  webIcon4,
+  webIcon5,
+  businessProcessImg,
+  businessBG,
+  websiteBG,
+  uiUxBG,
   careerTech1,
   careerTech2,
   careerTech3,
@@ -377,6 +423,7 @@ export {
   careerTech9,
   bgContact,
   bgBlur2,
+  devopsBG,
   benefitIcon1,
   benefitIcon2,
   benefitIcon3,

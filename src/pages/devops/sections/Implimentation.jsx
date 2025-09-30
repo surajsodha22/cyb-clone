@@ -65,19 +65,16 @@ const Implimentation = () => {
         />
 
         {/* Process Flow Container */}
-        <div className="rounded-2xl p-6 md:p-8 lg:p-12 relative overflow-hidden shadow-custom bg-[#FFFCF8]">
+        <div className="rounded-2xl p-6 md:p-8 xl:p-12 relative overflow-hidden shadow-custom bg-[#FFFCF8]">
           {/* Desktop Dashed Line - hidden on mobile/tablet */}
-          <hr className="hidden lg:block border border-dashed w-[70%] border-[#F15E5F] absolute top-[40%] left-40 z-0" />
-
-          {/* Mobile/Tablet Vertical Line - hidden on desktop */}
-          <div className="lg:hidden absolute left-1/2 top-8 bottom-14 w-0.5 bg-[#F15E5F] border-dashed transform -translate-x-1/2 z-0"></div>
+          <hr className="hidden xl:block border border-dashed w-[70%] border-[#F15E5F] absolute top-[40%] left-40 z-0" />
 
           {/* Process Steps */}
-          <div className="flex flex-col lg:flex-row justify-center gap-6 md:gap-8 lg:gap-12 relative z-10">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8 xl:gap-12 relative z-10">
             {processSteps.map((step, index) => (
               <div
                 key={step.id}
-                className="flex flex-col items-center text-center w-full lg:w-auto"
+                className="flex flex-col items-center text-center"
               >
                 {/* Icon Container */}
                 <div className="mb-3 relative z-20">

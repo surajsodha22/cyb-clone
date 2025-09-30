@@ -5,16 +5,16 @@ import Button from "../../../components/reusable/Button";
 
 const WhatDevOps = () => {
   return (
-    <section className="py-72 px-4 sm:px-6 lg:px-8 bg-white relative">
+    <section className="py-72 relative">
       <div className=" relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row items-center  justify-center gap-12">
           {/* Left Side - Content */}
           <div className="w-full lg:w-1/2">
-            <h2 className="text-4xl md:text-5xl text-left font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center lg:text-left">
               What is DevOps ?
             </h2>
 
-            <p className="text-lg text-gray-600 leading-relaxed mb-8 text-left">
+            <p className="text-base text-gray-600 leading-relaxed mb-8 text-center lg:text-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -25,7 +25,9 @@ const WhatDevOps = () => {
             </p>
 
             {/* Call to Action Button */}
-            <Button text="Get Actual Cost of Development" />
+            <div className="flex justify-center lg:justify-start">
+              <Button text="Get Actual Cost of Development" />
+            </div>
           </div>
 
           {/* Right Side - Conceptual Image */}

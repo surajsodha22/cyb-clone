@@ -19,26 +19,17 @@ const ServicesWebDev = () => {
           {webDevServices?.map((service) => (
             <div
               key={service.id}
-              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+              className="bg-white max-w-[346px] mx-auto rounded-xl p-8 shadow-[0px_2px_16px_0px_#0F1A2529] transition-shadow duration-300 border  z-20"
             >
               {/* Icon with background blob */}
-              <div className="flex justify-center mb-6">
-                <div className="relative">
-                  {/* Orange/yellow blob background */}
-                  <div className="absolute inset-0 transform rotate-12 scale-110 opacity-80"></div>
-                  {/* Icon container */}
-                  <div className="relative w-16 h-16 bg-white rounded-full flex items-center justify-center ">
-                    <img
-                      src={service.icon}
-                      alt={service.title}
-                      className="w-16 h-16"
-                    />
-                  </div>
+              <div className="flex justify-center mb-2">
+                <div className="relative w-16  bg-white rounded-full flex items-center justify-center ">
+                  <img src={service.icon} alt={service.title} className="" />
                 </div>
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
+              <h3 className="text-xl font-bold text-gray-900 text-center mb-2">
                 {service.title}
               </h3>
 

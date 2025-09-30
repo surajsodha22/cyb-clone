@@ -2,18 +2,18 @@ import React from "react";
 
 import {processSteps} from "../../data/data";
 import SectionHeading from "./SectionHeading";
-import {businessProcess} from "../../data/assetes";
+import {businessProcessImg} from "../../data/assetes";
 
 const BusinessModernizationProcess = ({container}) => {
   return (
-    <section className={`${container} max-w-6xl mx-auto`}>
+    <section className={`max-w-6xl mx-auto`}>
       <SectionHeading
         title="Process we use for Business Modernization"
         align="center"
       />
 
-      <div>
-        <img src={businessProcess} alt="Business Modernization Process" />
+      <div className="w-full lg:px-0 px-2">
+        <img src={businessProcessImg} alt="Business Modernization Process" />
       </div>
 
       {/*

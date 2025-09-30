@@ -55,8 +55,8 @@ const Section1 = ({container}) => {
                       />
                     </div>
                     <div className="mt-4 sm:mt-5 text-sm sm:text-base lg:text-xl font-sans text-gray-700 leading-relaxed">
-                      {business.description.length > 500
-                        ? business.description.slice(0, 500) + "..."
+                      {business.description.length > 550
+                        ? business.description.slice(0, 550) + "..."
                         : business.description}
                     </div>
                   </div>

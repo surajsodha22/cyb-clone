@@ -11,7 +11,7 @@ const SectionHeading = ({
 
   return (
     <div
-      className={`w-full flex flex-col ${alignment} gap-2 sm:gap-3 mb-5 sm:mb-8 lg:mb-10 ${className}`}
+      className={`w-full flex flex-col ${alignment} gap-2 sm:gap-3 mb-5 sm:mb-8 lg:mb-10  ${className}`}
     >
       <h2
         className="font-montserrat font-[700] text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl"

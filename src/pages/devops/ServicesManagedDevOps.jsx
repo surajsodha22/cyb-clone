@@ -67,7 +67,7 @@ const ServicesManagedDevOps = () => {
           {servicesData.map((service) => (
             <div
               key={service.id}
-              className="bg-[#FEF8EF] rounded-2xl p-6 md:p-8 lg:p-12 shadow-custom"
+              className="bg-[#FEF8EF] rounded-2xl p-6 md:p-8 lg:p-12 shadow-[0px_2px_4px_0px_#00000029]"
             >
               <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
                 {/* Image Section */}
@@ -81,7 +81,7 @@ const ServicesManagedDevOps = () => {
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-64 md:h-80 object-cover rounded-xl shadow-lg"
+                    className="w-full h-64 md:h-80 object-cover rounded-xl shadow-[0px_4px_9.2px_0px_#00000036]"
                   />
                 </div>
 
@@ -93,7 +93,7 @@ const ServicesManagedDevOps = () => {
                       : "order-1 md:order-1"
                   } text-left`}
                 >
-                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
                     {service.title}
                   </h3>
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed">

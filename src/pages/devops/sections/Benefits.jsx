@@ -5,7 +5,7 @@ import SectionHeading from "../../../components/reusable/SectionHeading";
 const Benefits = ({container}) => {
   return (
     <section
-      className="py-72 mt-72 "
+      className="py-72 mt-72 px-2 xl:px-0 "
       style={{
         background: "linear-gradient(to bottom, #FFF8E7, #FFFFFF)",
       }}
@@ -23,11 +23,11 @@ const Benefits = ({container}) => {
           {benefitsDevops?.map((benefit) => (
             <div
               key={benefit.id}
-              className="bg-white rounded-xl shadow-lg p-6  "
+              className="bg-white rounded-xl shadow-[0px_4px_4px_0px_#00000040] p-6  "
             >
               {/* Image */}
               <div className="mb-6 flex justify-center">
-                <div className=" rounded-xl w-full h-44 overflow-hidden shadow-lg">
+                <div className=" rounded-xl w-full h-44 overflow-hidden ">
                   <img
                     src={benefit.image}
                     alt={benefit.title}

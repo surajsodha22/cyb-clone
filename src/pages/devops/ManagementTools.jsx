@@ -1,6 +1,13 @@
 import React from "react";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Navigation, Pagination, Autoplay} from "swiper/modules";
 import {cloud1, cloud2, cloud3} from "../../data/assetes";
 import SectionHeading from "../../components/reusable/SectionHeading";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const ManagementTools = () => {
   const cloudToolsData = [
@@ -36,6 +43,22 @@ const ManagementTools = () => {
       image: cloud1,
       alt: "AWS",
     },
+    {
+      id: 5,
+      title: "AWS",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      image: cloud1,
+      alt: "AWS",
+    },
+    {
+      id: 6,
+      title: "Microsoft Azure",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      image: cloud2,
+      alt: "Microsoft Azure",
+    },
   ];
 
   return (
@@ -48,27 +71,55 @@ const ManagementTools = () => {
       />
 
       {/* Cloud Tools Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {cloudToolsData.map((tool) => (
-          <div key={tool.id} className="border border-red-200 rounded-lg p-6">
-            <div className="flex flex-col items-center text-center">
-              {/* Tool Logo */}
-              <div className="  rounded-lg flex items-center justify-center mb-4">
-                <img src={tool.image} alt={tool.alt} className="w-full" />
+      <div className="px-4">
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={24}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 24,
+            },
+          }}
+          className="mySwiper"
+        >
+          {cloudToolsData.map((tool) => (
+            <SwiperSlide key={tool.id}>
+              <div className="border border-red-200 rounded-lg p-6 h-full">
+                <div className="flex flex-col items-center text-center h-full">
+                  {/* Tool Logo */}
+                  <div className="rounded-lg flex items-center justify-center mb-4">
+                    <img src={tool.image} alt={tool.alt} className="w-full" />
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                    {tool.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-gray-700 text-xs leading-relaxed">
+                    {tool.description}
+                  </p>
+                </div>
               </div>
-
-              {/* Title */}
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                {tool.title}
-              </h3>
-
-              {/* Description */}
-              <p className="text-gray-700 text-xs leading-relaxed">
-                {tool.description}
-              </p>
-            </div>
-          </div>
-        ))}
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

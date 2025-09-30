@@ -141,16 +141,21 @@ const DelayedQuotePopup = () => {
                   className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg  shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white placeholder-black"
                 />
               </div>
-              <div className="relative">
+              <div className="relative flex items-center">
                 <IoIosGlobe
-                  className="absolute left-3 sm:top-3 top-2"
-                  size={18}
+                  className="absolute left-3 top-1/2 transform -translate-y-1/2  pointer-events-none"
+                  size={20}
                 />
                 <select
-                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white placeholder-black"
+                  className="w-full pl-9 sm:pl-10 pr-3 py-2 sm:py-3 rounded-lg shadow-[0px_2px_6px_0px_#00000026] focus:ring-1 focus:ring-secondary outline-none text-xs sm:text-sm bg-white placeholder-black appearance-none"
                   defaultValue=""
+                  style={{
+                    WebkitAppearance: "none",
+                    MozAppearance: "none",
+                    appearance: "none",
+                  }}
                 >
-                  <option value="" disabled className="">
+                  <option value="" disabled>
                     Select Country
                   </option>
                   <option value="United States">United States</option>

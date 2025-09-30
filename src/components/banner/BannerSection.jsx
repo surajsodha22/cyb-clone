@@ -3,7 +3,7 @@ import React from "react";
 const BannerSection = ({title, description, image}) => {
   return (
     <section
-      className={`flex  flex-col lg:flex-row items-center justify-between  py-16 sm:py-20 md:py-24 `}
+      className={`flex  flex-col lg:flex-row items-center justify-between  py-8 sm:py-16  `}
     >
       {/* Left Section */}
       <div className="w-full lg:w-1/2 space-y-4 text-center lg:text-left">
@@ -20,7 +20,7 @@ const BannerSection = ({title, description, image}) => {
 
       {/* Right Section */}
       <div className="w-full lg:w-1/2 mt-6 sm:mt-8 lg:mt-0 flex justify-center lg:justify-end">
-        <div className="rounded-[20px] sm:rounded-[30px] overflow-hidden w-full max-w-sm sm:max-w-md lg:max-w-xl lg:mr-5">
+        <div className="rounded-[20px] sm:rounded-[30px] overflow-hidden w-full max-w-sm sm:max-w-md lg:max-w-lg lg:mr-5">
           <img src={image} alt="banner" className="w-full h-auto" />
         </div>
       </div>

@@ -30,7 +30,7 @@ const VideoSection = ({img, container, playIcon}) => {
           />
 
           {/* Testimonial Cards */}
-          <div className="flex flex-col md:flex-row flex-wrap items-center justify-center md:justify-between p-2 gap-4">
+          <div className="flex flex-col md:flex-row flex-wrap items-center justify-center xl:justify-between p-2 xl:gap-4 gap-10">
             {testimonialData.map((testimonial) => (
               <div
                 key={testimonial.id}

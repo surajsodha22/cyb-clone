@@ -1,5 +1,5 @@
 import React, {Suspense, lazy} from "react";
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route, Navigate} from "react-router-dom";
 
 const Home = lazy(() => import("../pages/home/Home"));
 const About = lazy(() => import("../pages/about/About"));
@@ -24,6 +24,7 @@ const BusinessModernization = lazy(() =>
   import("../pages/business-modernization/BusinessModernization")
 );
 const UiUxDesign = lazy(() => import("../pages/uiUxDesign/UiUxDesign"));
+const Team = lazy(() => import("../pages/team/Team"));
 
 const RouterPage = ({container}) => {
   return (
@@ -45,18 +46,6 @@ const RouterPage = ({container}) => {
           path="/salesforce"
           element={<Salesforce container={container} />}
         />
-        <Route
-          path="/ai-development"
-          element={<AIDevelopment container={container} />}
-        />
-        <Route
-          path="/business-modernization"
-          element={<BusinessModernization container={container} />}
-        />
-        <Route
-          path="/ui-ux-design"
-          element={<UiUxDesign container={container} />}
-        />
 
         <Route
           path="/mobile-app-development"
@@ -69,11 +58,23 @@ const RouterPage = ({container}) => {
         <Route path="/devops" element={<Devops container={container} />} />
 
         <Route
+          path="/ai-development"
+          element={<AIDevelopment container={container} />}
+        />
+        <Route
+          path="/business-modernization"
+          element={<BusinessModernization container={container} />}
+        />
+        <Route
+          path="/ui-ux-design"
+          element={<UiUxDesign container={container} />}
+        />
+        <Route
           path="/website-development"
           element={<WebsiteDevelopment container={container} />}
         />
-        {/* <Route path="/on-demand" element={<Devops container={container} />} /> */}
-        <Route path="/*" element={"page not found"} />
+        <Route path="/our-team" element={<Team container={container} />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Suspense>
   );

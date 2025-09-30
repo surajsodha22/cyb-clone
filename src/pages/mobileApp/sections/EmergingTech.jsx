@@ -21,21 +21,21 @@ function EmergingTech({container}) {
             <div key={tech.id} className="bg-gray-100 rounded-lg  p-6">
               {/* Icon */}
               <div className="mb-4">
-                <div className="w-16 h-16 flex items-center justify-center">
+                <div className="w-[60px] h-[60px] flex items-center justify-center">
                   <img
                     src={tech.icon}
                     alt={tech.title}
-                    className="w-full object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>
 
               {/* Content */}
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 text-left">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3 text-left">
                   {tech.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed text-left">
+                <p className="text-gray-600 text-base leading-relaxed text-left">
                   {tech.description}
                 </p>
               </div>

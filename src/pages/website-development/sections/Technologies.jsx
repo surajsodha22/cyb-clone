@@ -1,0 +1,60 @@
+import React from "react";
+import {
+  features,
+  features2,
+  features2Web,
+  featuresWeb,
+} from "../../../data/data";
+import SectionHeading from "../../../components/reusable/SectionHeading";
+
+const Technologies = () => {
+  return (
+    <div className="">
+      <SectionHeading
+        title={"Technologies we Use "}
+        subtitle={
+          "follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
+        }
+      />
+
+      <div className="flex flex-col lg:flex-row justify-between">
+        <div className="bg-[#FDC36645] px-4 sm:px-6 py-4 flex-1   lg:rounded-l-2xl rounded-t-[14px] lg:rounded-tr-none lg:rounded-br-none">
+          {featuresWeb.map((feature, index) => (
+            <div
+              key={index}
+              className="mt-0 hover:bg-[#FFD694] hover:shadow-[0px_4px_4px_0px_#00000040] p-3 sm:p-4 rounded flex gap-2 items-center hover:font-semibold"
+            >
+              <div className="w-[24px]">
+                <img src={feature.img} alt={feature.title} className="w-full" />
+              </div>
+              <div className="text-sm sm:text-base">{feature.title}</div>
+            </div>
+          ))}
+        </div>
+        <div className="bg-primary flex-1  lg:rounded-r-2xl lg:rounded-l-none  rounded-b-[14px]">
+          <div className="flex w-full flex-wrap justify-center items-center gap-3 sm:gap-4 max-w-2xl mx-auto p-3 sm:p-4 mt-6 sm:mt-10">
+            {features2Web?.map((feature, index) => (
+              <div
+                key={index}
+                className="flex w-40 sm:w-52 lg:w-[241px] h-[65px] sm:h-[75px] bg-white shadow-[0px_4px_16px_0px_#0000000D;] sm:rounded-[14px] gap-2 items-center py-3 sm:py-4 pl-3 sm:pl-4"
+              >
+                <div className="w-8 sm:w-10">
+                  <img
+                    src={feature.img}
+                    alt="img"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="text-sm sm:text-base lg:text-[18px] font-semibold">
+                  {feature?.title}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Technologies;

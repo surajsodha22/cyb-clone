@@ -4,7 +4,7 @@ const ServiceCard = ({feature, index}) => {
   return (
     <div
       key={index}
-      className="bg-white border-[0.5px] border-[#F26064] rounded-xl shadow-sm p-3 sm:p-4 pb-8 sm:pb-12 text-center hover:shadow-lg transition"
+      className="bg-white border-[0.5px] border-[#F26064] rounded-xl shadow-sm p-3 sm:p-4 pb-8 sm:pb-12 text-center  transition"
     >
       {/* Icon */}
       <div className="mb-3 sm:mb-4 flex justify-center">

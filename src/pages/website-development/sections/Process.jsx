@@ -4,8 +4,8 @@ import SectionHeading from "../../../components/reusable/SectionHeading";
 
 const Process = ({container}) => {
   return (
-    <div className="my-72 bg-primary">
-      <div className={`${container} py-72`}>
+    <div className="my-72 bg-primary shadow-[0px_4px_16px_0px_#00000029]">
+      <div className={`max-w-6xl mx-auto py-72`}>
         <SectionHeading title="Our Web Development Process" align="center" />
 
         {/* Process Steps */}

@@ -10,7 +10,7 @@ const PartnershipCTA = () => {
         alt=""
         className="w-[100px] sm:w-[148px] absolute top-6 sm:top-10 left-0 z-0"
       />
-      <div className="relative z-10  sm:mt-0 sm:ml-[10%] flex flex-col justify-center items-center sm:items-start">
+      <div className="relative z-10  md:mt-0 lg:ml-[10%] flex flex-col justify-center items-center lg:items-start">
         <div
           className="
             text-sm 
@@ -25,8 +25,8 @@ const PartnershipCTA = () => {
             leading-[25px] 
             sm:leading-[35px] 
             tracking-normal
-            text-center sm:text-left
-            "
+            text-center lg:text-left
+          "
         >
           Tech Powered Success Awaites. Empower Your Digital Journey.
         </div>
@@ -38,7 +38,7 @@ const PartnershipCTA = () => {
           />
         </div>
       </div>
-      <div className="absolute sm:right-10 -right-5 bottom-0 -top-22 w-[250px] sm:w-[330px] hidden sm:block">
+      <div className="absolute sm:right-10 -right-5 bottom-0 -top-22 w-[250px] sm:w-[330px] hidden lg:block">
         <img src={women} alt="" />
       </div>
     </div>

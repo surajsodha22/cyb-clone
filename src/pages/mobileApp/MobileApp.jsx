@@ -17,16 +17,18 @@ import {sliderDataMobApp} from "../../data/data";
 const MobileApp = ({container}) => {
   return (
     <>
-      <div className={`${container}`}>
+      <div className={`${container} px-2 xl:px-0`}>
         <AppDevelopmentServices container={container} />
-        <CTA image={ctaBanner} />
+        {/* <CTA image={ctaBanner} /> */}
 
-        {/* <PartnershipCTA /> */}
+        <div className="mt-72 ">
+          <PartnershipCTA />
+        </div>
       </div>
 
       <DevelopmentProcess container={container} />
 
-      <div className={`${container} mt-72`}>
+      <div className={`${container} mt-72 px-2 xl:px-0`}>
         <SectionHeading
           title="Our Industry Specific Mobile App Development Services"
           subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
@@ -35,12 +37,16 @@ const MobileApp = ({container}) => {
         <AutoSlider reverse={true} slideData={sliderDataMobApp} />
       </div>
 
-      <EmergingTech container={container} />
-      <AiServices container={container} />
-      <AiFeatures container={container} />
+      <div className={`px-2 xl:px-0`}>
+        <EmergingTech container={container} />
+        <AiServices container={container} />
+        <AiFeatures container={container} />
+      </div>
       {/* <TechnologiesSection /> */}
 
-      <MultiGridSlider />
+      <div className={` my-72 px-2 xl:px-0`}>
+        <MultiGridSlider />
+      </div>
     </>
   );
 };

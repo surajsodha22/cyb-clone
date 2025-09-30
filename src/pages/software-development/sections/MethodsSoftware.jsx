@@ -5,7 +5,7 @@ import SectionHeading from "../../../components/reusable/SectionHeading";
 const MethodsSoftware = ({container}) => {
   return (
     <section className="my-72  sm:px-6 lg:px-8 bg-gradient-to-b from-[#FFF8E7] to-[#FFFFFF]">
-      <div className={`${container} pt-72`}>
+      <div className={`${container} pt-72 xl:px-0 px-2`}>
         <div className="flex flex-col lg:flex-row items-end gap-12">
           {/* Left Side - Image */}
           <div className="w-full lg:w-2/5">
@@ -31,7 +31,7 @@ const MethodsSoftware = ({container}) => {
               {/* Left Column */}
               <div className="space-y-8 text-left">
                 <div>
-                  <h3 className="text-md font-bold text-gray-900 mb-3 text-left">
+                  <h3 className="text-md font-bold mb-3 text-left">
                     Agile Development Methodology
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-left">
@@ -42,7 +42,7 @@ const MethodsSoftware = ({container}) => {
                 </div>
 
                 <div>
-                  <h3 className="text-md font-bold text-gray-900 mb-3 text-left">
+                  <h3 className="text-md font-bold mb-3 text-left">
                     Waterfall Development Methodology
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-left">
@@ -56,7 +56,7 @@ const MethodsSoftware = ({container}) => {
               {/* Right Column */}
               <div className="space-y-8 text-left">
                 <div>
-                  <h3 className="text-md  font-bold text-gray-900 mb-3 text-left">
+                  <h3 className="text-md  font-bold mb-3 text-left">
                     Scrum Development
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-left">
@@ -67,7 +67,7 @@ const MethodsSoftware = ({container}) => {
                 </div>
 
                 <div>
-                  <h3 className="text-md font-bold text-gray-900 mb-3 text-left">
+                  <h3 className="text-md font-bold mb-3 text-left">
                     DevOps Services
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-left">

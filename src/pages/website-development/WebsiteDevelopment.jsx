@@ -7,45 +7,60 @@ import WhyChooseUS from "./sections/WhyChooseUS";
 import MultiGridSlider from "../../components/reusable/MultiGridSlider";
 import AutoSlider from "../../components/reusable/AutoSlider";
 import SectionHeading from "../../components/reusable/SectionHeading";
-import Section7 from "../../components/hero_sections/Section7";
-import {ctaBanner, ctaBanner3} from "../../data/assetes";
+import {bgBlur, ctaBanner3} from "../../data/assetes";
 import CTA from "../../components/reusable/CTA";
+import PartnershipCTA from "../../components/reusable/PartnershipCTA";
+import Technologies from "./sections/Technologies";
+import ReversePartnershipCTAMan from "../../components/reusable/ReversePartnershipCTAMan";
 
 const WebsiteDevelopment = ({container}) => {
   return (
     <div>
-      <div className={container}>
-        <Collaborate />
-        <CTA image={ctaBanner} />
+      <div className="max-w-[1500px] mx-auto relative">
+        <img
+          src={bgBlur}
+          alt=""
+          className="absolute top-16 right-0 md:w-40 w-28 z-0"
+        />
+        <div className={`${container} z-10 xl:px-0 px-2`}>
+          <Collaborate />
+          <div className="sm:mt-72">
+            <PartnershipCTA />
+          </div>
+        </div>
       </div>
       <Process container={container} />
-      <div className={container}>
-        <ServicesWebDev />
+      <div className="max-w-[1500px] mx-auto relative">
+        <img
+          src={bgBlur}
+          alt=""
+          className="absolute top-24 right-0 md:w-40 w-28 z-0"
+        />
+        <div className={`${container} z-10 xl:px-0 px-2`}>
+          <ServicesWebDev />
+        </div>
       </div>
       <WhyChooseUS container={container} />
-      <div className={container}>
-        <Section7
-          title="Technologies we Use "
-          subtitle={
-            "follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
-          }
-        />
+      <div className={`max-w-6xl mx-auto xl:px-0 px-2`}>
+        <Technologies />
         <div className="mt-72">
-          <CTA image={ctaBanner3} />
-        </div>
-        <div className="mt-72">
-          <SectionHeading
-            title={"Our Industry Specific Mobile App Development Services"}
-            subtitle={
-              "follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
-            }
-            align="center"
-          />
-          <AutoSlider />
+          <ReversePartnershipCTAMan />
         </div>
       </div>
 
-      <MultiGridSlider />
+      <div className={`${container} mt-72`}>
+        <SectionHeading
+          title={"Our Industry Specific Mobile App Development Services"}
+          subtitle={
+            "follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
+          }
+          align="center"
+        />
+        <AutoSlider />
+      </div>
+      <div className={`my-72`}>
+        <MultiGridSlider />
+      </div>
     </div>
   );
 };

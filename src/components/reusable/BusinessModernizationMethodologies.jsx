@@ -5,12 +5,16 @@ import SectionHeading from "./SectionHeading";
 const BusinessModernizationMethodologies = ({container}) => {
   return (
     <section className={`py-72 px-4 ${container}`}>
-      <div className=" flex flex-col lg:flex-row items-center gap-10">
+      <div className=" flex flex-col lg:flex-row items-center lg:items-end lg:gap-10 gap-4 lg:justify-end justify-center">
         {/* Left: Image with icons */}
 
-        <div>
+        <div className="w-80">
           {" "}
-          <img src={women3} alt="Woman Professional" className="" />
+          <img
+            src={women3}
+            alt="Woman Professional"
+            className="w-full object-contain h-full"
+          />
         </div>
 
         {/* Right: Text content */}
@@ -21,7 +25,8 @@ const BusinessModernizationMethodologies = ({container}) => {
             idea. Here are all the app development services offered by us:"
             align="left"
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:mt-24">
             {BusinessMethodologies.map((item, index) => (
               <div key={index}>
                 <h3 className="font-semibold text-lg">{item.title}</h3>

@@ -1,5 +1,4 @@
 import React from "react";
-import {FaRocket} from "react-icons/fa";
 import {
   aboutBanner,
   image,
@@ -15,14 +14,24 @@ import {
   devopsHead,
   testimoHead,
   headCareers,
+  headOurTeam,
 } from "../../data/assetes";
 
-import BannerSection from "./BannerSection";
 import HomeHero from "./heroes/HomeHero";
 import AboutHero from "./heroes/AboutHero";
 import CareerHero from "./heroes/CareerHero";
 import ContactHero from "./heroes/ContactHero";
 import TestimonialsHero from "./heroes/TestimonialsHero";
+import PartnershipHero from "./heroes/PartnershipHero";
+import MobileAppHero from "./heroes/MobileAppHero";
+import SoftwareHero from "./heroes/SoftwareHero";
+import SalesforceHero from "./heroes/SalesforceHero";
+import AIDevelopmentHero from "./heroes/AIDevelopmentHero";
+import BusinessModernizationHero from "./heroes/BusinessModernizationHero";
+import UiUxDesignHero from "./heroes/UiUxDesignHero";
+import WebsiteDevelopmentHero from "./heroes/WebsiteDevelopmentHero";
+import DevOpsHero from "./heroes/DevOpsHero";
+import OurTeamHero from "./heroes/OurTeamHero";
 
 const Banner = ({container, location}) => {
   return (
@@ -50,13 +59,9 @@ const Banner = ({container, location}) => {
             pathname={location?.pathname}
           />
         ) : location?.pathname === "/partnership" ? (
-          <BannerSection
-            title="Partner With Us"
-            image={partner}
-            pathname={location?.pathname}
-          />
+          <PartnershipHero title="Partner With Us" image={partner} />
         ) : location?.pathname === "/salesforce" ? (
-          <BannerSection
+          <SalesforceHero
             title="Salesforce Development Company"
             description={
               "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
@@ -65,7 +70,7 @@ const Banner = ({container, location}) => {
             pathname={location?.pathname}
           />
         ) : location?.pathname === "/ai-development" ? (
-          <BannerSection
+          <AIDevelopmentHero
             title="AI Development"
             description={
               "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
@@ -74,7 +79,7 @@ const Banner = ({container, location}) => {
             pathname={location?.pathname}
           />
         ) : location?.pathname === "/business-modernization" ? (
-          <BannerSection
+          <BusinessModernizationHero
             title="Business Modernization"
             description={
               "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
@@ -83,7 +88,7 @@ const Banner = ({container, location}) => {
             pathname={location?.pathname}
           />
         ) : location?.pathname === "/ui-ux-design" ? (
-          <BannerSection
+          <UiUxDesignHero
             title="UI UX Design "
             description={
               "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
@@ -98,16 +103,15 @@ const Banner = ({container, location}) => {
             pathname={location?.pathname}
           />
         ) : location?.pathname === "/mobile-app-development" ? (
-          <BannerSection
+          <MobileAppHero
             title="Mobile App Development"
             description={
               "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
             }
             image={mobileHead}
-            pathname={location?.pathname}
           />
         ) : location?.pathname === "/software-development" ? (
-          <BannerSection
+          <SoftwareHero
             title="Software Development"
             description={
               "As the premier software company, we empower your growth and innovation with a future-forward vision for software development. We focus on your long-term goals, ensuring you are equipped to thrive in this competitive environment."
@@ -116,7 +120,7 @@ const Banner = ({container, location}) => {
             pathname={location?.pathname}
           />
         ) : location?.pathname === "/website-development" ? (
-          <BannerSection
+          <WebsiteDevelopmentHero
             title="Web Development "
             description={
               "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
@@ -125,7 +129,7 @@ const Banner = ({container, location}) => {
             pathname={location?.pathname}
           />
         ) : location?.pathname === "/devops" ? (
-          <BannerSection
+          <DevOpsHero
             title="DevOps Services Solutions"
             description={
               "Cybdeer is a leading mobile app development company with expertise in developing cross-platform and native mobile applications. Hire our dedicated Mobile app developers to build award-winning apps and give wings to your ideas."
@@ -137,6 +141,13 @@ const Banner = ({container, location}) => {
           <TestimonialsHero
             title="Testimonial"
             image={testimoHead}
+            container={container}
+          />
+        ) : location?.pathname === "/our-team" ? (
+          <OurTeamHero
+            title="Our Team"
+            description="We have expert members in every field, each with over eight years of experience, which is helpful for your company's growth. As a top IT company, we are ready to serve your company with the best services."
+            image={headOurTeam}
             container={container}
           />
         ) : (

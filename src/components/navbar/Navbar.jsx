@@ -4,7 +4,7 @@ import {logo} from "../../data/assetes";
 import Button from "../reusable/Button";
 import {Link} from "react-router-dom";
 import {navMenu} from "../../data/data";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -13,6 +13,31 @@ const Navbar = () => {
   const toggleSubMenu = (index) => {
     setActiveMenu(activeMenu === index ? null : index);
   };
+
+  // Close drawer when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        open &&
+        !event.target.closest(".mobile-drawer") &&
+        !event.target.closest(".mobile-menu-button")
+      ) {
+        setOpen(false);
+      }
+    };
+
+    if (open) {
+      document.addEventListener("mousedown", handleClickOutside);
+      document.body.style.overflow = "hidden"; // Prevent body scroll
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.body.style.overflow = "unset";
+    };
+  }, [open]);
 
   return (
     <nav className="w-full pt-2 sm:pt-4 xl:px-0        ">
@@ -63,51 +88,104 @@ const Navbar = () => {
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
-            <button onClick={() => setOpen(!open)}>
+            <button
+              className="mobile-menu-button p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+              onClick={() => setOpen(!open)}
+            >
               {open ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Drawer Overlay */}
       {open && (
-        <div className="lg:hidden px-6 py-4 space-y-4 bg-primary">
-          <ul>
-            {navMenu.map((item, index) => (
-              <li key={index} className="pt-2">
-                <div
-                  className="flex items-center justify-between cursor-pointer"
-                  onClick={() => toggleSubMenu(index)}
-                >
-                  <span>{item.name}</span>
-                  {activeMenu === index ? <FaAngleUp /> : <FaAngleDown />}
+        <div className="fixed inset-0 z-[9999] lg:hidden">
+          {/* Backdrop */}
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300"
+            onClick={() => setOpen(false)}
+          />
+
+          {/* Drawer */}
+          <div className="mobile-drawer fixed right-0 top-0 h-full w-80 max-w-[85vw] bg-primary shadow-2xl transform transition-transform duration-300 ease-in-out">
+            {/* Drawer Header */}
+            <div className="flex items-center justify-between p-6 border-b border-gray-200">
+              <h2 className="text-xl font-semibold text-gray-800">Menu</h2>
+              <button
+                onClick={() => setOpen(false)}
+                className="p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+              >
+                <FaTimes size={20} />
+              </button>
+            </div>
+
+            {/* Drawer Content */}
+            <div className="flex flex-col h-full">
+              <div className="flex-1 overflow-y-auto p-6">
+                <ul className="space-y-2">
+                  {navMenu.map((item, index) => (
+                    <li
+                      key={index}
+                      className="border-b border-gray-100 last:border-b-0"
+                    >
+                      <div
+                        className="flex items-center justify-between py-4 cursor-pointer hover:bg-gray-50 rounded-lg px-3 transition-colors duration-200"
+                        onClick={() => toggleSubMenu(index)}
+                      >
+                        <span className="text-gray-800 font-medium">
+                          {item.name}
+                        </span>
+                        {activeMenu === index ? (
+                          <FaAngleUp className="text-gray-500" />
+                        ) : (
+                          <FaAngleDown className="text-gray-500" />
+                        )}
+                      </div>
+
+                      {/* Submenu */}
+                      {activeMenu === index && item.submenu && (
+                        <div className="pl-4 pb-2 space-y-1 animate-fadeIn">
+                          {item.submenu.map((sub, i) => (
+                            <Link
+                              key={i}
+                              to={sub.link}
+                              className="block py-3 px-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors duration-200"
+                              onClick={() => setOpen(false)}
+                            >
+                              {sub.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Blog Link */}
+                <div className="mt-6 pt-4 border-t border-gray-200">
+                  <Link
+                    to="/blog"
+                    className="block py-3 px-3 text-gray-800 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors duration-200"
+                    onClick={() => setOpen(false)}
+                  >
+                    Blog
+                  </Link>
                 </div>
+              </div>
 
-                {/* Submenu */}
-                {activeMenu === index && item.submenu && (
-                  <ul className="pl-4 mt-2 space-y-2">
-                    {item.submenu.map((sub, i) => (
-                      <li key={i}>
-                        <Link
-                          to={sub.link}
-                          className="block py-1 hover:text-orange-600"
-                        >
-                          {sub.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
-
-          <Link to={"/blog"} className="block">
-            Blog
-          </Link>
-
-          <Button text="Contact Us" onClick={() => alert("Clicked!")} />
+              {/* Drawer Footer */}
+              <div className="p-6 border-t border-gray-200 bg-gray-50">
+                <Button
+                  text="Contact Us"
+                  onClick={() => {
+                    alert("Clicked!");
+                    setOpen(false);
+                  }}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       )}
     </nav>

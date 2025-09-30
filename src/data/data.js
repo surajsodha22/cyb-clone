@@ -223,6 +223,19 @@ import {
   benefitIcon2,
   benefitIcon3,
   benefitIcon4,
+  webIcon1,
+  webIcon2,
+  webIcon3,
+  webIcon4,
+  webIcon5,
+  d1_html,
+  d2_reachjs,
+  d3_mern,
+  d4_mean,
+  d5_angular,
+  d6_vue,
+  teamPerson1,
+  teamPerson2,
 } from "./assetes";
 
 export const navMenu = [
@@ -279,55 +292,55 @@ export const services = [
     img: Frame1,
     hoverImg: FrameHover,
     title: "Mobile app creation",
-    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
+    desc: "We create innovative, client-friendly mobile apps with a focus on cybersecurity and flexible solutions,turning your ideas into a reality.",
   },
   {
     img: Frame2,
     hoverImg: FrameHover1,
     title: "Software creation",
-    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
+    desc: "Our expert software developers use advanced technology and cutting-edge tools to create well-crafted solutions that will benefit your company.",
   },
   {
     img: Frame3,
     hoverImg: FrameHover2,
     title: "AI creation",
-    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
+    desc: "Our expert developers use advanced tools to create well-crafted software solutions that align with future trends, ensuring your company benefits from cutting-edge technology.",
   },
   {
     img: Frame4,
     hoverImg: FrameHover3,
     title: "Website Development",
-    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
+    desc: "We deliver exceptional websites with expert UX design, mobile-first responsiveness, high-quality content, fast loading speeds, strong SEO, robust security, and effective calls to action.",
   },
   {
     img: Frame5,
     hoverImg: FrameHover4,
     title: "DevOps",
-    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
+    desc: "A combination of development and IT services, with the goal of shortening the software lifecycle and delivering high-quality software through our expert developers.",
   },
   {
     img: Frame6,
     hoverImg: FrameHover5,
-    title: "UX UI Design ",
-    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
+    title: "UX/UI Design ",
+    desc: "For a better user experience, we create a superior UI with visual designs, interactive elements, and consistent layouts, all enhanced by AI and immersive technologies.",
   },
   {
     img: Frame7,
     hoverImg: FrameHover6,
     title: "Business modernization",
-    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
+    desc: "You need to update your company technologies, services or products, and strategic approach to align with the future. We are ready to provide this business modernization service to help you achieve your future vision.",
   },
   {
     img: Frame8,
     hoverImg: FrameHover7,
     title: "Salesforce",
-    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
+    desc: "Salesforce is a cloud-based CRM software that is helpful for all types of customer services, removing all the problems we have with traditional CRM.",
   },
   {
     img: Frame9,
     hoverImg: FrameHover8,
-    title: "ON Demand ",
-    desc: "We are committed to solving your app creation challenges with a focus on cybersecurity and flexible solutions. We value your ideas regardless of their complexity.",
+    title: "On Demand ",
+    desc: "Your choice, our responsibility” We provide custom on-demand services for various industries, from ride-hailing to streaming, with features that align with your vision and market demand.",
   },
 ];
 
@@ -354,7 +367,6 @@ export const features = [
   {title: "Machine Learning", img: ML},
   {title: "CMS & E-Commerce", img: CMS},
 ];
-
 export const features2 = [
   {title: "Swift", img: d1},
   {title: "Xcode", img: d2},
@@ -362,6 +374,23 @@ export const features2 = [
   {title: "Ionic", img: d4},
   {title: "Xamarin", img: d5},
   {title: "React Native", img: d6},
+];
+export const featuresWeb = [
+  {title: "CMS", img: Mobilty},
+  {title: "Frontend", img: Frontend},
+  {title: "Backend", img: Backend},
+  {title: "Data Base ", img: AI},
+  {title: "Hosting", img: ML},
+  // {title: "CMS & E-Commerce", img: CMS},
+];
+
+export const features2Web = [
+  {title: "HTML", img: d1_html},
+  {title: "ReachJS", img: d2_reachjs},
+  {title: "Mern Stack ", img: d3_mern},
+  {title: "Mean Stack", img: d4_mean},
+  {title: "Angular JS ", img: d5_angular},
+  {title: "Vue.JS", img: d6_vue},
 ];
 
 export const slider = [
@@ -1524,27 +1553,140 @@ export const ourBusiness = [
     image: ourBusinessimg1,
     cardIcon: cardImg1,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "We offer solutions for your online payments, allowing for secure transfers from websites to payment processors. We provide both & pay-in & pay-out services with all types of payment gateways, including hosted payment gateways, direct post, and API hosted. Our vendor payment solution is beneficial for your business because it increases efficiency, reduces costs, enhances security, and improves scalability and control, all of which are helpful for us. Our mission is to connect with organizations to help them with salary distribution.",
   },
   {
     id: 2,
     image: ourBusinessimg2,
     cardIcon: cardImg2,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Paydeer is a fintech company that operates on a B2B model with the goal of making bill payments and ticket booking easier. It provides a wide range of services, including Aadhaar-enabled payment systems, recharges, insurance, and e-tax services, as well as utility bill payments. These custom solutions are designed to best suit your organization, helping with your growth through digital measures, security, and AI customer services, which in turn offers convenience, efficiency, and automation.",
   },
   {
     id: 3,
     image: ourBusinessimg3,
     cardIcon: cardImg3,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "We are a credit loan services provider company that works in a B2C model, offering all types of loans based on security and repayment structure. We have all the qualities you need for your credit loan, including transparency, clarity, favorable loan products, excellent customer service and support, responsible lending practices, robust technology, and security. We are regulated by the RBI, and we offer fair interest rates and full security. We also ensure that our services are accessible on mobile and that they take into account the borrower&#39;s ability to repay.",
   },
   {
     id: 4,
     image: ourBusinessimg4,
     cardIcon: cardImg4,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "We help you establish your digital footprint with our expert digital marketing and e-commerce services. Our solutions offer global reach, measurable results, personalization, and cost-effectiveness, leading to an improved ROI. We offer a full suite of digital marketing services, including SEO, SEM, PPC, content marketing, SMM, email marketing, affiliate marketing, video marketing, and mobile marketing. Our e-commerce services cover platform and storefront development, payment solutions, logistics, customer support, and more.",
+  },
+];
+
+export const webFeatures = [
+  {
+    id: 1,
+    title: "Mobile-friendly & responsive design",
+    icon: webIcon1,
+    description:
+      "Our websites are designed to work perfectly on all devices and screen sizes.",
+  },
+  {
+    id: 2,
+    title: "SEO-optimized structure",
+    icon: webIcon2,
+    description:
+      "Built with search engine optimization in mind for better visibility.",
+  },
+  {
+    id: 3,
+    title: "Fast loading & performance-focused",
+    icon: webIcon3,
+    description:
+      "Optimized for speed and performance to provide the best user experience.",
+  },
+  {
+    id: 4,
+    title: "Clean, modern UI/UX",
+    icon: webIcon4,
+    description:
+      "Contemporary design that engages users and drives conversions.",
+  },
+  {
+    id: 5,
+    title: "Tailored to your business goals",
+    icon: webIcon5,
+    description:
+      "Customized solutions that align with your specific business objectives.",
+  },
+];
+
+export const teamData = [
+  {
+    id: 1,
+    img: teamPerson1,
+    role: "Creative Director",
+    name: "RAHUL SHARMA",
+    description:
+      "A visionary with a passion for aesthetics and storytelling. Rahul shapes the visual language behind everything we do.",
+  },
+  {
+    id: 2,
+    img: teamPerson2,
+    role: "Lead Developer",
+    name: "PRIYA PATEL",
+    description:
+      "A technical expert who brings innovative solutions to life. Priya ensures our digital experiences are seamless and powerful.",
+  },
+  {
+    id: 3,
+    img: teamPerson1,
+    role: "UX Designer",
+    name: "ARJUN SINGH",
+    description:
+      "A creative mind focused on user experience. Arjun designs interfaces that are both beautiful and intuitive.",
+  },
+  {
+    id: 4,
+    img: teamPerson2,
+    role: "Marketing Manager",
+    name: "SOPHIA CHEN",
+    description:
+      "A strategic thinker who connects brands with their audiences. Sophia drives our marketing initiatives forward.",
+  },
+  {
+    id: 5,
+    img: teamPerson1,
+    role: "Project Manager",
+    name: "MARCUS JOHNSON",
+    description:
+      "An organized leader who keeps projects on track. Marcus ensures timely delivery and quality outcomes.",
+  },
+  {
+    id: 6,
+    img: teamPerson2,
+    role: "Content Writer",
+    name: "EMMA WILSON",
+    description:
+      "A wordsmith who crafts compelling narratives. Emma creates content that resonates with our audience.",
+  },
+  {
+    id: 7,
+    img: teamPerson1,
+    role: "Frontend Developer",
+    name: "DAVID KIM",
+    description:
+      "A frontend specialist who builds responsive interfaces. David creates smooth user experiences across all devices.",
+  },
+  {
+    id: 8,
+    img: teamPerson2,
+    role: "Backend Developer",
+    name: "LISA GARCIA",
+    description:
+      "A backend expert who builds robust systems. Lisa ensures our applications are scalable and secure.",
+  },
+  {
+    id: 9,
+    img: teamPerson1,
+    role: "Quality Assurance",
+    name: "JAMES BROWN",
+    description:
+      "A detail-oriented tester who ensures quality. James meticulously tests every feature before release.",
   },
 ];

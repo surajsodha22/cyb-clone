@@ -15,26 +15,21 @@ function AppDevelopmentServices({container}) {
         />
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-8 gap-4">
           {appDevelopmentServices.map((service) => (
             <div
               key={service.id}
-              className="bg-white mb-72 mt-72  rounded-xl border border-gray-200 border-l-4 border-l-orange-300 shadow-lg p-8 relative hover:shadow-xl transition-shadow duration-300"
+              className="bg-white sm:mb-4 mb-2 mt-72  rounded-xl border border-gray-200 p-8 relative "
             >
+              <div className="absolute left-0 top-[5%] h-[90%] w-1 bg-secondary rounded"></div>
               {/* Vector 2143 Background with Service Icon */}
               <div className="absolute -top-[90px] left-1/2 transform -translate-x-1/2">
                 <div className="w-44 h-44 flex items-center justify-center relative">
-                  {/* Vector 2143 Background */}
-                  <img
-                    src={bg_yellow}
-                    alt="Background Icon"
-                    className="w-44 h-44 object-contain absolute"
-                  />
                   {/* Service Icon on top */}
                   <img
                     src={service.icon}
                     alt={service.title}
-                    className="w-12 h-12 object-contain relative z-10"
+                    className="w-full h-full object-contain relative z-10"
                   />
                 </div>
               </div>

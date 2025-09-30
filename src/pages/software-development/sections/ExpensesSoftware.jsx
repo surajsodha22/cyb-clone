@@ -75,7 +75,11 @@ const ExpensesSoftware = () => {
 
           {/* Right Side - Image */}
           <div className="w-full lg:w-1/2 flex justify-end items-center">
-            <img src={woman3} alt="img" className="w-96 object-contain" />
+            <img
+              src={woman3}
+              alt="img"
+              className="w-96 mx-auto object-contain"
+            />
           </div>
         </div>
       </div>

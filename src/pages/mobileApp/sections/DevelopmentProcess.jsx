@@ -49,7 +49,7 @@ function DevelopmentProcess({container}) {
   ];
 
   return (
-    <div className="mt-72 bg-primary">
+    <div className="mt-72 bg-primary px-2 xl:px-0">
       <div className={`${container}`}>
         {/* Header Section */}
         <div className="py-72">
@@ -62,7 +62,7 @@ function DevelopmentProcess({container}) {
           {/* Two Column Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start relative">
             {/* Left Side - Image Collage */}
-            <div className=" flex justify-center lg:justify-start sticky top-5">
+            <div className=" flex justify-center lg:justify-start lg:sticky top-5">
               <div className="w-full max-w-md">
                 <img
                   src={mobAppImg}

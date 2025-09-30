@@ -8,7 +8,7 @@ import {techItems} from "../../data/data";
 import SectionHeading from "./SectionHeading";
 const MultiGridSlider = () => {
   return (
-    <div className="relative max-w-[1448px] mx-auto">
+    <div className="relative max-w-[1500px] mx-auto">
       <section className="px-4 text-center relative">
         <SectionHeading
           title="Technologies and Platforms We Use"
@@ -18,12 +18,12 @@ const MultiGridSlider = () => {
         />
         {/* Left Gradient Overlay */}
         <div
-          className="absolute top-18 sm:top-0 left-0 sm:w-[357px] w-[200px] sm:h-full h-[200px] z-10 pointer-events-none 
+          className="absolute top-18 xl:top-0 left-0 sm:w-[357px] w-[200px] sm:h-full h-[200px] z-10 pointer-events-none 
   bg-gradient-to-r from-white to-transparent"
         />
         {/* Right Gradient Overlay */}
         <div
-          className="absolute sm:top-0 top-18 right-0 sm:w-[357px] w-[200px] sm:h-full h-[200px] z-10 pointer-events-none 
+          className="absolute xl:top-0 top-18 right-0 sm:w-[357px] w-[200px] sm:h-full h-[200px] z-10 pointer-events-none 
   bg-gradient-to-l from-white to-transparent"
         />
         <div className="flex flex-col sm:gap-10 gap-6 mt-5 sm:mt-0">

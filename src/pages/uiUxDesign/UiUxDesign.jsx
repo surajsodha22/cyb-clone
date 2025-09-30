@@ -11,14 +11,15 @@ import AutoSlider from "../../components/reusable/AutoSlider";
 import MultiGridSlider from "../../components/reusable/MultiGridSlider";
 import FAQ from "../../components/reusable/FAQ";
 
-import {ctaBanner, ctaBanner2, UIUXProcess} from "../../data/assetes";
-import CTA from "../../components/reusable/CTA";
+import {UIUXProcess} from "../../data/assetes";
 import ProcessTimeline from "./section/ProcessTimeline";
+import PartnershipCTA from "../../components/reusable/PartnershipCTA";
+import ReversePartnershipCTAMan from "../../components/reusable/ReversePartnershipCTAMan";
 
 const UiUxDesign = ({container}) => {
   const TechWork = () => {
     return (
-      <div className="flex flex-wrap gap-6 justify-between mt-10">
+      <div className="flex flex-wrap gap-6 lg:justify-between justify-center mt-10">
         {tech_work.map((tech, index) => (
           <div
             key={index}
@@ -26,17 +27,17 @@ const UiUxDesign = ({container}) => {
               index % 2 === 0
                 ? "bg-gradient-to-b from-[#F26064] to-[#FBC165]"
                 : "bg-gradient-to-b from-[#FBC165] to-[#F26064]"
-            } hover:scale-105 transition-transform`}
+            } `}
           >
-            <div className="w-48 h-52 bg-primary rounded-xl flex flex-col items-center justify-center">
-              <div className="w-20 h-20 ">
+            <div className="sm:w-48 sm:h-48 w-32 h-32 bg-primary rounded-xl flex flex-col items-center justify-center">
+              <div className="sm:w-20 sm:h-20 w-16 h-16 ">
                 <img
                   src={tech.img}
                   alt={tech.title}
                   className="w-full rounded-full"
                 />
               </div>
-              <p className="mt-4 text-sm font-semibold text-[#121212]">
+              <p className="sm:mt-4 mt-2 text-sm font-semibold text-[#121212]">
                 {tech.title}
               </p>
             </div>
@@ -59,7 +60,7 @@ const UiUxDesign = ({container}) => {
 
   return (
     <div className="mt-72">
-      <div className={`${container}`}>
+      <div className={`${container} xl:px-0 px-2`}>
         <SectionHeading title="Our UI/UX Design Services" align="center" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {UiUxData?.map((item, index) => (
@@ -86,13 +87,13 @@ const UiUxDesign = ({container}) => {
             </div>
           ))}
         </div>
-        <div className=" mt-72">
+        <div className=" mt-72 sm:pb-72 max-w-6xl mx-auto">
           <DesignProcess />
-          <div className="mt-72">
-            <CTA image={ctaBanner} />
-          </div>
         </div>
-        <div className=" mt-72">
+        <div className="mt-72">
+          <PartnershipCTA />
+        </div>
+        <div className=" mt-72 max-w-6xl mx-auto">
           <SectionHeading
             title="Technologies and Platforms We Use"
             subtitle=" follows the best app development practices while digitalizing your
@@ -103,7 +104,7 @@ const UiUxDesign = ({container}) => {
           <TechWork />
         </div>
         <div className="mt-72">
-          <CTA image={ctaBanner2} />
+          <ReversePartnershipCTAMan />
         </div>
         <div className="mt-72">
           <SectionHeading
@@ -111,12 +112,14 @@ const UiUxDesign = ({container}) => {
             subtitle="follows the best app development practices while digitalizing your idea. Here are all the app development services offered by us:"
             align="center"
           />
-          <AutoSlider reverse slideData={UXUI_Slide} />
+          <AutoSlider slideData={UXUI_Slide} />
         </div>
       </div>
 
-      <MultiGridSlider />
-      <div className={`${container}`}>
+      <div className="my-72">
+        <MultiGridSlider />
+      </div>
+      <div className={`${container} mb-72`}>
         <FAQ />
       </div>
     </div>

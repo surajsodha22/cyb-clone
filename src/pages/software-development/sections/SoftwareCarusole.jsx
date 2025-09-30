@@ -108,7 +108,7 @@ const SoftwareCarusole = ({container}) => {
             {industries.map((industry) => (
               <SwiperSlide key={industry.id}>
                 <div className="px-4">
-                  <div className="bg-gradient-to-br from-[#FEBB4D] to-[#FFF8E9] rounded-2xl shadow-lg p-6 lg:p-8 relative hover:shadow-xl transition-shadow duration-300 h-96">
+                  <div className="bg-gradient-to-br from-[#FEBB4D] to-[#FFF8E9] rounded-2xl  p-6 lg:p-8 relative transition-shadow duration-300 h-96">
                     {/* Circular Icon - Top Left */}
                     <div className="">
                       <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white rounded-full flex items-center justify-center shadow-lg">
@@ -142,9 +142,6 @@ const SoftwareCarusole = ({container}) => {
               <img src={rightArrow} alt="Next" className="w-full h-full" />
             </button>
           </div>
-
-          {/* Custom Pagination */}
-          <div className="swiper-pagination-custom flex justify-center mt-4"></div>
         </div>
       </div>
     </section>

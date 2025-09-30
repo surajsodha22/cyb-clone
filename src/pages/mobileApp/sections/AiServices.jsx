@@ -39,9 +39,9 @@ const AiServices = ({container}) => {
       </div>
 
       {/* Content Section */}
-      <div className="bg-orange-50 rounded-2xl p-8 flex flex-col lg:flex-row items-center gap-10 shadow">
+      <div className="bg-orange-50 rounded-2xl p-8 flex flex-col lg:flex-row items-center gap-12 shadow">
         {/* Image */}
-        <div className="w-96">
+        <div className="w-[270px] h-[350px]">
           <img
             src={mob_robo}
             alt="AI Bot"
@@ -52,11 +52,11 @@ const AiServices = ({container}) => {
         {/* Services */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-end">
           {services.map((service, index) => (
-            <div key={index}>
-              <h3 className="text-lg text-left font-semibold text-red-500 mb-2">
+            <div key={index} className=" max-w-[375px]">
+              <h3 className="text-[20px] text-left font-semibold text-red-500 mb-2">
                 {service.title}
               </h3>
-              <p className="text-gray-600 text-sm text-left leading-relaxed">
+              <p className="text-base text-left leading-relaxed">
                 {service.description}
               </p>
             </div>
